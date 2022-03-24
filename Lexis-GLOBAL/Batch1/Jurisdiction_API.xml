@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Jurisdiction_Suite">
+	<test thread-count="5" name="Test"><!-- Total API-(7), PASS(7), FAIL(0) and Display Result-(11), Pass(11), Fail(0) -->
+		<classes>
+
+			<class name="scenarios.api.Jurisdiction_BaseLine"></class>
+			<class name="extend.api.CreateReport"></class>
+            <class name="testsuite1.test.Jurisdiction_GET_with_indistinct" />
+			<class name="testsuite1.test.Jurisdiction_POST_with_indistinct" />
+			<class name="testsuite1.test.Jurisdiction_PUT_with_distinct_JurisdictionID" />
+			<class name="testsuite1.test.Jurisdiction_DELETE_with_distinct_JurisdictionID" />
+			<class name="testsuite1.test.Jurisdiction_GET_with_distinct_JurisdictionID" />
+
+            <class name="scenarios.api.Jurisdiction_GetMyJurisdiction"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite1.test.Jurisdiction_GET_with_indistinct_GetMyJurisdiction" />
+
+            <class name="scenarios.api.Jurisdiction_GetJurisdictions"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite1.test.Jurisdiction_GET_with_distinct_GetJurisdictions_with_JurisdictionID" />
+		
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

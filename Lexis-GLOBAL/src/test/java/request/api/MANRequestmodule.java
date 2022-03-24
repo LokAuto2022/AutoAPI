@@ -1,0 +1,559 @@
+package request.api;
+
+import org.testng.Assert;
+
+import com.aventstack.extentreports.Status;
+
+//import com.aventstack.extentreports.Status;
+
+import global.api.Environment;
+import io.restassured.http.Method;
+
+public class MANRequestmodule extends Environment {
+
+	public static void PREPOSTresponse(String url, String str1) {
+		try {
+			httprequest.headers("Content-Type", "application/json");
+			httpresponse = httprequest.request(Method.POST, str1);
+			log.debug("<<-PRE-POST->> Requested for: " + url + str1);
+			// test.log(Status.PASS, "POST Method Succeed ( ! ) for Login Athentication");
+
+		} catch (Exception e) {
+			log.debug("Failing(!)...Exception occur! on PRE-POST Request " + e);
+			// test.log(Status.FAIL, "FAIL, unable to access POST Method for Login
+			// Authentication");
+			htmlreport.flush();
+			// Assert.fail();
+		}
+	}
+
+	public static void POSTresponse(String url, String str2, String str3, String str4, String str5, String str6,
+			String str7) {
+		if (executefile.equals("Region")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str3);
+					log.debug("<<-POST->> Requested for " + url + str3);
+					test.log(Status.PASS, "POST Method Initiated ! For New " + executefile + " Creation");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to Initiate POST Method for " + executefile + " Creation");
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("UserRegion")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str3);
+					log.debug("<<-POST->> Requested for " + url + str3);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method from UserRegion Includes UserID");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("UserIDRegionID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str3);
+					log.debug("<<-POST->> Requested for " + url + str3);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion includes UserIDRegionID");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("Add_UserRegion")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str4);
+					log.debug("<<-POST->> Requested for " + url + str4);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("Jurisdiction")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str3);
+					log.debug("<<-POST->> Requested for " + url + str3);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("Yes_Jurisdiction")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str5);
+					log.debug("<<-POST->> Requested for " + url + str5);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+					Subcategory = "BaseLine";
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("UserJurisdiction")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str3);
+					log.debug("<<-POST->> Requested for " + url + str3);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+					Subcategory = "BaseLine";
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserJurisdiction");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("Yes_Jurisdiction")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.POST, str5);
+					log.debug("<<-POST->> Requested for " + url + str5);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+					Subcategory = "BaseLine";
+
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("Yes_UserJurisdiction")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					// httpresponse=httprequest.body(payloadd).post(str6);
+					httpresponse = httprequest.request(Method.POST, str6);
+					log.debug("<<-POST->> Requested for " + url + str6);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+					Subcategory = "BaseLine";
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("GetMyJurisdictionID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					 //httpresponse=httprequest.body(payload).post(str7);
+				    httpresponse = httprequest.request(Method.POST, str7);
+					log.debug("<<-POST->> Requested for " + url + str7);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+					
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+		}
+	}
+
+	public static void GETresponseALL(String url, String str2, String str3, String str4, String str5, String str6,
+			String str7) {
+		if (executefile.equals("Region")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.GET, str3);
+				log.debug("<<-GET_ALL->> Request for " + url + str3);
+				test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("UserRegion")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.GET, str2);
+				log.debug("<<-GET_ALL->> Request for " + url + str2);
+				test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("Jurisdiction")) {
+			if (Subcategory.equals("BaseLine")) { // complex
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str5);
+					log.debug("<<-GET_ALL->> Request for " + url + str5);
+					test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("GetMyJurisdiction")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str6);
+					log.debug("<<-GET_ALL->> Request for " + url + str6);
+					test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("UserJurisdiction")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str2);
+					log.debug("<<-POST->> Requested for " + url + str2);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("UserID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str2);
+					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("UserIDJurisdictionID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str2);
+					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("GetByJurisdictionID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str2);
+					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("GetMyJurisdictions")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str2);
+					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
+				} catch (Exception e) {
+					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+					Assert.fail();
+				}
+			}
+		}
+	}
+
+	public static void GETresponseSPF(String url, String str2, String str3, String str4, String str5, String str6,
+			String str7) {
+		if (executefile.equals("Region")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.GET, str3 + "/" + uniqueidr1);
+				log.debug("<<-GET_SPF->> Request for " + url + str3 + "/" + uniqueidr1);
+				test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("UserRegion")) {
+			if (Subcategory.equals("UserID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID);
+					log.debug("<<-GET_SPF->> Request for " + url + str4 + "/" + UsersID);
+					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("UserIDRegionID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + uniqueidr1);
+					log.debug("<<-GET_SPF->> Request for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
+					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("Jurisdiction")) {
+			if (Subcategory.equals("BaseLine")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str5 + "/" + uniqueidj1);
+					log.debug("<<-GET_SPF->> Request for " + url + str5 + "/" + uniqueidj1);
+					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("GetMyJurisdiction")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str5 + "/" + uniqueidj1);
+					log.debug("<<-GET_SPF->> Request for " + url + str5 + "/" + uniqueidj1);
+					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("GetJurisdictions")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str7 + "/" + uniqueidr1);
+					log.debug("<<-GET_SPF->> Request for " + url + str7 + "/" + uniqueidr1);
+					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+		}
+		if (executefile.equals("UserJurisdiction")) {
+			if (Subcategory.equals("UserID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str6 + "/" + UsersID);
+					log.debug("<<-GET_SPF->> Request for " + url + str6 + "/" + UsersID);
+					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (Subcategory.equals("UserIDJurisdictionID")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.GET, str6 + "/" + UsersID + "/" + uniqueidj1);
+					log.debug("<<-GET_SPF->> Request for " + url + str6 + "/" + UsersID + "/" + uniqueidj1);
+					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+		}
+	}
+
+	public static void DELETEresponseSPF(String url, String str2, String str3, String str4, String str5, String str6,
+			String str7) {
+		if (executefile.equals("Region")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.DELETE, str3 + "/" + uniqueidr1);
+				log.debug("<<-DELETE->> Request initiated for " + url + str3 + "/" + uniqueidr1);
+				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("UserRegion")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.DELETE, str4 + "/" + UsersID + "/" + uniqueidr1);
+				log.debug("<<-DELETE->> Request initiated for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
+				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("Jurisdiction")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.DELETE, str5 + "/" + uniqueidj1);
+				log.debug("<<-DELETE->> Request initiated for " + url + str5 + "/" + uniqueidj1);
+				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("UserJurisdiction")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.DELETE, str6);
+				log.debug("<<-DELETE->> Request initiated for " + url + str6);
+				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+				htmlreport.flush();
+				Assert.fail();
+			}
+		}
+	}
+
+	public void PUTresponseSPF(String url, String str2, String str3, String str4, String str5, String str6,
+			String str7) {
+		if (executefile.equals("Region")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.PUT, str3 + "/" + uniqueidr1);
+				log.debug("<<-PUT->> Request Intiated for " + url + str3 + "/" + uniqueidr1);
+				test.log(Status.PASS,
+						"PUT(ID) Method Accomplished (!) for Updating the Specific " + executefile + " Values");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on PUT Specific Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("Jurisdiction")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.PUT, str5 + "/" + uniqueidj1);
+				log.debug("<<-PUT->> Request Intiated for " + url + str5 + "/" + uniqueidj1);
+				test.log(Status.PASS,
+						"PUT(ID) Method Accomplished (!) for Updating the Specific " + executefile + " Values");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on PUT Specific Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
+				Assert.fail();
+			}
+		}
+		if (executefile.equals("UserJurisdiction")) {
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.PUT, str7 + "/" + uniqueidj1+ "/" + UsersID);
+				log.debug("<<-PUT->> Request Intiated for " + url + str7 + "/" + uniqueidj1+ "/" + UsersID);
+				test.log(Status.PASS,
+						"PUT(ID) Method Accomplished (!) for Updating the Specific " + executefile + " Values");
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on PUT Specific Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
+				Assert.fail();
+			}
+		}
+	}
+}

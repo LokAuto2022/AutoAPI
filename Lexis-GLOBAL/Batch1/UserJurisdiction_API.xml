@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test"> <!-- Total API-(7), PASS(4), FAIL(3) and Display Result-(13), Pass(10), Fail(3) -->
+    <classes>
+    
+      <class name="scenarios.api.UserJurisdiction_Indistinct"></class> 
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite1.test.UserJurisdiction_POST_with_indistinct"/>
+      <class name="testsuite1.test.UserJurisdiction_DELETE_with_indistinct"/>
+      
+      <class name="scenarios.api.UserJurisdiction_UserID"></class> 
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite1.test.UserJurisdiction_GET_with_distinct_UserID"/>
+      
+      <class name="scenarios.api.UserJurisdiction_UserIDJurisdictionID"></class>
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite1.test.UserJurisdiction_GET_with_distinct_UserID_JurisdictionID"/>
+      
+      <class name="scenarios.api.UserJurisdiction_GetByJurisdictionID"></class> 
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite1.test.UserJurisdiction_POST_with_distinct_GetByJurisdictionID"/>
+      
+      <class name="scenarios.api.UserJurisdiction_GetMyJurisdictions"></class> 
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite1.test.UserJurisdiction_GET_with_distinct_GetMyJurisdictions"/>
+      
+      <class name="testsuite1.test.UserJurisdiction_PUT_with_distinct_UpdateDefaultJurisdiction_with_JurisdictionID_UserID"/>
+      
+    </classes>
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->
