@@ -1831,3 +1831,186 @@
 2022-03-24 19:54:24,912 - main.api.ExecuteAPILead -DEBUG - FAIL(!)...Expected Status_Code [200] is Not Equal to Actual Status_Code [400]
 2022-03-24 19:54:24,912 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 400 Bad Request
 2022-03-24 19:54:24,912 - main.api.ExecuteAPILead -DEBUG - FAIL(!)...Expected Status_Code [HTTP/1.1 200 OK] is Not Equal to Actual Status_Code [HTTP/1.1 400 Bad Request]
+2022-03-24 20:22:25,283 - main.api.ExecuteAPILead -DEBUG - Execution Started....[[POST REQUEST]]_[[Region Creation]]
+2022-03-24 20:22:25,286 - main.api.ExecuteAPILead -DEBUG - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-03-24 20:22:25,506 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:22:25,507 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:22:25,507 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:22:29,920 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:22:29,921 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:29,921 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:29,923 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:29,924 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:29,933 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTQ3LCJleHAiOjE2NTA3MjU1NDcsImlhdCI6MTY0ODEzMzU0NywiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.XCLZRoVUB1kbO80Svbfaoo8Nq0yWnop9OtBk_mtbcBM
+2022-03-24 20:22:30,048 - main.api.ExecuteAPILead -DEBUG - RegionName Given i.e. Auto_API_20.22.30
+2022-03-24 20:22:30,049 - main.api.ExecuteAPILead -DEBUG - Prefix Given i.e. Lw30
+2022-03-24 20:22:30,049 - main.api.ExecuteAPILead -DEBUG - Description Given i.e. Test_Description
+2022-03-24 20:22:30,049 - main.api.ExecuteAPILead -DEBUG - DataCentre Given i.e. Test_DataCentre
+2022-03-24 20:22:30,049 - main.api.ExecuteAPILead -DEBUG - Hosting Given i.e. Test_Hosting
+2022-03-24 20:22:31,722 - main.api.ExecuteAPILead -DEBUG - <<-POST->> Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-03-24 20:22:31,722 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:31,723 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:31,723 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:31,723 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:31,725 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> {"Name":"Auto_API_20.22.30","Prefix":"Lw30","Description":"Test_Description","DataCentre":"Test_DataCentre","Hosting":"Test_Hosting","Id":"ed94325a-d600-4aee-b047-7a310d749649"}
+2022-03-24 20:22:32,077 - main.api.ExecuteAPILead -DEBUG - Region ID is ed94325a-d600-4aee-b047-7a310d749649
+2022-03-24 20:22:33,742 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users
+2022-03-24 20:22:33,757 - main.api.ExecuteAPILead -DEBUG - Response Time is 1660
+2022-03-24 20:22:33,757 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1660 milliseconds
+2022-03-24 20:22:34,075 - main.api.ExecuteAPILead -DEBUG - Execution Started....[[GET ALL REQUEST]]_[[View all Regions ]]
+2022-03-24 20:22:34,076 - main.api.ExecuteAPILead -DEBUG - Base URL fetched Succeed i.e.https://lnmjapi.adappt.ai/
+2022-03-24 20:22:34,183 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:22:34,184 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:22:34,184 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:22:35,838 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:22:35,840 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:35,840 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:35,840 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:35,840 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:35,841 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTUzLCJleHAiOjE2NTA3MjU1NTMsImlhdCI6MTY0ODEzMzU1MywiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.3S5BvKdGsH-xoJUBHJf1xHlaNvMqoELyUbfkgcKTaxU
+2022-03-24 20:22:37,395 - main.api.ExecuteAPILead -DEBUG - <<-GET_ALL->> Request for https://lnmjapi.adappt.ai/api/v1/Region
+2022-03-24 20:22:37,400 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> [{"Name":"test region","Prefix":"1tet","Description":"test1 desc","DataCentre":"center","Hosting":"host","Id":"753828a1-19e3-4a29-a920-09c74fcbed6b"},{"Name":"United Kingdom","Prefix":"UK","Description":"qwerty","DataCentre":"qwerty","Hosting":"qwerty","Id":"3ef4c4d7-ff33-472f-ad68-22b3a81b6ea0"},{"Name":"Bangalore","Prefix":"ck2","Description":"string","DataCentre":"string1","Hosting":"string2","Id":"41f09885-c28e-4a62-a885-2b00eaa86548"},{"Name":"Pondicherry","Prefix":"PY","Description":"pondy","DataCentre":"pondy","Hosting":"test","Id":"577dc681-f793-4595-888a-3e6c283f774f"},{"Name":"Pune","Prefix":"PN","Description":"Haveli","DataCentre":"Pune","Hosting":"Pune","Id":"3f855c96-e7ae-41a7-a8e3-7916d159a6ab"},{"Name":"Auto_API_20.22.30","Prefix":"Lw30","Description":"Test_Description","DataCentre":"Test_DataCentre","Hosting":"Test_Hosting","Id":"ed94325a-d600-4aee-b047-7a310d749649"},{"Name":"abc&abc.abc-a/b/c(a098)","Prefix":"-/","Description":"varchar region 12344234-;''/","DataCentre":"4356e6knowledge testing firm","Hosting":"department testing","Id":"d397d93d-4614-4da6-8a13-b4b3ca1bf4de"},{"Name":"&()-';/.,&&","Prefix":"test","Description":"test test region with spcl char only","DataCentre":")(&&87656';/.&test","Hosting":"test test edit","Id":"1cd2447c-5f92-4c72-9149-ccc7b68a2fb8"}]
+2022-03-24 20:22:37,400 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:37,401 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:37,401 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:37,401 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:38,997 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users
+2022-03-24 20:22:38,998 - main.api.ExecuteAPILead -DEBUG - Response Time is 1591
+2022-03-24 20:22:38,998 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1591 milliseconds
+2022-03-24 20:22:39,059 - main.api.ExecuteAPILead -DEBUG - Execution Started....[[PUT REQUEST]]_[[Update Specific Region Details ]]
+2022-03-24 20:22:39,060 - main.api.ExecuteAPILead -DEBUG - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-03-24 20:22:39,164 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:22:39,165 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:22:39,165 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:22:40,748 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:22:40,749 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:40,749 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:40,749 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:40,749 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:40,751 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTU4LCJleHAiOjE2NTA3MjU1NTgsImlhdCI6MTY0ODEzMzU1OCwiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.xbd0EkjGda2_fEKTBUaa_qOH02uPILyZ3KHf1uH-nT8
+2022-03-24 20:22:40,854 - main.api.ExecuteAPILead -DEBUG - RegionName Given i.e. Auto_API_20.22.40
+2022-03-24 20:22:40,855 - main.api.ExecuteAPILead -DEBUG - Prefix Given i.e. Lw40
+2022-03-24 20:22:40,855 - main.api.ExecuteAPILead -DEBUG - Description Given i.e. Test_Description
+2022-03-24 20:22:40,855 - main.api.ExecuteAPILead -DEBUG - DataCentre Given i.e. Test_DataCentre
+2022-03-24 20:22:40,856 - main.api.ExecuteAPILead -DEBUG - Hosting Given i.e. Test_Hosting
+2022-03-24 20:22:42,407 - main.api.ExecuteAPILead -DEBUG - <<-POST->> Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-03-24 20:22:42,409 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> {"Name":"Auto_API_20.22.40","Prefix":"Lw40","Description":"Test_Description","DataCentre":"Test_DataCentre","Hosting":"Test_Hosting","Id":"e8fe1659-be78-48c8-8b86-22c9c21e04d9"}
+2022-03-24 20:22:42,420 - main.api.ExecuteAPILead -DEBUG - Region ID is e8fe1659-be78-48c8-8b86-22c9c21e04d9
+2022-03-24 20:22:42,420 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:42,420 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:42,420 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:42,420 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:44,144 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users
+2022-03-24 20:22:44,145 - main.api.ExecuteAPILead -DEBUG - Response Time is 1722
+2022-03-24 20:22:44,145 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1722 milliseconds
+2022-03-24 20:22:44,246 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:22:44,246 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:22:44,246 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:22:45,987 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:22:45,987 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:45,988 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:45,988 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:45,989 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:45,989 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTYzLCJleHAiOjE2NTA3MjU1NjMsImlhdCI6MTY0ODEzMzU2MywiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.UQxSR1d7ZpV3c5QvT0D1-Wnkxts9k20nUBZk88VC3JM
+2022-03-24 20:22:46,092 - main.api.ExecuteAPILead -DEBUG - Updated RegionName Given i.e. Upd_Auto_API_20.22.46
+2022-03-24 20:22:46,092 - main.api.ExecuteAPILead -DEBUG - Updated Prefix Given i.e. LP46
+2022-03-24 20:22:46,092 - main.api.ExecuteAPILead -DEBUG - Updated Description Given i.e. Test_UpDescription
+2022-03-24 20:22:46,092 - main.api.ExecuteAPILead -DEBUG - Updated DataCentre Given i.e. Test_UpDataCentre
+2022-03-24 20:22:46,092 - main.api.ExecuteAPILead -DEBUG - Updated Hosting Given i.e. Test_UpHosting
+2022-03-24 20:22:47,817 - main.api.ExecuteAPILead -DEBUG - <<-PUT->> Request Intiated for https://lnmjapi.adappt.ai/api/v1/Region/e8fe1659-be78-48c8-8b86-22c9c21e04d9
+2022-03-24 20:22:47,819 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> {"Name":"Upd_Auto_API_20.22.46","Prefix":"LP46","Description":"Test_UpDescription","DataCentre":"Test_UpDataCentre","Hosting":"Test_UpHosting","Id":"e8fe1659-be78-48c8-8b86-22c9c21e04d9"}
+2022-03-24 20:22:47,819 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:47,819 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:47,819 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:47,819 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:49,468 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users
+2022-03-24 20:22:49,469 - main.api.ExecuteAPILead -DEBUG - Response Time is 1647
+2022-03-24 20:22:49,469 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1647 milliseconds
+2022-03-24 20:22:49,528 - main.api.ExecuteAPILead -DEBUG - Execution Started....[[GET SPECIFIC REQUEST]]_[[View Specific Region Details ]]
+2022-03-24 20:22:49,529 - main.api.ExecuteAPILead -DEBUG - Base URL fetched Succeed i.e.https://lnmjapi.adappt.ai/
+2022-03-24 20:22:49,630 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:22:49,630 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:22:49,630 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:22:51,199 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:22:51,199 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:51,199 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:51,199 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:51,200 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:51,200 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTY5LCJleHAiOjE2NTA3MjU1NjksImlhdCI6MTY0ODEzMzU2OSwiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.tKaedcxwAuX6JYzbaavrOJicRyWRn8I2L9orUFxyQ8A
+2022-03-24 20:22:51,302 - main.api.ExecuteAPILead -DEBUG - RegionName Given i.e. Auto_API_20.22.51
+2022-03-24 20:22:51,302 - main.api.ExecuteAPILead -DEBUG - Prefix Given i.e. Lw51
+2022-03-24 20:22:51,302 - main.api.ExecuteAPILead -DEBUG - Description Given i.e. Test_Description
+2022-03-24 20:22:51,302 - main.api.ExecuteAPILead -DEBUG - DataCentre Given i.e. Test_DataCentre
+2022-03-24 20:22:51,302 - main.api.ExecuteAPILead -DEBUG - Hosting Given i.e. Test_Hosting
+2022-03-24 20:22:52,833 - main.api.ExecuteAPILead -DEBUG - <<-POST->> Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-03-24 20:22:52,833 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> {"Name":"Auto_API_20.22.51","Prefix":"Lw51","Description":"Test_Description","DataCentre":"Test_DataCentre","Hosting":"Test_Hosting","Id":"7c2f1e1e-35cd-4fa0-aa21-4067cf55ef58"}
+2022-03-24 20:22:52,844 - main.api.ExecuteAPILead -DEBUG - Region ID is 7c2f1e1e-35cd-4fa0-aa21-4067cf55ef58
+2022-03-24 20:22:52,845 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:52,845 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:52,845 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:52,845 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:54,519 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users
+2022-03-24 20:22:54,520 - main.api.ExecuteAPILead -DEBUG - Response Time is 1673
+2022-03-24 20:22:54,520 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1673 milliseconds
+2022-03-24 20:22:54,622 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:22:54,623 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:22:54,623 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:22:56,269 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:22:56,270 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:56,270 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:56,270 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:56,270 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:56,270 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTc0LCJleHAiOjE2NTA3MjU1NzQsImlhdCI6MTY0ODEzMzU3NCwiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.t2ZlIiJZm3sCklq1NwFJzaJBl4Bl6EIGYAPV9FINShI
+2022-03-24 20:22:57,858 - main.api.ExecuteAPILead -DEBUG - <<-GET_SPF->> Request for https://lnmjapi.adappt.ai/api/v1/Region/7c2f1e1e-35cd-4fa0-aa21-4067cf55ef58
+2022-03-24 20:22:57,861 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> {"Name":"Auto_API_20.22.51","Prefix":"Lw51","Description":"Test_Description","DataCentre":"Test_DataCentre","Hosting":"Test_Hosting","Id":"7c2f1e1e-35cd-4fa0-aa21-4067cf55ef58"}
+2022-03-24 20:22:57,872 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:22:57,872 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:22:57,872 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:22:57,872 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:22:59,417 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users/7c2f1e1e-35cd-4fa0-aa21-4067cf55ef58
+2022-03-24 20:22:59,418 - main.api.ExecuteAPILead -DEBUG - Response Time is 1543
+2022-03-24 20:22:59,418 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1543 milliseconds
+2022-03-24 20:22:59,465 - main.api.ExecuteAPILead -DEBUG - Execution Started....[[DELETE REQUEST]]_[[Delete Specific Region Includes UserID & RegionID ]]
+2022-03-24 20:22:59,465 - main.api.ExecuteAPILead -DEBUG - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-03-24 20:22:59,580 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:22:59,580 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:22:59,581 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:23:01,189 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:23:01,189 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:23:01,190 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:23:01,191 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:23:01,191 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:23:01,191 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTc5LCJleHAiOjE2NTA3MjU1NzksImlhdCI6MTY0ODEzMzU3OSwiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.Ojto8h-4o-zsHm7g-cBkXH3y4T4alzbeAjqagPRovn8
+2022-03-24 20:23:01,300 - main.api.ExecuteAPILead -DEBUG - RegionName Given i.e. Auto_API_20.23.01
+2022-03-24 20:23:01,300 - main.api.ExecuteAPILead -DEBUG - Prefix Given i.e. Lw01
+2022-03-24 20:23:01,300 - main.api.ExecuteAPILead -DEBUG - Description Given i.e. Test_Description
+2022-03-24 20:23:01,301 - main.api.ExecuteAPILead -DEBUG - DataCentre Given i.e. Test_DataCentre
+2022-03-24 20:23:01,301 - main.api.ExecuteAPILead -DEBUG - Hosting Given i.e. Test_Hosting
+2022-03-24 20:23:02,861 - main.api.ExecuteAPILead -DEBUG - <<-POST->> Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-03-24 20:23:02,862 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> {"Name":"Auto_API_20.23.01","Prefix":"Lw01","Description":"Test_Description","DataCentre":"Test_DataCentre","Hosting":"Test_Hosting","Id":"d8e3d5a1-5fcf-4ee8-a8ae-a6c1afe784f7"}
+2022-03-24 20:23:02,872 - main.api.ExecuteAPILead -DEBUG - Region ID is d8e3d5a1-5fcf-4ee8-a8ae-a6c1afe784f7
+2022-03-24 20:23:02,872 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:23:02,872 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:23:02,872 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:23:02,872 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:23:04,620 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users
+2022-03-24 20:23:04,621 - main.api.ExecuteAPILead -DEBUG - Response Time is 1746
+2022-03-24 20:23:04,621 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1746 milliseconds
+2022-03-24 20:23:04,731 - main.api.ExecuteAPILead -DEBUG - Defined Credentials are [[ Valid_GlobalUsername ]]  &  [[ Valid_GlobalPassword ]]
+2022-03-24 20:23:04,732 - main.api.ExecuteAPILead -DEBUG - Username Given i.e. [LexisnexisAdmin@adappt.co.in]
+2022-03-24 20:23:04,732 - main.api.ExecuteAPILead -DEBUG - Password Given i.e. [LonestarAdmin@123]
+2022-03-24 20:23:06,323 - main.api.ExecuteAPILead -DEBUG - <<-PRE-POST->> Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-03-24 20:23:06,324 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:23:06,324 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:23:06,325 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:23:06,325 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:23:06,325 - main.api.ExecuteAPILead -DEBUG - PASS(!)...BEARER TOKEN Generated Succeed i.e. eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiLCIxNjIzYjg2MS1mYWQxLTRhNTgtYTZhZS05ZWUxNTYwMWMzODkiXSwic3ViIjoiMTYyM2I4NjEtZmFkMS00YTU4LWE2YWUtOWVlMTU2MDFjMzg5IiwiZW1haWwiOiJMZXhpc25leGlzQWRtaW5AYWRhcHB0LmNvLmluIiwicm9sZSI6IlN1cGVyIEFkbWluIiwibmJmIjoxNjQ4MTMzNTg0LCJleHAiOjE2NTA3MjU1ODQsImlhdCI6MTY0ODEzMzU4NCwiaXNzIjoiaHR0cHM6Ly91YXQuYXBpLmxleGlzbmV4aXMuY28udWsiLCJhdWQiOiJodHRwczovL3VhdC5hcGkubGV4aXNuZXhpcy5jby51ayJ9.iR8i4NZF1zVOeymSGL-jYHVwAzkG_NRsgZE2K0O5lPo
+2022-03-24 20:23:07,958 - main.api.ExecuteAPILead -DEBUG - <<-DELETE->> Request initiated for https://lnmjapi.adappt.ai/api/v1/Region/d8e3d5a1-5fcf-4ee8-a8ae-a6c1afe784f7
+2022-03-24 20:23:07,960 - main.api.ExecuteAPILead -DEBUG - Actual JsonBody Result is --> Region is deleted
+2022-03-24 20:23:07,960 - main.api.ExecuteAPILead -DEBUG - Actual Status_Code is--> 200
+2022-03-24 20:23:07,961 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Code [200] is Equal to Actual Status_Code [200]
+2022-03-24 20:23:07,961 - main.api.ExecuteAPILead -DEBUG - Actual Status_Info is--> HTTP/1.1 200 OK
+2022-03-24 20:23:07,961 - main.api.ExecuteAPILead -DEBUG - PASS(!)...Expected Status_Line [HTTP/1.1 200 OK] is Equal to Actual Status_Code [HTTP/1.1 200 OK]
+2022-03-24 20:23:09,481 - main.api.ExecuteAPILead -DEBUG - @Finding Response Time for this (API) i.e. https://lnmjapi.adappt.ai/api/v1/Account/Users/d8e3d5a1-5fcf-4ee8-a8ae-a6c1afe784f7
+2022-03-24 20:23:09,484 - main.api.ExecuteAPILead -DEBUG - Response Time is 1518
+2022-03-24 20:23:09,484 - main.api.ExecuteAPILead -DEBUG - Response time less than 2 seconds i.e. 1518 milliseconds
