@@ -16,8 +16,7 @@ public class CreateReport extends Environment {
 	@Test(priority = 1)
 	public static void extend() {
 		try {
-
-			htmlreport = new ExtentReports();
+            htmlreport = new ExtentReports();
 			if (executefile.equals("Login_Validation")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
@@ -47,8 +46,7 @@ public class CreateReport extends Environment {
 			Assert.fail();
 		}
 	}
-
-	public static String timestamp() {
+    public static String timestamp() {
 		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
 	}
 

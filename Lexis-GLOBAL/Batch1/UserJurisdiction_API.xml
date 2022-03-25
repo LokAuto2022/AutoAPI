@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test"> <!-- Total API-(7), PASS(4), FAIL(3) and Display Result-(13), Pass(10), Fail(3) -->
+  <test thread-count="5" name="Test">  <!-- Total API-(7), PASS(4), FAIL(3) and Display Result-(13), Pass(10), Fail(3) -->
     <classes>
     
       <class name="scenarios.api.UserJurisdiction_Indistinct"></class> 

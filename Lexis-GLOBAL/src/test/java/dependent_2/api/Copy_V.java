@@ -6,19 +6,9 @@ import global.api.Environment;
 
 public class Copy_V extends Environment {
 
-	@SuppressWarnings("unused")
+	//@SuppressWarnings("unused")
 	public static void inClipboard() {
-		try {
-			String copiedcontent = uniqueidr1;
-			//StringSelection stringSelection = new StringSelection(copiedcontent);
-			//System.out.println("xxxxxxxxxxxxx ss" + stringSelection);
-			//clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-			//clipboard.setContents(stringSelection, null);
-
-		} catch (Exception e) {
-			log.debug("Failing(!)....Exception occur! on Copy in Clipboard Area " + e);
-			Assert.fail();
-		}
+		
 	}
 
 	public static void inPastevRobot()   {

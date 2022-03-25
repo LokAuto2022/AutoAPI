@@ -745,8 +745,8 @@ public class FrameSuite extends Environment {
 	public static void UserJurisdiction_POST_Create(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
 
-		test = htmlreport.createTest(executefile + " in GET(ID) Method")
-				.info("CASE : View the Specific " + executefile + " Value");
+		test = htmlreport.createTest(executefile + " in POST Method")
+				.info("CASE : Create " + executefile);
 
 		// TODO Stage 2
 		httprequest = RestAssured.given();

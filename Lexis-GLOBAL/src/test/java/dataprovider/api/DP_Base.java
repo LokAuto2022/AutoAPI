@@ -10,5 +10,4 @@ public class DP_Base extends Environment {
 		String[] basurl = { "https://lnmjapi.adappt.ai/" };
 		return basurl;
 	}
-
 }

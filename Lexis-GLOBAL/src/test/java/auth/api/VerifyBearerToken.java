@@ -13,16 +13,17 @@ public class VerifyBearerToken extends Environment {
 			token = httpresponse.getBody().asString();
 			String partialtoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9";
 			if (token.contains(partialtoken)) {
-				log.debug("PASS(!)...BEARER TOKEN Generated Succeed i.e. " + token);
+				log.debug("PASS ! 🙂...BEARER TOKEN Generated Succeed ");
 				test.log(Status.PASS, "TOKEN Generated Succeed with POST method");
 			} else {
-				log.debug("FAIL(!)...Unable to generate TOKEN with POST method.");
-				log.debug("Actual Result is " + token);
+				log.debug("FAIL ! ☹...Unable to generate TOKEN with POST method.");
+				log.debug("Actual Result ➨➨ " + token);
 				test.log(Status.FAIL, "Unable to generate TOKEN with POST method");
 				Assert.fail();
 		  }
 		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on Token Genration on Common platform " + e);
+			log.debug("Failing ! ☹...Exception occur! on Verify Bearer Token Genration" + e);
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -31,11 +32,11 @@ public class VerifyBearerToken extends Environment {
 		try {
 			token = httpresponse.getBody().asString();
 			if (token.contains("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9")) {
-				log.debug("PASS(!)...BEARER TOKEN Generated Succeed i.e. " + token);
+				log.debug("PASS ! 🙂...BEARER TOKEN Generated Succeed");
 			}
 			if (token.equals("Invalid Login")) {
-				log.debug("Actual Result is " + token);
-				log.debug("FAIL(!)...Unable to generate TOKEN.");
+			    log.debug("FAIL ! ☹...Unable to generate TOKEN.");
+				log.debug("Actual Result ➨➨ " + token);
 				// Assert.fail();
 			}
 		} catch (Exception e) {

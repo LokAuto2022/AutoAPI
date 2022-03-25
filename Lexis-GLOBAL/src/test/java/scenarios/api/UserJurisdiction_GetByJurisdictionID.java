@@ -10,5 +10,5 @@ public class UserJurisdiction_GetByJurisdictionID extends Environment {
  public static void filename() {
 	 executefile="UserJurisdiction";
 	 Subcategory="GetByJurisdictionID";
-  }
+   }
 }

@@ -10,6 +10,5 @@ public class Jurisdiction_GetMyJurisdiction extends Environment {
  public static void filename() {
 	 executefile="Jurisdiction";
 	 Subcategory="GetMyJurisdiction";
-	
-  }
+	}
 }

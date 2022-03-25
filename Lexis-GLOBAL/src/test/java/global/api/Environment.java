@@ -69,8 +69,5 @@ public class Environment {
 	protected static String Subcategory;
 	protected static String Index;
     protected static String UsersID;
-   
-	
-	
-
+  
 }

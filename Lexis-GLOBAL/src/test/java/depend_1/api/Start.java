@@ -13,15 +13,15 @@ public class Start extends Environment{
 	}
 
 	public static void division() {
-		System.out.println("----------------------------------------------------------------------------------------------------------------------------->");
-		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>");
+		System.out.println("▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶");
+		System.out.println("◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎◎");
 		CurrentTime.date();
-		System.out.println("->->->->->->->->->->->->->->->");
+		System.out.println("★★★★★★★★★★★★★★★★★★★★★★");
 		
 	}
 	public static void accessedfile() {
-		System.out.println("->->->->->->->->->->->->->->->");
-		System.out.println("Accessed File is "+executefile+".xlsx");
+		
+		System.out.println("▂ ▃ ▄ ▅ ▆ ▇ █ ⏳ ₳ccessed File is "+executefile+".xlsx");
 		
 	}
 

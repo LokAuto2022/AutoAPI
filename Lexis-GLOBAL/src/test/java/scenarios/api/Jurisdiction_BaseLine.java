@@ -10,7 +10,5 @@ public class Jurisdiction_BaseLine extends Environment {
  public static void filename() {
 	 executefile="Jurisdiction";
 	 Subcategory="BaseLine";
-	 
-	
-  }
+   }
 }

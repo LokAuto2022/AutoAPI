@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
-import cookies.base.JsonProperty;
+import cookies.api.JsonProperty;
 import dependent_2.api.CurrentTime;
 import global.api.Environment;
 
@@ -16,13 +16,13 @@ public class AllBodyStructure extends Environment {
 		try {
 			requestParams = new JSONObject();
 			SupportProperties.logincred();
-			log.debug("Defined Credentials are " + "[[ " + eusername + " ]]" + "  &  " + "[[ " + epassword + " ]]");
+			log.debug("Defined Credentials are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
 			String username = pro.getProperty(eusername);
 			requestParams.put("Username", username);
-			log.debug("Username Given i.e. " + "[" + username + "]");
+			log.debug("Username Given ➜➜ " + "(" + username + ")");
 			String password = pro.getProperty(epassword);
 			requestParams.put("Password", password);
-			log.debug("Password Given i.e. " + "[" + password + "]");
+			log.debug("Password Given ➜➜" + "(" + password + ")");
 			requestParams.put("GrantType", "Password");
 			httprequest.body(requestParams.toJSONString());
 		} catch (Exception e) {

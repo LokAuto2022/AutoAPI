@@ -15,11 +15,11 @@ public class MANRequestmodule extends Environment {
 		try {
 			httprequest.headers("Content-Type", "application/json");
 			httpresponse = httprequest.request(Method.POST, str1);
-			log.debug("<<-PRE-POST->> Requested for: " + url + str1);
+			log.debug("⏪ PRE_POST ⏩  Requested for: " + url + str1);
 			// test.log(Status.PASS, "POST Method Succeed ( ! ) for Login Athentication");
 
 		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on PRE-POST Request " + e);
+			log.debug("Failing ! ☹...Exception occur! on PRE-POST Request " + e);
 			// test.log(Status.FAIL, "FAIL, unable to access POST Method for Login
 			// Authentication");
 			htmlreport.flush();
@@ -35,11 +35,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str3);
-					log.debug("<<-POST->> Requested for " + url + str3);
+					log.debug("⏪ POST ⏩ Requested for " + url + str3);
 					test.log(Status.PASS, "POST Method Initiated ! For New " + executefile + " Creation");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to Initiate POST Method for " + executefile + " Creation");
 					Assert.fail();
 				}
@@ -51,11 +51,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str3);
-					log.debug("<<-POST->> Requested for " + url + str3);
+					log.debug("⏪ POST ⏩ Requested for " + url + str3);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method from UserRegion Includes UserID");
 					Assert.fail();
 				}
@@ -65,11 +65,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str3);
-					log.debug("<<-POST->> Requested for " + url + str3);
+					log.debug("⏪ POST ⏩ Requested for " + url + str3);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion includes UserIDRegionID");
 					Assert.fail();
 				}
@@ -79,11 +79,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str4);
-					log.debug("<<-POST->> Requested for " + url + str4);
+					log.debug("⏪ POST ⏩ Requested for " + url + str4);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹...Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -95,10 +95,10 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str3);
-					log.debug("<<-POST->> Requested for " + url + str3);
+					log.debug("⏪ POST ⏩ Requested for " + url + str3);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -108,11 +108,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str5);
-					log.debug("<<-POST->> Requested for " + url + str5);
+					log.debug("⏪ POST ⏩ Requested for " + url + str5);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 					Subcategory = "BaseLine";
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -124,11 +124,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str3);
-					log.debug("<<-POST->> Requested for " + url + str3);
+					log.debug("⏪ POST ⏩ Requested for " + url + str3);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 					Subcategory = "BaseLine";
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserJurisdiction");
 					Assert.fail();
 				}
@@ -138,12 +138,12 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.POST, str5);
-					log.debug("<<-POST->> Requested for " + url + str5);
+					log.debug("⏪ POST ⏩ Requested for " + url + str5);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 					Subcategory = "BaseLine";
 
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -154,11 +154,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.header("Authorization", "Bearer " + token);
 					// httpresponse=httprequest.body(payloadd).post(str6);
 					httpresponse = httprequest.request(Method.POST, str6);
-					log.debug("<<-POST->> Requested for " + url + str6);
+					log.debug("⏪ POST ⏩ Requested for " + url + str6);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 					Subcategory = "BaseLine";
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -167,13 +167,13 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					 //httpresponse=httprequest.body(payload).post(str7);
-				    httpresponse = httprequest.request(Method.POST, str7);
-					log.debug("<<-POST->> Requested for " + url + str7);
+					// httpresponse=httprequest.body(payload).post(str7);
+					httpresponse = httprequest.request(Method.POST, str7);
+					log.debug("⏪ POST ⏩ Requested for " + url + str7);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
-					
+
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -188,11 +188,11 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.GET, str3);
-				log.debug("<<-GET_ALL->> Request for " + url + str3);
+				log.debug("⏪ GET_ALL ⏩ Request for " + url + str3);
 				test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on GET Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on GET Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
 				htmlreport.flush();
 				Assert.fail();
@@ -203,11 +203,11 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.GET, str2);
-				log.debug("<<-GET_ALL->> Request for " + url + str2);
+				log.debug("⏪ GET_ALL ⏩ Request for " + url + str2);
 				test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on GET Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on GET Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
 				htmlreport.flush();
 				Assert.fail();
@@ -219,11 +219,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str5);
-					log.debug("<<-GET_ALL->> Request for " + url + str5);
+					log.debug("⏪ GET_ALL ⏩ Request for " + url + str5);
 					test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur! on GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur! on GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -234,11 +234,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str6);
-					log.debug("<<-GET_ALL->> Request for " + url + str6);
+					log.debug("⏪ GET_ALL ⏩ Request for " + url + str6);
 					test.log(Status.PASS, "GET Method Accomplished ( ! ) for Viewing All " + executefile + "s");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur! on GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur! on GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET Method for Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -251,10 +251,10 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str2);
-					log.debug("<<-POST->> Requested for " + url + str2);
+					log.debug("⏪ POST ⏩ Requested for " + url + str2);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -264,10 +264,10 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str2);
-					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					log.debug("⏪ GET_ALL ⏩ Requested for " + url + str2);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -277,10 +277,10 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str2);
-					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					log.debug(" ⏪ GET_ALL ⏩ Requested for " + url + str2);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -290,10 +290,10 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str2);
-					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					log.debug("⏪ GET_ALL ⏩ Requested for " + url + str2);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -303,10 +303,10 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str2);
-					log.debug("<<-GET_ALL->> Requested for " + url + str2);
+					log.debug("⏪ GET_ALL ⏩ Requested for " + url + str2);
 					test.log(Status.PASS, "POST Method Accomplished ( ! ) for New " + executefile + " Creation");
 				} catch (Exception e) {
-					log.debug("Failing(!)....Exception occur! on POST Request " + e);
+					log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
 					Assert.fail();
 				}
@@ -321,11 +321,11 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.GET, str3 + "/" + uniqueidr1);
-				log.debug("<<-GET_SPF->> Request for " + url + str3 + "/" + uniqueidr1);
+				log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + uniqueidr1);
 				test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+				log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 				htmlreport.flush();
 				Assert.fail();
@@ -337,11 +337,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID);
-					log.debug("<<-GET_SPF->> Request for " + url + str4 + "/" + UsersID);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID);
 					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -352,11 +352,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + uniqueidr1);
-					log.debug("<<-GET_SPF->> Request for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
 					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -369,11 +369,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str5 + "/" + uniqueidj1);
-					log.debug("<<-GET_SPF->> Request for " + url + str5 + "/" + uniqueidj1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str5 + "/" + uniqueidj1);
 					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -384,11 +384,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str5 + "/" + uniqueidj1);
-					log.debug("<<-GET_SPF->> Request for " + url + str5 + "/" + uniqueidj1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str5 + "/" + uniqueidj1);
 					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -399,11 +399,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str7 + "/" + uniqueidr1);
-					log.debug("<<-GET_SPF->> Request for " + url + str7 + "/" + uniqueidr1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + uniqueidr1);
 					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -416,11 +416,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str6 + "/" + UsersID);
-					log.debug("<<-GET_SPF->> Request for " + url + str6 + "/" + UsersID);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str6 + "/" + UsersID);
 					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -431,11 +431,11 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.GET, str6 + "/" + UsersID + "/" + uniqueidj1);
-					log.debug("<<-GET_SPF->> Request for " + url + str6 + "/" + UsersID + "/" + uniqueidj1);
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str6 + "/" + UsersID + "/" + uniqueidj1);
 					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 				} catch (Exception e) {
-					log.debug("Failing(!)...Exception occur on Spcefic GET Request " + e);
+					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
 					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
 					htmlreport.flush();
 					Assert.fail();
@@ -451,11 +451,11 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.DELETE, str3 + "/" + uniqueidr1);
-				log.debug("<<-DELETE->> Request initiated for " + url + str3 + "/" + uniqueidr1);
+				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str3 + "/" + uniqueidr1);
 				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
 				htmlreport.flush();
 				Assert.fail();
@@ -466,11 +466,11 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.DELETE, str4 + "/" + UsersID + "/" + uniqueidr1);
-				log.debug("<<-DELETE->> Request initiated for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
+				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
 				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
 				htmlreport.flush();
 				Assert.fail();
@@ -481,11 +481,11 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.DELETE, str5 + "/" + uniqueidj1);
-				log.debug("<<-DELETE->> Request initiated for " + url + str5 + "/" + uniqueidj1);
+				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str5 + "/" + uniqueidj1);
 				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
 				htmlreport.flush();
 				Assert.fail();
@@ -496,11 +496,11 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.DELETE, str6);
-				log.debug("<<-DELETE->> Request initiated for " + url + str6);
+				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str6);
 				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on DELETE Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
 				htmlreport.flush();
 				Assert.fail();
@@ -515,12 +515,12 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.PUT, str3 + "/" + uniqueidr1);
-				log.debug("<<-PUT->> Request Intiated for " + url + str3 + "/" + uniqueidr1);
+				log.debug("⏪ PUT ⏩ Request Intiated for " + url + str3 + "/" + uniqueidr1);
 				test.log(Status.PASS,
 						"PUT(ID) Method Accomplished (!) for Updating the Specific " + executefile + " Values");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on PUT Specific Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
 				Assert.fail();
 			}
@@ -530,12 +530,12 @@ public class MANRequestmodule extends Environment {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
 				httpresponse = httprequest.request(Method.PUT, str5 + "/" + uniqueidj1);
-				log.debug("<<-PUT->> Request Intiated for " + url + str5 + "/" + uniqueidj1);
+				log.debug("⏪ PUT ⏩ Request Intiated for " + url + str5 + "/" + uniqueidj1);
 				test.log(Status.PASS,
 						"PUT(ID) Method Accomplished (!) for Updating the Specific " + executefile + " Values");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on PUT Specific Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
 				Assert.fail();
 			}
@@ -544,13 +544,13 @@ public class MANRequestmodule extends Environment {
 			try {
 				httprequest.headers("Content-Type", "application/json");
 				httprequest.header("Authorization", "Bearer " + token);
-				httpresponse = httprequest.request(Method.PUT, str7 + "/" + uniqueidj1+ "/" + UsersID);
-				log.debug("<<-PUT->> Request Intiated for " + url + str7 + "/" + uniqueidj1+ "/" + UsersID);
+				httpresponse = httprequest.request(Method.PUT, str7 + "/" + uniqueidj1 + "/" + UsersID);
+				log.debug("⏪ PUT ⏩ Request Intiated for " + url + str7 + "/" + uniqueidj1 + "/" + UsersID);
 				test.log(Status.PASS,
 						"PUT(ID) Method Accomplished (!) for Updating the Specific " + executefile + " Values");
 
 			} catch (Exception e) {
-				log.debug("Failing(!)...Exception occur! on PUT Specific Request " + e);
+				log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
 				test.log(Status.FAIL, "FAIL, unable to access PUT Method for Update the Existing Region Value");
 				Assert.fail();
 			}
