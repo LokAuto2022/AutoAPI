@@ -215,7 +215,7 @@ public class Sa extends Environment {
 		 * VerifyJsonID.ensure(); URL fullurl = new URL(url + str2 + "/" + uniqueid);
 		 * HttpURLConnection http = (HttpURLConnection) fullurl.openConnection();
 		 * http.setRequestMethod("DELETE");
-		 * log.debug("<¦DELETE¦> Requested Initiated for (HTTP): " + url + str2 + "/" +
+		 * log.debug("<ï¿½DELETEï¿½> Requested Initiated for (HTTP): " + url + str2 + "/" +
 		 * uniqueid); http.setRequestProperty("Accept", "application/json");
 		 * http.setRequestProperty("Authorization", "Bearer " + token);
 		 * log.debug("Actual Statuscode is " + http.getResponseCode());
@@ -232,7 +232,7 @@ public class Sa extends Environment {
 		 * VerifyJsonID.ensure(); URL fullurl = new URL(url + str2 + "/" + uniqueid);
 		 * HttpURLConnection http = (HttpURLConnection) fullurl.openConnection();
 		 * http.setRequestMethod("PUT");
-		 * log.debug("<¦PUT¦> Requested Initiated for (HTTP): " + url + str2 + "/" +
+		 * log.debug("<ï¿½PUTï¿½> Requested Initiated for (HTTP): " + url + str2 + "/" +
 		 * uniqueid); http.setDoOutput(true); http.setRequestProperty("Accept",
 		 * "application/json"); http.setRequestProperty("Authorization", "Bearer " +
 		 * token); http.setRequestProperty("Content-Type", "application/json");
@@ -245,4 +245,41 @@ public class Sa extends Environment {
 		 */
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

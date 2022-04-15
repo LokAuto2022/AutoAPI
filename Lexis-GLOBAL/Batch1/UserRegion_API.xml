@@ -5,22 +5,16 @@
 		<classes>
             <class name="scenarios.api.UserRegion_UserID" />
 			<class name="extend.api.CreateReport" />
-            <class name="testsuite1.test.User_Region_GET_with_indistinct" />
+           <!--  <class name="testsuite1.test.User_Region_GET_with_indistinct" /> -->
 	        <class name="testsuite1.test.User_Region_GET_with_distinct_UserID" />
-			<class name="testsuite1.test.User_Region_POST_with_indistinct" />
+			<!-- <class name="testsuite1.test.User_Region_POST_with_indistinct" /> -->
 
-			<class name="scenarios.api.UserRegion_UserIDRegionID" />
+			<!-- <class name="scenarios.api.UserRegion_UserIDRegionID" />
 			<class name="extend.api.CreateReport" />
 			<class name="testsuite1.test.User_Region_GET_with_distinct_UserID_RegionID" />
-			<class name="testsuite1.test.User_Region_DELETE_with_distinct_UserID_RegionID" />
+			<class name="testsuite1.test.User_Region_DELETE_with_distinct_UserID_RegionID" /> -->
  
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
-
-
-
-
-
-
 

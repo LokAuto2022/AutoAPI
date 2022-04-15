@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
-import cookies.api.JsonProperty;
+import com.aventstack.extentreports.Status;
+
+import json.api.JsonProperty;
 import dependent_2.api.CurrentTime;
 import global.api.Environment;
 
@@ -17,6 +19,7 @@ public class AllBodyStructure extends Environment {
 			requestParams = new JSONObject();
 			SupportProperties.logincred();
 			log.debug("Defined Credentials are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
+			test.log(Status.INFO, "Defined Credentials are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
 			String username = pro.getProperty(eusername);
 			requestParams.put("Username", username);
 			log.debug("Username Given ➜➜ " + "(" + username + ")");
@@ -54,7 +57,7 @@ public class AllBodyStructure extends Environment {
 			Subcategory = "BaseLine";
 
 		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+			log.debug("❌ Failling ! 🙁...Exception occur in Region Creation Configuration! " + e);
 			Assert.fail();
 		}
 	}
@@ -199,9 +202,37 @@ public class AllBodyStructure extends Environment {
 		requestParams.put("JurisdictionID", getmyJurisdictionID);
 		log.debug("JurisdictionID Given i.e. " + getmyJurisdictionID);
 		httprequest.body(requestParams.toJSONString());
-		
-		//payload="[\r\n"
+	     //payload="[\r\n"
 		//		+ "  \"string\"\r\n"
 		//		+ "]";
 	}
+	@SuppressWarnings("unchecked")
+	public void Creation_EntityType() throws InterruptedException, IOException {
+		
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+		
+		String EntityTypeName = pro.getProperty("CName");
+		requestParams.put("Name", EntityTypeName);
+		log.debug("EntityType Name Given i.e. " + EntityTypeName );
+		requestParams.put("RegionId", uniqueidr1);
+		log.debug("Region ID Given i.e. " + uniqueidr1 );
+		httprequest.body(requestParams.toJSONString());
+  }
+	@SuppressWarnings("unchecked")
+	public void Updation_EntityType() throws InterruptedException, IOException {
+		
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+		
+		String EntityTypeKey = pro.getProperty("Key");
+		requestParams.put("Key", EntityTypeKey);
+		log.debug("EntityType Key Given i.e. " + EntityTypeKey );
+		String EntityTypeUpName = pro.getProperty("UName");
+		requestParams.put("Name", EntityTypeUpName);
+		log.debug("EntityType Name Given i.e. " + EntityTypeUpName );
+		requestParams.put("RegionId", uniqueidr1);
+		log.debug("Region ID Given i.e. " + uniqueidr1 );
+		httprequest.body(requestParams.toJSONString());
+  }
 }

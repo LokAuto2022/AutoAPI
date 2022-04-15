@@ -10,8 +10,8 @@ public class ExtractJsonValue extends Environment{
 		List<String> extractid =httpresponse.jsonPath().getList("Id");
 		//log.debug("JSON IDs ➞➞ "+extractid);
 		log.debug("List of Users IDs ➞➞ "+extractid.size());
-		UsersID=extractid.get(2);
-		log.debug("Specific User ID ➞➞ "+UsersID +"-(Index 2)");
+		UsersID=extractid.get(0);
+		log.debug("Index 0 User ID ➞➞ "+UsersID);
 		
 	}
 

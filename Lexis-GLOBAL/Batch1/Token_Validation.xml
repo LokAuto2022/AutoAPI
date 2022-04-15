@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login_Validation_Suite">
+	<test thread-count="5" name="Test"> <!-- 3 Pass out of 60 API (Both Positive and Negative) -->
+		<classes>
+			<class name="scenarios.api.Token_Validation_Valid"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite1.test.Token_Validation_Valid" />
+			<class name="scenarios.api.Token_Validation_Invalid"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite1.test.Token_Validation_Invalid" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

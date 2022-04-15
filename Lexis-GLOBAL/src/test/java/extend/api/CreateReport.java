@@ -17,13 +17,13 @@ public class CreateReport extends Environment {
 	public static void extend() {
 		try {
             htmlreport = new ExtentReports();
-			if (executefile.equals("Login_Validation")) {
+			if (executefile.equals("TOKEN_VALIDATION")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
-			if (executefile.equals("Region")) {
+			if (executefile.equals("REGION")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
-			if (executefile.equals("UserRegion")) {
+			if (executefile.equals("USER_REGION")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
 			if (executefile.equals("Jurisdiction")) {
@@ -35,7 +35,7 @@ public class CreateReport extends Environment {
 			if (executefile.equals("EntityType")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
-			sparkreport.config().setTheme(Theme.STANDARD);
+			sparkreport.config().setTheme(Theme.DARK);
 			sparkreport.config().setDocumentTitle("API Automation Report");
 			htmlreport.attachReporter(sparkreport);
 			// test=htmlreport.createTest("MyFirstTest");
@@ -47,7 +47,7 @@ public class CreateReport extends Environment {
 		}
 	}
     public static String timestamp() {
-		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+		return new SimpleDateFormat("HH-mm-ss  dd-MM-yyyy").format(new Date());
 	}
 
 }

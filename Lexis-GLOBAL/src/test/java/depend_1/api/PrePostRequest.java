@@ -15,6 +15,6 @@ public class PrePostRequest extends Environment{
 		referencereqresponse.PREPOSTresponse(url, str1);
 		VerifyStatusCode.prePOSTensure();
 		VerifyStatusLine.prePOSTensure();
-	    VerifyBearerToken.ensuretoken();
+		VerifyBearerToken.ensuretoken();
 	}
 }

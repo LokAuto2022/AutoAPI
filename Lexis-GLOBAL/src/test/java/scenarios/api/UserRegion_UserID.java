@@ -7,7 +7,7 @@ import global.api.Environment;
 public class UserRegion_UserID extends Environment{
 	 @Test
 	 public static void filename() {
-		 executefile="UserRegion";
+		 executefile="USER_REGION";
 		 Subcategory="UserID";
 	 }
   }

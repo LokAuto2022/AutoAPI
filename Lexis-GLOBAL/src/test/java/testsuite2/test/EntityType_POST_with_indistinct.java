@@ -22,5 +22,5 @@ public class EntityType_POST_with_indistinct extends Environment {
 			log.debug("Failing(!)...Exception occur! on Delte Specific Region in Sheet Page " + e);
 			Assert.fail();
 		}
-	}	
+	}
 }

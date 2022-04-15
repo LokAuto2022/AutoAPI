@@ -54,6 +54,7 @@ public class CurrentTime extends Environment {
 		try {
 			millis = System.currentTimeMillis();
 			date = new java.util.Date(millis); 
+			System.err.println(date);
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on CurrentDates in Response Time " + e);
             Assert.fail();
