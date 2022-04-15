@@ -345,8 +345,7 @@ public class MANRequestmodule extends Environment {
 
 		}
 	}
-
-	public static void GETresponseSPF(String url, String str2, String str3, String str4, String str5, String str6,
+   public static void GETresponseSPF(String url, String str2, String str3, String str4, String str5, String str6,
 			String str7) {
 		if (executefile.equals("REGION")) {
 			if (user.equals("GlobalAdmin")) {
@@ -446,9 +445,9 @@ public class MANRequestmodule extends Environment {
 					try {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
-						httpresponse = httprequest.request(Method.GET, str4 + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-						test.log(Status.PASS, "GET (ID) Method ➜ "+url + str4 + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID);
+						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID);
+						test.log(Status.PASS, "GET (ID) Method ➜ "+url + str4 + "/" + UsersID);
 
 					} catch (Exception e) {
 						log.debug("Failing ! ☹...Exception occur on GET Specific Method in UserRegion Include UserID in " + e);
@@ -534,21 +533,99 @@ public class MANRequestmodule extends Environment {
 				}
 			}
 			if (Subcategory.equals("UserIDRegionID")) {
-				try {
-					httprequest.headers("Content-Type", "application/json");
-					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + uniqueidr1);
-					log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
-					test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+				if (user.equals("GlobalAdmin")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
-				} catch (Exception e) {
-					log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
-					test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
-					htmlreport.flush();
-					Assert.fail();
+					} catch (Exception e) {
+						log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+						htmlreport.flush();
+						Assert.fail();
+					}
 				}
-			}
+				if (user.equals("RegionalAdmin")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.GET, str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+					} catch (Exception e) {
+						log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+						htmlreport.flush();
+						Assert.fail();
+					}
+				}
+				if (user.equals("CompanyAdmin")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+					} catch (Exception e) {
+						log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+						htmlreport.flush();
+						Assert.fail();
+					}
+				}
+				if (user.equals("AccountIT")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+					} catch (Exception e) {
+						log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+						htmlreport.flush();
+						Assert.fail();
+					}
+				}
+				if (user.equals("Approver")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+					} catch (Exception e) {
+						log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+						htmlreport.flush();
+						Assert.fail();
+					}
+				}
+				if (user.equals("NormalUser")) {
+					try {
+						httprequest.headers("Content-Type", "application/json");
+						httprequest.header("Authorization", "Bearer " + token);
+						httpresponse = httprequest.request(Method.GET, str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
+
+					} catch (Exception e) {
+						log.debug("Failing ! ☹...Exception occur on Spcefic GET Request " + e);
+						test.log(Status.FAIL, "FAIL, unable to access GET (ID) for Specific Viewing");
+						htmlreport.flush();
+						Assert.fail();
+					}
+				}
+			} 
 		}
+	    
 		if (executefile.equals("Jurisdiction")) {
 			if (Subcategory.equals("BaseLine")) {
 				try {
@@ -740,19 +817,96 @@ public class MANRequestmodule extends Environment {
 				}
 			}
 		}
-		if (executefile.equals("UserRegion")) {
-			try {
-				httprequest.headers("Content-Type", "application/json");
-				httprequest.header("Authorization", "Bearer " + token);
-				httpresponse = httprequest.request(Method.DELETE, str4 + "/" + UsersID + "/" + uniqueidr1);
-				log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
-				test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+		if (executefile.equals("USER_REGION")) {
+			if (user.equals("GlobalAdmin")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.DELETE, str4 + "/" + UsersID + "/" + uniqueidr1);
+					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + UsersID + "/" + uniqueidr1);
+					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
-			} catch (Exception e) {
-				log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
-				test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
-				htmlreport.flush();
-				Assert.fail();
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (user.equals("RegionalAdmin")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.DELETE, str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (user.equals("CompanyAdmin")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.DELETE, str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (user.equals("AccountIT")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.DELETE, str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (user.equals("Approver")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.DELETE, str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+					htmlreport.flush();
+					Assert.fail();
+				}
+			}
+			if (user.equals("NormalUser")) {
+				try {
+					httprequest.headers("Content-Type", "application/json");
+					httprequest.header("Authorization", "Bearer " + token);
+					httpresponse = httprequest.request(Method.DELETE, str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
+
+				} catch (Exception e) {
+					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
+					test.log(Status.FAIL, "FAIL, unable to access DELETE (ID) for Specific Deletions");
+					htmlreport.flush();
+					Assert.fail();
+				}
 			}
 		}
 		if (executefile.equals("Jurisdiction")) {

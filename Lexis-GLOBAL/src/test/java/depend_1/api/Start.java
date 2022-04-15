@@ -12,9 +12,10 @@ public class Start extends Environment{
 		PropertyConfigurator.configure(projectpath + "\\log4j\\log4j.properties");
 	}
 
-	public static void division() {
+	public static void division() throws InterruptedException {
 		System.out.println("▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶");
 		CurrentTime.date();
+		Thread.sleep(2000);
 		System.out.println("★★★★★★★★★★★★★★★★★★★★★★ ➜➜ "+user);
 		
 	}

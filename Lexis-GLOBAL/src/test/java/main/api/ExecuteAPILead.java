@@ -176,7 +176,7 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.Region_DELETE_Delete(url, str1, str2, str3, str4, str5, str6, str7);
 			}
-			if (executefile.equals("UserRegion")) {
+			if (executefile.equals("USER_REGION")) {
 				if (Subcategory.equals("UserIDRegionID")) {
 					log.debug("Execution Started...DELETE THE "+ executefile +" include "+Subcategory+" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
@@ -228,11 +228,9 @@ public class ExecuteAPILead extends Environment {
 					FrameSuite.UserRegion_GET_View_Specific_UserID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 				if (Subcategory.equals("UserIDRegionID")) {
-					log.debug("Execution Started....[[GET SPECIFIC REQUEST]]_[[View Specific " + executefile
-							+ " Details Includes UserID & RegionID]]");
-					log.debug("Base URL fetched Succeed i.e." + url);
-					FrameSuite.UserRegion_GET_View_Specific_UserID_RegionID(url, str1, str2, str3, str4, str5, str6,
-							str7);
+					log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" Include "+Subcategory+ " in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.UserRegion_GET_View_Specific_UserID_RegionID(url, str1, str2, str3, str4, str5, str6,str7);
 				}
 			}
 			if (executefile.equals("Jurisdiction")) {

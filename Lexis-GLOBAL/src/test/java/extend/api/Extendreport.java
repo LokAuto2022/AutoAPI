@@ -96,10 +96,19 @@ public class Extendreport extends Environment {
 	public static void aSSignUserRegion() {
 		if (extendFinalOutput.equals("Pass")) {
 			log.debug("✔️ User-Region Assigned with Specific Region Successfully.");
-			test.log(Status.INFO, "✔️ User-Region is Not Assigned.");
+			test.log(Status.INFO, "✔️ User-Region Assigned with Specific Region Successfully.");
 		} else {
 			log.debug("❌User-Region is NOT Assigned");
 			test.log(Status.INFO, "❌ User-Region is NOT Assigned");
+		}
+	}
+	public static void dEleteUserRegion() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ User-Region Deleted the Specific Region Successfully");
+			test.log(Status.INFO, "✔️ User-Region Deleted the Specific Region Successfully");
+		} else {
+			log.debug("❌User-Region is NOT Deleted");
+			test.log(Status.INFO, "❌ User-Region is NOT Deleted");
 		}
 	}
 

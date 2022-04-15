@@ -465,6 +465,9 @@ public class Shuffle extends Environment {
 						api.Delete(url, str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12);
 					}
 				}
+				if (runmode.equals("No")) {
+					System.err.println("Flag switched -OFF- for NormalUser");
+				}
 			}
 		} catch (Exception e) {
 			log.debug("Expection occur! in Normal User Operation" + e);

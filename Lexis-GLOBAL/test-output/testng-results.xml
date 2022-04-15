@@ -2,18 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-15T11:00:51 IST" name="UserRegion_Suite" finished-at="2022-04-15T11:02:22 IST" duration-ms="91163">
+  <suite started-at="2022-04-15T21:06:29 IST" name="UserRegion_Suite" finished-at="2022-04-15T21:07:07 IST" duration-ms="37665">
     <groups>
     </groups>
-    <test started-at="2022-04-15T11:00:51 IST" name="Test" finished-at="2022-04-15T11:02:22 IST" duration-ms="91163">
-      <class name="scenarios.api.UserRegion_UserID">
-        <test-method signature="filename()[pri:0, instance:scenarios.api.UserRegion_UserID@4567f35d]" started-at="2022-04-15T11:00:51 IST" name="filename" finished-at="2022-04-15T11:00:51 IST" duration-ms="7" status="PASS">
+    <test started-at="2022-04-15T21:06:29 IST" name="Test" finished-at="2022-04-15T21:07:07 IST" duration-ms="37665">
+      <class name="scenarios.api.UserRegion_UserIDRegionID">
+        <test-method signature="filename()[pri:0, instance:scenarios.api.UserRegion_UserIDRegionID@6356695f]" started-at="2022-04-15T21:06:29 IST" name="filename" finished-at="2022-04-15T21:06:29 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filename -->
-      </class> <!-- scenarios.api.UserRegion_UserID -->
-      <class name="testsuite1.test.User_Region_POST_with_indistinct">
-        <test-method signature="VIEW_All_UserRegion(java.lang.String)[pri:0, instance:testsuite1.test.User_Region_POST_with_indistinct@5876a9af]" started-at="2022-04-15T11:00:52 IST" name="VIEW_All_UserRegion" data-provider="ProbaseURL" finished-at="2022-04-15T11:02:22 IST" duration-ms="90894" status="PASS">
+      </class> <!-- scenarios.api.UserRegion_UserIDRegionID -->
+      <class name="extend.api.CreateReport">
+        <test-method signature="extend()[pri:1, instance:extend.api.CreateReport@7ec7ffd3]" started-at="2022-04-15T21:06:29 IST" name="extend" finished-at="2022-04-15T21:06:30 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extend -->
+      </class> <!-- extend.api.CreateReport -->
+      <class name="testsuite1.test.User_Region_DELETE_with_distinct_UserID_RegionID">
+        <test-method signature="VIEW_Specific_UserRegion_includes_UserIDRegionID(java.lang.String)[pri:0, instance:testsuite1.test.User_Region_DELETE_with_distinct_UserID_RegionID@5b239d7d]" started-at="2022-04-15T21:06:30 IST" name="VIEW_Specific_UserRegion_includes_UserIDRegionID" data-provider="ProbaseURL" finished-at="2022-04-15T21:07:07 IST" duration-ms="37343" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,14 +29,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VIEW_All_UserRegion -->
-      </class> <!-- testsuite1.test.User_Region_POST_with_indistinct -->
-      <class name="extend.api.CreateReport">
-        <test-method signature="extend()[pri:1, instance:extend.api.CreateReport@59309333]" started-at="2022-04-15T11:00:51 IST" name="extend" finished-at="2022-04-15T11:00:52 IST" duration-ms="204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extend -->
-      </class> <!-- extend.api.CreateReport -->
+        </test-method> <!-- VIEW_Specific_UserRegion_includes_UserIDRegionID -->
+      </class> <!-- testsuite1.test.User_Region_DELETE_with_distinct_UserID_RegionID -->
     </test> <!-- Test -->
   </suite> <!-- UserRegion_Suite -->
 </testng-results>
