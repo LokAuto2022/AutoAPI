@@ -93,5 +93,14 @@ public class Extendreport extends Environment {
 			test.log(Status.INFO, "❌ Specific User-Region is NOT Viewed");
 		}
 	}
+	public static void aSSignUserRegion() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ User-Region Assigned with Specific Region Successfully.");
+			test.log(Status.INFO, "✔️ User-Region is Not Assigned.");
+		} else {
+			log.debug("❌User-Region is NOT Assigned");
+			test.log(Status.INFO, "❌ User-Region is NOT Assigned");
+		}
+	}
 
 }

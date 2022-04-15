@@ -182,7 +182,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("GlobalAdmin")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -216,7 +216,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("RegionalAdmin")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -249,7 +249,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("CompanyAdmin")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -281,7 +281,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("AccountIT")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -313,7 +313,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("Approver")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -345,7 +345,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("NormalUser")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -508,8 +508,8 @@ public class FrameSuite extends Environment {
 			String str6, String str7) throws InterruptedException, IOException {
 		if (user.equals("GlobalAdmin")) {
 			try {
-				test = htmlreport.createTest(executefile + " in DELETE Method")
-						.info("CASE : Delete the Specific " + executefile + " Value");
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -541,8 +541,8 @@ public class FrameSuite extends Environment {
 		}
 		if (user.equals("RegionalAdmin")) {
 			try {
-				test = htmlreport.createTest(executefile + " in DELETE Method")
-						.info("CASE : Delete the Specific " + executefile + " Value");
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -574,8 +574,8 @@ public class FrameSuite extends Environment {
 		}
 		if (user.equals("CompanyAdmin")) {
 			try {
-				test = htmlreport.createTest(executefile + " in DELETE Method")
-						.info("CASE : Delete the Specific " + executefile + " Value");
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -607,8 +607,8 @@ public class FrameSuite extends Environment {
 		}
 		if (user.equals("AccountIT")) {
 			try {
-				test = htmlreport.createTest(executefile + " in DELETE Method")
-						.info("CASE : Delete the Specific " + executefile + " Value");
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -640,8 +640,8 @@ public class FrameSuite extends Environment {
 		}
 		if (user.equals("Approver")) {
 			try {
-				test = htmlreport.createTest(executefile + " in DELETE Method")
-						.info("CASE : Delete the Specific " + executefile + " Value");
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -673,8 +673,8 @@ public class FrameSuite extends Environment {
 		}
 		if (user.equals("NormalUser")) {
 			try {
-				test = htmlreport.createTest(executefile + " in DELETE Method")
-						.info("CASE : Delete the Specific " + executefile + " Value");
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
 				// TODO Stage 1
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -1099,7 +1099,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("GlobalAdmin")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile+" Include "+Subcategory);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 
 				// TODO Stage 2
 				httprequest = RestAssured.given();
@@ -1132,7 +1132,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("RegionalAdmin")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile+" Include "+Subcategory);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 			    // TODO Stage 2 
 				//httprequest = RestAssured.given(); 
 				// TODO Token Generation and Store it 
@@ -1165,7 +1165,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("CompanyAdmin")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile+" Include "+Subcategory);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 			    
 				// TODO Stage 3
 				httprequest = RestAssured.given();
@@ -1189,7 +1189,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("AccountIT")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile+" Include "+Subcategory);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 			    
 				// TODO Stage 3
 				httprequest = RestAssured.given();
@@ -1213,7 +1213,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("Approver")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile+" Include "+Subcategory);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 			    
 				// TODO Stage 3
 				httprequest = RestAssured.given();
@@ -1237,7 +1237,7 @@ public class FrameSuite extends Environment {
 		if (user.equals("NormalUser")) {
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
-						.info("SCENARIO ➨ VIEW ALL " + executefile+" Include "+Subcategory);
+						.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 			    
 				// TODO Stage 3
 				httprequest = RestAssured.given();
@@ -1311,48 +1311,290 @@ public class FrameSuite extends Environment {
 	@SuppressWarnings("static-access")
 	public static void UserRegion_POST_Create(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
-		try {
-			test = htmlreport.createTest(executefile + " in GET(ID) Method")
-					.info("CASE : View the Specific " + executefile + " Value");
+		if (user.equals("GlobalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ ASSIGN SPECIFIC REGION TO " + executefile);
 
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			ExtractJsonValue.fromResult();
-			// TODO Stage 2
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			// TODO Create a Region and Store Unique ID
-			withrespectto.createregioninglobal();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromRegionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
-			// TODO Stage 3
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			withrespectto.additionUserRegion();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				ExtractJsonValue.fromResult();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.additionUserRegion();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
 
-			// TODO End the HTML Report
-			htmlreport.flush();
+				// TODO End the HTML Report
+				Extendreport.aSSignUserRegion();
+				htmlreport.flush();
 
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
-			Assert.fail();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ ASSIGN SPECIFIC REGION TO " + executefile);
+
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				Extendreport.vIewUserRegion();
+			    // TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				Extendreport.cReateRegion();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.additionUserRegion();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.aSSignUserRegion();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ ASSIGN SPECIFIC REGION TO " + executefile);
+
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				ExtractJsonValue.fromResult();
+				Extendreport.vIewUserRegion();
+			    // TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				Extendreport.cReateRegion();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.additionUserRegion();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.aSSignUserRegion();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ ASSIGN SPECIFIC REGION TO " + executefile);
+
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				ExtractJsonValue.fromResult();
+				Extendreport.vIewUserRegion();
+			    // TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				Extendreport.cReateRegion();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.additionUserRegion();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.aSSignUserRegion();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ ASSIGN SPECIFIC REGION TO " + executefile);
+
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				//ExtractJsonValue.fromResult();
+				Extendreport.vIewUserRegion();
+			    // TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				Extendreport.cReateRegion();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.additionUserRegion();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.aSSignUserRegion();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ ASSIGN SPECIFIC REGION TO " + executefile);
+
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				//ExtractJsonValue.fromResult();
+				Extendreport.vIewUserRegion();
+			    // TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				Extendreport.cReateRegion();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.additionUserRegion();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.aSSignUserRegion();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
 		}
 	}
 

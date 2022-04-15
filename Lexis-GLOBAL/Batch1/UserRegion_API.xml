@@ -6,8 +6,8 @@
             <class name="scenarios.api.UserRegion_UserID" />
 			<class name="extend.api.CreateReport" />
            <!--  <class name="testsuite1.test.User_Region_GET_with_indistinct" /> -->
-	        <class name="testsuite1.test.User_Region_GET_with_distinct_UserID" />
-			<!-- <class name="testsuite1.test.User_Region_POST_with_indistinct" /> -->
+	       <!--  <class name="testsuite1.test.User_Region_GET_with_distinct_UserID" /> -->
+			<class name="testsuite1.test.User_Region_POST_with_indistinct" />
 
 			<!-- <class name="scenarios.api.UserRegion_UserIDRegionID" />
 			<class name="extend.api.CreateReport" />

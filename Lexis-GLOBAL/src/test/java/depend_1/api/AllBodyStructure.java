@@ -91,21 +91,113 @@ public class AllBodyStructure extends Environment {
 
 	@SuppressWarnings("unchecked")
 	public void additionUserRegion() throws InterruptedException, IOException {
-		try {
-			requestParams = new JSONObject();
-			// SupportProperties.CRUDRegion();
-			// CurrentTime.time12();
-			// CurrentTime.second();
-			requestParams.put("UserId", UsersID);
-			log.debug("UserID Given i.e. " + UsersID);
-			requestParams.put("RegionId", uniqueidr1);
-			log.debug("RegionID Given i.e. " + uniqueidr1);
-			httprequest.body(requestParams.toJSONString());
-			Subcategory = "Add_UserRegion";
+		if (user.equals("GlobalAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				// SupportProperties.CRUDRegion();
+				// CurrentTime.time12();
+				// CurrentTime.second();
+				requestParams.put("UserId", UsersID);
+				log.debug("UserID Given i.e. " + UsersID);
+				requestParams.put("RegionId", uniqueidr1);
+				log.debug("RegionID Given i.e. " + uniqueidr1);
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Add_UserRegion";
 
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
-			Assert.fail();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}	
+		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				// SupportProperties.CRUDRegion();
+				// CurrentTime.time12();
+				// CurrentTime.second();
+				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
+				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Add_UserRegion";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}	
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				// SupportProperties.CRUDRegion();
+				// CurrentTime.time12();
+				// CurrentTime.second();
+				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
+				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Add_UserRegion";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}	
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				requestParams = new JSONObject();
+				// SupportProperties.CRUDRegion();
+				// CurrentTime.time12();
+				// CurrentTime.second();
+				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
+				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Add_UserRegion";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}	
+		}
+		if (user.equals("Approver")) {
+			try {
+				requestParams = new JSONObject();
+				// SupportProperties.CRUDRegion();
+				// CurrentTime.time12();
+				// CurrentTime.second();
+				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
+				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Add_UserRegion";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}	
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				requestParams = new JSONObject();
+				// SupportProperties.CRUDRegion();
+				// CurrentTime.time12();
+				// CurrentTime.second();
+				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
+				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Add_UserRegion";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}	
 		}
 	}
 

@@ -44,7 +44,7 @@ public class MANRequestmodule extends Environment {
 				}
 			}
 		}
-		if (executefile.equals("UserRegion")) {
+		if (executefile.equals("USER_REGION")) {
 			if (Subcategory.equals("BaseLine")) {
 				try {
 					httprequest.headers("Content-Type", "application/json");

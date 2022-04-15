@@ -88,8 +88,8 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.Region_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);
 			}
-			if (executefile.equals("UserRegion")) {
-				log.debug("Execution Started... for POST Method in [[" + executefile + " Creation]]");
+			if (executefile.equals("USER_REGION")) {
+				log.debug("Execution Started...ASSIGN SPECIFIC REGION TO "+ executefile +" in "+user);
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.UserRegion_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);
 			}
@@ -178,8 +178,7 @@ public class ExecuteAPILead extends Environment {
 			}
 			if (executefile.equals("UserRegion")) {
 				if (Subcategory.equals("UserIDRegionID")) {
-					log.debug("Execution Started....[[DELETE REQUEST]]_[[Delete Specific " + executefile
-							+ " Includes UserID ]]");
+					log.debug("Execution Started...DELETE THE "+ executefile +" include "+Subcategory+" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserRegion_DELETE_Delete_UserID_RegionID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
