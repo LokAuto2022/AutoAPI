@@ -1891,13 +1891,14 @@ public class FrameSuite extends Environment {
 				// TODO End the HTML Report
 				Extendreport.dEleteUserRegion();
 				htmlreport.flush();
-
+				Subcategory="UserIDRegionID";
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
 				Assert.fail();
 			}
 		}
 		if (user.equals("RegionalAdmin")) {
+			 Subcategory="UserIDRegionID";
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 						.info("SCENARIO ➨ DELETE  SPECIFIC REGION FROM " + executefile);
@@ -1944,10 +1945,11 @@ public class FrameSuite extends Environment {
 				VerifyStatusCode.ensureCode403();
 				VerifyStatusLine.ensureLine403();
 				VerifyResponseTime.ensure3(url, str2);
-
+         
 				// TODO End the HTML Report
 				Extendreport.dEleteUserRegion();
 				htmlreport.flush();
+				Subcategory="UserIDRegionID";
 
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
@@ -1955,6 +1957,7 @@ public class FrameSuite extends Environment {
 			}
 		}
 		if (user.equals("CompanyAdmin")) {
+			 Subcategory="UserIDRegionID";
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 						.info("SCENARIO ➨ DELETE  SPECIFIC REGION FROM " + executefile);
@@ -2005,13 +2008,14 @@ public class FrameSuite extends Environment {
 				// TODO End the HTML Report
 				Extendreport.dEleteUserRegion();
 				htmlreport.flush();
-
+				Subcategory="UserIDRegionID";
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
 				Assert.fail();
 			}
 		}
 		if (user.equals("AccountIT")) {
+			Subcategory="UserIDRegionID";
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 						.info("SCENARIO ➨ DELETE  SPECIFIC REGION FROM " + executefile);
@@ -2062,6 +2066,7 @@ public class FrameSuite extends Environment {
 				// TODO End the HTML Report
 				Extendreport.dEleteUserRegion();
 				htmlreport.flush();
+				Subcategory="UserIDRegionID";
 
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
@@ -2069,6 +2074,7 @@ public class FrameSuite extends Environment {
 			}
 		}
 		if (user.equals("Approver")) {
+			Subcategory="UserIDRegionID";
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 						.info("SCENARIO ➨ DELETE  SPECIFIC REGION FROM " + executefile);
@@ -2119,13 +2125,14 @@ public class FrameSuite extends Environment {
 				// TODO End the HTML Report
 				Extendreport.dEleteUserRegion();
 				htmlreport.flush();
-
+				Subcategory="UserIDRegionID";
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
 				Assert.fail();
 			}
 		}
 		if (user.equals("NormalUser")) {
+			Subcategory="UserIDRegionID";
 			try {
 				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
 						.info("SCENARIO ➨ DELETE  SPECIFIC REGION FROM " + executefile);
@@ -2176,6 +2183,7 @@ public class FrameSuite extends Environment {
 				// TODO End the HTML Report
 				Extendreport.dEleteUserRegion();
 				htmlreport.flush();
+				Subcategory="UserIDRegionID";
 
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
