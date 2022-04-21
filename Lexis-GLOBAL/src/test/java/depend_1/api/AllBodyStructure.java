@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
-import com.aventstack.extentreports.Status;
-
 import json.api.JsonProperty;
 import dependent_2.api.CurrentTime;
 import global.api.Environment;
@@ -18,14 +16,15 @@ public class AllBodyStructure extends Environment {
 		try {
 			requestParams = new JSONObject();
 			SupportProperties.logincred();
-			log.debug("Defined Credentials are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
-			test.log(Status.INFO, "Defined Credentials are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
+			log.debug("Defined Inputs are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
+			//test.log(Status.INFO, "Defined Credentials are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
 			String username = pro.getProperty(eusername);
 			requestParams.put("Username", username);
 			log.debug("Username Given ➜➜ " + "(" + username + ")");
 			String password = pro.getProperty(epassword);
 			requestParams.put("Password", password);
 			log.debug("Password Given ➜➜" + "(" + password + ")");
+			//test.log(Status.INFO, username + "  and  " + password);
 			requestParams.put("GrantType", "Password");
 			httprequest.body(requestParams.toJSONString());
 		} catch (Exception e) {

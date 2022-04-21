@@ -16,8 +16,8 @@ public class ExecuteAPILead extends Environment {
 			Start.noclient();
 			Start.division();
 			RestAssured.baseURI = url;
-			log.debug("Execution Started ➜ To Authenticate TOKEN Generation in "+user+"( "+Subcategory+" Scenario )");
-			log.debug("Base-URL fetched Succeed i.e." + url);
+			log.debug("Execution Started ➜ To Validate TOKEN Generation with " +Subcategory+" Data in "+user);  
+			log.debug("Base Static URL fetched Succeed i.e." + url);
 			FrameSuite.POST_Login(url, str1);
 
 		} catch (Exception e) {

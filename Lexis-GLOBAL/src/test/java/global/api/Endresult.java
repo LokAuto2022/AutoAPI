@@ -10,5 +10,5 @@ public class Endresult extends GBdeclered{
 	protected static String uniqueidj1;
 	protected static String UsersID;
 	protected static String projectpath=System.getProperty("user.dir");
-	protected static String finalreport="C:\\Users\\adapp\\OneDrive\\Desktop\\GetMe-API";
+	protected static String finalreport="C:\\Users\\adapp\\OneDrive\\Desktop\\GetMe_API";
 }
