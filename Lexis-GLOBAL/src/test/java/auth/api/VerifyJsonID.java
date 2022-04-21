@@ -26,7 +26,7 @@ public class VerifyJsonID extends Environment {
 		}
 		
 	}
-	public static void fromJurisdictionID() {
+	public static void fromOLDJurisdictionID() {
 		try {
 			uniqueidj1 = JsonPath.from(ActualBodyResult).get("Id");
 			log.debug("➜ Jurisdiction ID is " + uniqueidj1);
@@ -34,7 +34,15 @@ public class VerifyJsonID extends Environment {
 			log.debug("❌ Failling ! 🙁...Exception occur! on Jurisdiction ID Extraction from Json Body", e);
 			Assert.fail();
 		}
-
+	}
+	public static void fromJurisdictionID() {
+		try {
+			uniqueidj1=ActualBodyResult.replaceAll("^\"|\"$", "");                                                                                                                                                                                                                                                                                                                                                                                            
+			log.debug("➜ Jurisdiction ID ➞➞ "+uniqueidj1);
+		} catch (Exception e) {
+			log.debug("❌ Failling ! 🙁...Exception occur! on Jurisdiction ID Extraction from Json Body",e);
+	        e.printStackTrace();
+		}
 	}
 
 }

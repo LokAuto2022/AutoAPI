@@ -8,7 +8,7 @@ public class Jurisdiction_BaseLine extends Environment {
 
  @Test
  public static void filename() {
-	 executefile="Jurisdiction";
+	 executefile="JURISDICTION";
 	 Subcategory="BaseLine";
    }
 }

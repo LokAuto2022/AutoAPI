@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 21 14:30:24 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>599 seconds (599186 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testsuite1.test.Jurisdiction_POST_with_indistinct.Create_Jurisdiction_depend_with_Region_ID()'><b>Create_Jurisdiction_depend_with_Region_ID</b><br>Test class: testsuite1.test.Jurisdiction_POST_with_indistinct<br>Parameters: https://lnmjapi.adappt.ai/</td>
+<td></td>
+<td>81</td>
+<td>testsuite1.test.Jurisdiction_POST_with_indistinct@16293aa2</td></tr>
+<tr>
+<td title='scenarios.api.Jurisdiction_BaseLine.filename()'><b>filename</b><br>Test class: scenarios.api.Jurisdiction_BaseLine</td>
+<td></td>
+<td>0</td>
+<td>scenarios.api.Jurisdiction_BaseLine@4a94ee4</td></tr>
+<tr>
+<td title='scenarios.api.Jurisdiction_GetMyJurisdiction.filename()'><b>filename</b><br>Test class: scenarios.api.Jurisdiction_GetMyJurisdiction</td>
+<td></td>
+<td>0</td>
+<td>scenarios.api.Jurisdiction_GetMyJurisdiction@38c6f217</td></tr>
+<tr>
+<td title='testsuite1.test.Jurisdiction_DELETE_with_distinct_JurisdictionID.View_Specific_Jurisdiction_using_ID()'><b>View_Specific_Jurisdiction_using_ID</b><br>Test class: testsuite1.test.Jurisdiction_DELETE_with_distinct_JurisdictionID<br>Parameters: https://lnmjapi.adappt.ai/</td>
+<td></td>
+<td>108</td>
+<td>testsuite1.test.Jurisdiction_DELETE_with_distinct_JurisdictionID@595b007d</td></tr>
+<tr>
+<td title='testsuite1.test.Jurisdiction_GET_with_indistinct.View_All_Jurisdiction()'><b>View_All_Jurisdiction</b><br>Test class: testsuite1.test.Jurisdiction_GET_with_indistinct<br>Parameters: https://lnmjapi.adappt.ai/</td>
+<td></td>
+<td>49</td>
+<td>testsuite1.test.Jurisdiction_GET_with_indistinct@5c5eefef</td></tr>
+<tr>
+<td title='extend.api.CreateReport.extend()'><b>extend</b><br>Test class: extend.api.CreateReport</td>
+<td></td>
+<td>0</td>
+<td>extend.api.CreateReport@222545dc</td></tr>
+<tr>
+<td title='testsuite1.test.Jurisdiction_PUT_with_distinct_JurisdictionID.View_Specific_Jurisdiction_using_ID()'><b>View_Specific_Jurisdiction_using_ID</b><br>Test class: testsuite1.test.Jurisdiction_PUT_with_distinct_JurisdictionID<br>Parameters: https://lnmjapi.adappt.ai/</td>
+<td></td>
+<td>113</td>
+<td>testsuite1.test.Jurisdiction_PUT_with_distinct_JurisdictionID@5158b42f</td></tr>
+<tr>
+<td title='scenarios.api.Jurisdiction_GetJurisdictions.filename()'><b>filename</b><br>Test class: scenarios.api.Jurisdiction_GetJurisdictions</td>
+<td></td>
+<td>0</td>
+<td>scenarios.api.Jurisdiction_GetJurisdictions@79e2c065</td></tr>
+<tr>
+<td title='testsuite1.test.Jurisdiction_GET_with_indistinct_GetMyJurisdiction.View_Specific_Jurisdiction_using_ID()'><b>View_Specific_Jurisdiction_using_ID</b><br>Test class: testsuite1.test.Jurisdiction_GET_with_indistinct_GetMyJurisdiction<br>Parameters: https://lnmjapi.adappt.ai/</td>
+<td></td>
+<td>40</td>
+<td>testsuite1.test.Jurisdiction_GET_with_indistinct_GetMyJurisdiction@478190fc</td></tr>
+<tr>
+<td title='testsuite1.test.Jurisdiction_GET_with_distinct_JurisdictionID.View_Specific_Jurisdiction_using_ID()'><b>View_Specific_Jurisdiction_using_ID</b><br>Test class: testsuite1.test.Jurisdiction_GET_with_distinct_JurisdictionID<br>Parameters: https://lnmjapi.adappt.ai/</td>
+<td></td>
+<td>104</td>
+<td>testsuite1.test.Jurisdiction_GET_with_distinct_JurisdictionID@72d1ad2e</td></tr>
+<tr>
+<td title='testsuite1.test.Jurisdiction_GET_with_distinct_GetJurisdictions_with_JurisdictionID.View_Specific_Jurisdiction_with_GetJurisdictions_using_JuristionID()'><b>View_Specific_Jurisdiction_with_GetJurisdictions_using_JuristionID</b><br>Test class: testsuite1.test.Jurisdiction_GET_with_distinct_GetJurisdictions_with_JurisdictionID<br>Parameters: https://lnmjapi.adappt.ai/</td>
+<td></td>
+<td>100</td>
+<td>testsuite1.test.Jurisdiction_GET_with_distinct_GetJurisdictions_with_JurisdictionID@3a93b025</td></tr>
+</table><p>
+</body>
+</html>

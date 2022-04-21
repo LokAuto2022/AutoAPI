@@ -2181,7 +2181,7 @@ public class FrameSuite extends Environment {
 				VerifyResponseTime.ensure3(url, str2);
 
 				// TODO End the HTML Report
-				Extendreport.dEleteUserRegion();
+				
 				htmlreport.flush();
 				Subcategory="UserIDRegionID";
 
@@ -2195,121 +2195,683 @@ public class FrameSuite extends Environment {
 	@SuppressWarnings("static-access")
 	public static void Jurisdiction_POST_Create(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
-		try {
-			test = htmlreport.createTest(executefile + " in POST Method")
-					.info("CASE : Create " + executefile + " under Specific Region");
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			// TODO Create a Region and Store Region Unique ID
-			withrespectto.createregioninglobal();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromRegionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
-			/*
-			 * // TODO Stage 2 httprequest = RestAssured.given(); // TODO Token Generation
-			 * and Store it PrePostRequest.tokengeneration(url, str1);
-			 * referencereqresponse.GETresponseALL(url, str2);
-			 * VerifyJsonResult.ensurebody(); VerifyStatusCode.ensureCode200();
-			 * VerifyStatusLine.ensureCode200(); ExtractJsonValue.fromResult();
-			 */
-			// TODO Stage 3
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			withrespectto.creationJurisdiction();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
+		if (user.equals("GlobalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+						.info("SCENARIO ➨ CREATE A NEW " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+			
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
 
-			// TODO End the HTML Report
-			htmlreport.flush();
+				// TODO End the HTML Report
+				Extendreport.cReateJurisdiction();
+				htmlreport.flush();
 
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
-			Assert.fail();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+	
+		if (user.equals("RegionalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+						.info("SCENARIO ➨ CREATE A NEW " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+			
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.cReateJurisdiction();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+						.info("SCENARIO ➨ CREATE A NEW " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+			
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.cReateJurisdiction();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+						.info("SCENARIO ➨ CREATE A NEW " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+			
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.cReateJurisdiction();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+						.info("SCENARIO ➨ CREATE A NEW " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+			
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.cReateJurisdiction();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+						.info("SCENARIO ➨ CREATE A NEW " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+			
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.cReateJurisdiction();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
 		}
 	}
 
 	@SuppressWarnings("static-access")
 	public static void Jurisdiction_GET_View(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
-		try {
-			test = htmlreport.createTest(executefile + " in GET Method")
-					.info("CASE : View All Listed " + executefile + "s");
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
-			htmlreport.flush();
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
-			Assert.fail();
+		if (user.equals("GlobalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ VIEW ALL " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ VIEW ALL " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ VIEW ALL " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ VIEW ALL " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ VIEW ALL " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ GET Method in " + user)
+						.info("SCENARIO ➨ VIEW ALL " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
 		}
 	}
-
-	@SuppressWarnings("static-access")
+   @SuppressWarnings("static-access")
 	public static void Jurisdiction_GET_View_Specific_JurisID(String url, String str1, String str2, String str3,
 			String str4, String str5, String str6, String str7) {
-		try {
-			test = htmlreport.createTest(executefile + " in POST Method")
-					.info("CASE : Create " + executefile + " under Specific Region");
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			// TODO Create a Region and Store Region Unique ID
-			withrespectto.createregioninglobal();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromRegionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
+		if (user.equals("GlobalAdmin")) {
+			 try {
+				 test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+							.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 
-			// TODO Stage 2
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			withrespectto.creationJurisdiction();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromJurisdictionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
-			// TODO Stage 3
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
+					// TODO Stage 1
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					// TODO Create a Region and Store Region Unique ID
+					withrespectto.createregioninglobal();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromRegionID();
+					VerifyStatusCode.ensureCode200();
+					VerifyStatusLine.ensureLine200();
+					VerifyResponseTime.ensure2(url, str2, str3, str4);
+					Extendreport.cReateRegion();
+					
+                    // TODO Stage 2
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					withrespectto.creationJurisdiction();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromJurisdictionID();
+					VerifyStatusCode.ensureCode200();
+					VerifyStatusLine.ensureLine200();
+					VerifyResponseTime.ensure3(url, str2);
+					Extendreport.cReateJurisdiction();
+					// TODO Stage 3
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyStatusCode.ensureCode200();
+					VerifyStatusLine.ensureLine200();
+					VerifyResponseTime.ensure3(url, str2);
 
-			// TODO End the HTML Report
-			htmlreport.flush();
+					// TODO End the HTML Report
+					Extendreport.viewSpecificJurisdiction();	
+					htmlreport.flush();
 
-			// TODO End the HTML Report
-			htmlreport.flush();
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
-			Assert.fail();
-		}
+					// TODO End the HTML Report
+					htmlreport.flush();
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+					Assert.fail();
+				}
+			}
+		if (user.equals("RegionalAdmin")) {
+			 try {
+				 test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+							.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
 
-	}
+					// TODO Stage 1
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					// TODO Create a Region and Store Region Unique ID
+					withrespectto.createregioninglobal();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromRegionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure2(url, str2, str3, str4);
+					Extendreport.cReateRegion();
+					
+                   // TODO Stage 2
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					withrespectto.creationJurisdiction();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromJurisdictionID();
+					VerifyStatusCode.ensureCode200();
+					VerifyStatusLine.ensureLine200();
+					VerifyResponseTime.ensure3(url, str2);
+					Extendreport.cReateJurisdiction();
+					// TODO Stage 3
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyStatusCode.ensureCode200();
+					VerifyStatusLine.ensureLine200();
+					VerifyResponseTime.ensure3(url, str2);
+
+					// TODO End the HTML Report
+					Extendreport.viewSpecificJurisdiction();	
+					htmlreport.flush();
+
+					// TODO End the HTML Report
+					htmlreport.flush();
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+					Assert.fail();
+				}
+			}
+		if (user.equals("CompanyAdmin")) {
+			 try {
+				 test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+							.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
+
+					// TODO Stage 1
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					// TODO Create a Region and Store Region Unique ID
+					withrespectto.createregioninglobal();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromRegionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure2(url, str2, str3, str4);
+					Extendreport.cReateRegion();
+					
+                  // TODO Stage 2
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					withrespectto.creationJurisdiction();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromJurisdictionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+					Extendreport.cReateJurisdiction();
+					// TODO Stage 3
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+
+					// TODO End the HTML Report
+					Extendreport.viewSpecificJurisdiction();	
+					htmlreport.flush();
+
+					// TODO End the HTML Report
+					htmlreport.flush();
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+					Assert.fail();
+				}
+			}
+		if (user.equals("AccountIT")) {
+			 try {
+				 test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+							.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
+
+					// TODO Stage 1
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					// TODO Create a Region and Store Region Unique ID
+					withrespectto.createregioninglobal();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromRegionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure2(url, str2, str3, str4);
+					Extendreport.cReateRegion();
+					
+                 // TODO Stage 2
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					withrespectto.creationJurisdiction();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromJurisdictionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+					Extendreport.cReateJurisdiction();
+					// TODO Stage 3
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+
+					// TODO End the HTML Report
+					Extendreport.viewSpecificJurisdiction();	
+					htmlreport.flush();
+
+					// TODO End the HTML Report
+					htmlreport.flush();
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+					Assert.fail();
+				}
+			}
+		if (user.equals("Approver")) {
+			 try {
+				 test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+							.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
+
+					// TODO Stage 1
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					// TODO Create a Region and Store Region Unique ID
+					withrespectto.createregioninglobal();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromRegionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure2(url, str2, str3, str4);
+					Extendreport.cReateRegion();
+					
+                // TODO Stage 2
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					withrespectto.creationJurisdiction();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromJurisdictionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+					Extendreport.cReateJurisdiction();
+					// TODO Stage 3
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+
+					// TODO End the HTML Report
+					Extendreport.viewSpecificJurisdiction();	
+					htmlreport.flush();
+
+					// TODO End the HTML Report
+					htmlreport.flush();
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+					Assert.fail();
+				}
+			}
+		if (user.equals("NormalUser")) {
+			 try {
+				 test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+							.info("SCENARIO ➨ VIEW SPECIFIC " + executefile+" Include "+Subcategory);
+
+					// TODO Stage 1
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					// TODO Create a Region and Store Region Unique ID
+					withrespectto.createregioninglobal();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromRegionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure2(url, str2, str3, str4);
+					Extendreport.cReateRegion();
+					
+               // TODO Stage 2
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					withrespectto.creationJurisdiction();
+					referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyJsonID.fromJurisdictionID();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+					Extendreport.cReateJurisdiction();
+					// TODO Stage 3
+					httprequest = RestAssured.given();
+					// TODO Token Generation and Store it
+					PrePostRequest.tokengeneration(url, str1);
+					referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+					VerifyJsonResult.ensurebody();
+					VerifyStatusCode.ensureCode403();
+					VerifyStatusLine.ensureLine403();
+					VerifyResponseTime.ensure3(url, str2);
+
+					// TODO End the HTML Report
+					Extendreport.viewSpecificJurisdiction();	
+					htmlreport.flush();
+
+					// TODO End the HTML Report
+					htmlreport.flush();
+				} catch (Exception e) {
+					log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+					Assert.fail();
+				}
+			}
+	 }
 
 	@SuppressWarnings("static-access")
 	public static void Jurisdiction_GET_View_Specific_JurisID_GetMyJurisdiction(String url, String str1, String str2,
@@ -2370,183 +2932,1049 @@ public class FrameSuite extends Environment {
 	@SuppressWarnings("static-access")
 	public static void Jurisdiction_GET_View_Specific_JurisID_GetJurisdictions(String url, String str1, String str2,
 			String str3, String str4, String str5, String str6, String str7) {
-		try {
-			test = htmlreport.createTest(executefile + " in POST Method")
-					.info("CASE : Create " + executefile + " under Specific Region");
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			// TODO Create a Region and Store Region Unique ID
-			withrespectto.createregioninglobal();
+		if (user.equals("GlobalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " in POST Method")
+						.info("CASE : Create " + executefile + " under Specific Region");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
 
-			Subcategory = "BaseLine";
+				Subcategory = "BaseLine";
 
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromRegionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
 
-			// TODO Stage 2
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			withrespectto.creationJurisdiction();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromJurisdictionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
-			// TODO Stage 3
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
 
-			Subcategory = "GetJurisdictions";
+				Subcategory = "GetJurisdictions";
 
-			referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
+				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
 
-			// TODO End the HTML Report
-			htmlreport.flush();
+				// TODO End the HTML Report
+				Extendreport.vIewGetJurisdictions();
+				htmlreport.flush();
 
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
-			Assert.fail();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
 		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " in POST Method")
+						.info("CASE : Create " + executefile + " under Specific Region");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
 
+				Subcategory = "BaseLine";
+
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+
+				Subcategory = "GetJurisdictions";
+
+				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.vIewGetJurisdictions();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " in POST Method")
+						.info("CASE : Create " + executefile + " under Specific Region");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+
+				Subcategory = "BaseLine";
+
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+
+				Subcategory = "GetJurisdictions";
+
+				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.vIewGetJurisdictions();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				test = htmlreport.createTest(executefile + " in POST Method")
+						.info("CASE : Create " + executefile + " under Specific Region");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+
+				Subcategory = "BaseLine";
+
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+
+				Subcategory = "GetJurisdictions";
+
+				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.vIewGetJurisdictions();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				test = htmlreport.createTest(executefile + " in POST Method")
+						.info("CASE : Create " + executefile + " under Specific Region");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+
+				Subcategory = "BaseLine";
+
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+
+				Subcategory = "GetJurisdictions";
+
+				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.vIewGetJurisdictions();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				test = htmlreport.createTest(executefile + " in POST Method")
+						.info("CASE : Create " + executefile + " under Specific Region");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+
+				Subcategory = "BaseLine";
+
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+
+				Subcategory = "GetJurisdictions";
+
+				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+
+				// TODO End the HTML Report
+				Extendreport.vIewGetJurisdictions();
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
 	}
 
 	@SuppressWarnings("static-access")
 	public static void Jurisdiction_GET_View_GetMyJurisdiction(String url, String str1, String str2, String str3,
 			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
-		try {
-			test = htmlreport.createTest(executefile + " in GET Method")
-					.info("CASE : View All Listed " + executefile + "s");
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
-			htmlreport.flush();
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
-			Assert.fail();
+		if (user.equals("GlobalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " in GET Method")
+						.info("CASE : View All Listed " + executefile + "s");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewGetMyJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " in GET Method")
+						.info("CASE : View All Listed " + executefile + "s");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewGetMyJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " in GET Method")
+						.info("CASE : View All Listed " + executefile + "s");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewGetMyJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				test = htmlreport.createTest(executefile + " in GET Method")
+						.info("CASE : View All Listed " + executefile + "s");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewGetMyJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				test = htmlreport.createTest(executefile + " in GET Method")
+						.info("CASE : View All Listed " + executefile + "s");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewGetMyJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				test = htmlreport.createTest(executefile + " in GET Method")
+						.info("CASE : View All Listed " + executefile + "s");
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.vIewGetMyJurisdiction();
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on GET ALL Function in CORE FRAME " + e);
+				Assert.fail();
+			}
 		}
 	}
 
 	@SuppressWarnings("static-access")
 	public static void Jurisdiction_PUT_Update(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {
-		try {
-			test = htmlreport.createTest(executefile + " in POST Method")
-					.info("CASE : Create " + executefile + " under Specific Region");
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			// TODO Create a Region and Store Region Unique ID
-			withrespectto.createregioninglobal();
+		if (user.equals("GlobalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+						.info("SCENARIO ➨ UPDATE THE EXISTING " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+                referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
 
-			// Subcategory = "Non_Jurisdiction"; // Only Temporary Value Declaration for
-			// Sequence Order in TESTNG.XML
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();	
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.updationJurisdiction();
+				referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.uPdateJurisdiction();	
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Jurisdiction PUT Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+						.info("SCENARIO ➨ UPDATE THE EXISTING " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+                referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
 
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromRegionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();	
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.updationJurisdiction();
+				referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.uPdateJurisdiction();	
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Jurisdiction PUT Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+						.info("SCENARIO ➨ UPDATE THE EXISTING " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+                referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
 
-			// TODO Stage 2
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			withrespectto.creationJurisdiction();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromJurisdictionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
-			// TODO Stage 3
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			withrespectto.updationJurisdiction();
-			referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();	
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.updationJurisdiction();
+				referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.uPdateJurisdiction();	
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Jurisdiction PUT Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+						.info("SCENARIO ➨ UPDATE THE EXISTING " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+                referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
 
-			htmlreport.flush();
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on Jurisdiction PUT Function in CORE FRAME " + e);
-			Assert.fail();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();	
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.updationJurisdiction();
+				referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.uPdateJurisdiction();	
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Jurisdiction PUT Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+						.info("SCENARIO ➨ UPDATE THE EXISTING " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+                referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();	
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.updationJurisdiction();
+				referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.uPdateJurisdiction();	
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Jurisdiction PUT Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+						.info("SCENARIO ➨ UPDATE THE EXISTING " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Region Unique ID
+				withrespectto.createregioninglobal();
+                referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str2
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();	
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.updationJurisdiction();
+				referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.uPdateJurisdiction();	
+				htmlreport.flush();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Jurisdiction PUT Function in CORE FRAME " + e);
+				Assert.fail();
+			}
 		}
 	}
 
 	@SuppressWarnings("static-access")
 	public static void Jurisdiction_DELETE_Delete_JurisdictionID(String url, String str1, String str2, String str3,
-
 			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
-		try {
-			test = htmlreport.createTest(executefile + " in GET(ID) Method")
-					.info("CASE : View the Specific " + executefile + " Value");
-			// TODO Stage 1
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			// TODO Create a Region and Store Unique ID
-			withrespectto.createregioninglobal();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromRegionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure2(url, str2, str3, str4);
-			// TODO Stage 2
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			withrespectto.creationJurisdiction();
-			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyJsonID.fromJurisdictionID();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
+		if (user.equals("GlobalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
 
-			// TODO Stage 3
-			httprequest = RestAssured.given();
-			// TODO Token Generation and Store it
-			PrePostRequest.tokengeneration(url, str1);
-			referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
-			VerifyJsonResult.ensurebody();
-			VerifyStatusCode.ensureCode200();
-			VerifyStatusLine.ensureLine200();
-			VerifyResponseTime.ensure3(url, str2);
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.dEleteJurisdiction();
 
-			// TODO End the HTML Report
-			htmlreport.flush();
+				// TODO End the HTML Report
+				htmlreport.flush();
 
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
-			Assert.fail();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
 		}
-	}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
 
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.dEleteJurisdiction();
+
+				// TODO End the HTML Report
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.dEleteJurisdiction();
+
+				// TODO End the HTML Report
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.dEleteJurisdiction();
+
+				// TODO End the HTML Report
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.dEleteJurisdiction();
+
+				// TODO End the HTML Report
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+						.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile);
+				// TODO Stage 1
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				// TODO Create a Region and Store Unique ID
+				withrespectto.createregioninglobal();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7); // url,str4
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromRegionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure2(url, str2, str3, str4);
+				Extendreport.cReateRegion();
+				// TODO Stage 2
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				withrespectto.creationJurisdiction();
+				referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyJsonID.fromJurisdictionID();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.cReateJurisdiction();
+
+				// TODO Stage 3
+				httprequest = RestAssured.given();
+				// TODO Token Generation and Store it
+				PrePostRequest.tokengeneration(url, str1);
+				referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+				VerifyJsonResult.ensurebody();
+				VerifyStatusCode.ensureCode403();
+				VerifyStatusLine.ensureLine403();
+				VerifyResponseTime.ensure3(url, str2);
+				Extendreport.dEleteJurisdiction();
+
+				// TODO End the HTML Report
+				htmlreport.flush();
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur! on Specific GET Function in CORE FRAME " + e);
+				Assert.fail();
+			}
+		}
+}
+		
 	@SuppressWarnings("static-access")
 	public static void UserJurisdiction_POST_Create(String url, String str1, String str2, String str3, String str4,
 			String str5, String str6, String str7) throws InterruptedException, IOException {

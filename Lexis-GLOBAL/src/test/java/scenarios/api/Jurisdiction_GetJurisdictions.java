@@ -8,7 +8,7 @@ public class Jurisdiction_GetJurisdictions extends Environment {
 
  @Test
  public static void filename() {
-	 executefile="Jurisdiction";
+	 executefile="JURISDICTION";
 	 Subcategory="GetJurisdictions";
   }
 }

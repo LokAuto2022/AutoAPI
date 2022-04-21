@@ -111,5 +111,68 @@ public class Extendreport extends Environment {
 			test.log(Status.INFO, "❌ User-Region is NOT Deleted");
 		}
 	}
+	public static void vIewJurisdiction() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ Jurisdiction Viewed Successfully");
+			test.log(Status.INFO, "✔️ Jurisdiction Viewed Successfully");
+		} else {
+			log.debug("❌Jurisdiction is NOT Viewed");
+			test.log(Status.INFO, "❌ Jurisdiction is NOT Viewed");
+		}
+	}
+	public static void cReateJurisdiction() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ Jurisdiction Created Successfully");
+			test.log(Status.INFO, "✔️ Jurisdiction Created Successfully");
+		} else {
+			log.debug("❌Jurisdiction is NOT Created");
+			test.log(Status.INFO, "❌ Jurisdiction is NOT Created");
+		}
+	}
+	public static void uPdateJurisdiction() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ Jurisdiction Updated Successfully");
+			test.log(Status.INFO, "✔️ Jurisdiction Updated Successfully");
+		} else {
+			log.debug("❌Jurisdiction is NOT Updated");
+			test.log(Status.INFO, "❌ Jurisdiction is NOT Updated");
+		}
+	}
+	public static void dEleteJurisdiction() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ Jurisdiction Deleted Successfully");
+			test.log(Status.INFO, "✔️ Jurisdiction Deleted Successfully");
+		} else {
+			log.debug("❌Jurisdiction is NOT Deleted");
+			test.log(Status.INFO, "❌ Jurisdiction is NOT Deleted");
+		}
+	}
+	public static void viewSpecificJurisdiction() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ Specific Jurisdiction Viewed Successfully");
+			test.log(Status.INFO, "✔️ Specific Jurisdiction Viewed Successfully");
+		} else {
+			log.debug("❌Specific Jurisdiction is NOT Viewed");
+			test.log(Status.INFO, "❌ Specific Jurisdiction is NOT Viewed");
+		}
+	}
+	public static void vIewGetMyJurisdiction() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ GetMyJurisdiction Viewed Successfully");
+			test.log(Status.INFO, "✔️ GetMyJurisdiction Viewed Successfully");
+		} else {
+			log.debug("❌GetMyJurisdiction is NOT Viewed");
+			test.log(Status.INFO, "❌ GetMyJurisdiction is NOT Viewed");
+		}
+	}
+	public static void vIewGetJurisdictions() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("✔️ Specific GetJurisdictions Viewed Successfully");
+			test.log(Status.INFO, "✔️ Specific GetJurisdictions Viewed Successfully");
+		} else {
+			log.debug("❌Specific GetJurisdictions is NOT Viewed");
+			test.log(Status.INFO, "❌ Specific GetJurisdictions is NOT Viewed");
+		}
+	}
 
 }

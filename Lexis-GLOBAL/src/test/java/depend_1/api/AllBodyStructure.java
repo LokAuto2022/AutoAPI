@@ -42,8 +42,8 @@ public class AllBodyStructure extends Environment {
 			CurrentTime.time12();
 			CurrentTime.second();
 			String uniqueregionname = pro.getProperty("Name");
-			requestParams.put("Name", uniqueregionname + "_" + currenttime12);
-			log.debug("RegionName Given i.e. " + uniqueregionname + "_" + currenttime12);
+			requestParams.put("Name", uniqueregionname + currenttime12);
+			log.debug("RegionName Given i.e. " + uniqueregionname + currenttime12);
 			String uniqueregionprefix = pro.getProperty("Prefix");
 			requestParams.put("Prefix", uniqueregionprefix + currentseconds);
 			log.debug("Prefix Given i.e. " + uniqueregionprefix + currentseconds);
@@ -70,8 +70,8 @@ public class AllBodyStructure extends Environment {
 			CurrentTime.time12();
 			CurrentTime.second();
 			String updateregionname = pro.getProperty("UpdateName");
-			requestParams.put("Name", updateregionname + "_" + currenttime12);
-			log.debug("Updated RegionName Given i.e. " + updateregionname + "_" + currenttime12);
+			requestParams.put("Name", updateregionname + currenttime12);
+			log.debug("Updated RegionName Given i.e. " + updateregionname + currenttime12);
 			String updateregionprefix = pro.getProperty("UpdatePrefix");
 			requestParams.put("Prefix", updateregionprefix + currentseconds);
 			log.debug("Updated Prefix Given i.e. " + updateregionprefix + currentseconds);
@@ -203,56 +203,312 @@ public class AllBodyStructure extends Environment {
 
 	@SuppressWarnings({ "unchecked" })
 	public void creationJurisdiction() throws InterruptedException, IOException {
-		try {
-			requestParams = new JSONObject();
-			SupportProperties.CRUDJurisdiction();
-			CurrentTime.time12();
-			CurrentTime.second();
-			String JurisName = pro.getProperty("JurisName");
-			requestParams.put("Name", JurisName + "_" + currenttime12);
-			log.debug("Name Given i.e. " + JurisName + "_" + currenttime12);
-			requestParams.put("RegionId", uniqueidr1);
-			log.debug("RegionID Given i.e. " + uniqueidr1);
-			String Jurisprefix = pro.getProperty("JurisPrefix");
-			requestParams.put("Prefix", Jurisprefix + currentseconds);
-			log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
-			httprequest.body(requestParams.toJSONString());
-			Subcategory = "Yes_Jurisdiction";
+		if (user.equals("GlobalAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+				String JurisName = pro.getProperty("JurisName");
+				requestParams.put("Name", JurisName + currenttime12);
+				log.debug("Name Given i.e. " + JurisName + currenttime12);
+				requestParams.put("RegionId", uniqueidr1);
+				log.debug("RegionID Given i.e. " + uniqueidr1);
+				String Jurisprefix = pro.getProperty("JurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Yes_Jurisdiction";
 
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
-			Assert.fail();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+				String JurisName = pro.getProperty("JurisName");
+				requestParams.put("Name", JurisName + currenttime12);
+				log.debug("Name Given i.e. " + JurisName + currenttime12);
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				String Jurisprefix = pro.getProperty("JurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Yes_Jurisdiction";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+				String JurisName = pro.getProperty("JurisName");
+				requestParams.put("Name", JurisName + currenttime12);
+				log.debug("Name Given i.e. " + JurisName + currenttime12);
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				String Jurisprefix = pro.getProperty("JurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Yes_Jurisdiction";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+				String JurisName = pro.getProperty("JurisName");
+				requestParams.put("Name", JurisName + currenttime12);
+				log.debug("Name Given i.e. " + JurisName + currenttime12);
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				String Jurisprefix = pro.getProperty("JurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Yes_Jurisdiction";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+				String JurisName = pro.getProperty("JurisName");
+				requestParams.put("Name", JurisName + currenttime12);
+				log.debug("Name Given i.e. " + JurisName + currenttime12);
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				String Jurisprefix = pro.getProperty("JurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Yes_Jurisdiction";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+				String JurisName = pro.getProperty("JurisName");
+				requestParams.put("Name", JurisName + currenttime12);
+				log.debug("Name Given i.e. " + JurisName + currenttime12);
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				String Jurisprefix = pro.getProperty("JurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+				httprequest.body(requestParams.toJSONString());
+				Subcategory = "Yes_Jurisdiction";
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
 		}
 	}
 
 	@SuppressWarnings({ "unchecked" })
 	public void updationJurisdiction() throws InterruptedException, IOException {
-		try {
-			requestParams = new JSONObject();
-			SupportProperties.CRUDJurisdiction();
-			CurrentTime.time12();
-			CurrentTime.second();
+		if (user.equals("GlobalAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
 
-			requestParams.put("Id", uniqueidj1);
-			log.debug("JurisdictionID Given i.e. " + uniqueidj1);
+				requestParams.put("Id", uniqueidj1);
+				log.debug("JurisdictionID Given i.e. " + uniqueidj1);
 
-			String UpdateJurisName = pro.getProperty("UpdateJurisName");
-			requestParams.put("Name", UpdateJurisName + "_" + currenttime12);
-			log.debug("Name Given i.e. " + UpdateJurisName + "_" + currenttime12);
+				String UpdateJurisName = pro.getProperty("UpdateJurisName");
+				requestParams.put("Name", UpdateJurisName + currenttime12);
+				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
 
-			requestParams.put("RegionId", uniqueidr1);
-			log.debug("RegionID Given i.e. " + uniqueidr1);
+				requestParams.put("RegionId", uniqueidr1);
+				log.debug("RegionID Given i.e. " + uniqueidr1);
 
-			String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
-			requestParams.put("Prefix", Jurisprefix + currentseconds);
-			log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
 
-			httprequest.body(requestParams.toJSONString());
+				httprequest.body(requestParams.toJSONString());
 
-		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
-			Assert.fail();
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
 		}
+		if (user.equals("RegionalAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+
+				requestParams.put("Id", uniqueidj1);
+				log.debug("JurisdictionID Given i.e. " + uniqueidj1);
+
+				String UpdateJurisName = pro.getProperty("UpdateJurisName");
+				requestParams.put("Name", UpdateJurisName + currenttime12);
+				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
+
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+
+				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+
+				httprequest.body(requestParams.toJSONString());
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("CompanyAdmin")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+
+				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+
+				String UpdateJurisName = pro.getProperty("UpdateJurisName");
+				requestParams.put("Name", UpdateJurisName + currenttime12);
+				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
+
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+
+				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+
+				httprequest.body(requestParams.toJSONString());
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("AccountIT")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+
+				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+
+				String UpdateJurisName = pro.getProperty("UpdateJurisName");
+				requestParams.put("Name", UpdateJurisName + currenttime12);
+				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
+
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+
+				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+
+				httprequest.body(requestParams.toJSONString());
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("Approver")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+
+				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+
+				String UpdateJurisName = pro.getProperty("UpdateJurisName");
+				requestParams.put("Name", UpdateJurisName + currenttime12);
+				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
+
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+
+				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+
+				httprequest.body(requestParams.toJSONString());
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		if (user.equals("NormalUser")) {
+			try {
+				requestParams = new JSONObject();
+				SupportProperties.CRUDJurisdiction();
+				CurrentTime.time12();
+				CurrentTime.second();
+
+				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+
+				String UpdateJurisName = pro.getProperty("UpdateJurisName");
+				requestParams.put("Name", UpdateJurisName + currenttime12);
+				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
+
+				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+
+				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
+				requestParams.put("Prefix", Jurisprefix + currentseconds);
+				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
+
+				httprequest.body(requestParams.toJSONString());
+
+			} catch (Exception e) {
+				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
+				Assert.fail();
+			}
+		}
+		
+		
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
