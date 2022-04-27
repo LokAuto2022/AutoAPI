@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 import json.api.JsonProperty;
 import dependent_2.api.CurrentTime;
+import extend.api.Extendreport;
 import global.api.Environment;
 
 public class AllBodyStructure extends Environment {
@@ -16,8 +17,7 @@ public class AllBodyStructure extends Environment {
 		try {
 			requestParams = new JSONObject();
 			SupportProperties.logincred();
-			log.debug("Defined Inputs are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
-			//test.log(Status.INFO, "Defined Credentials are " + "(( " + eusername + " ))" + "  &  " + "(( " + epassword + " ))");
+			Extendreport.definedCredential();
 			String username = pro.getProperty(eusername);
 			requestParams.put("Username", username);
 			log.debug("Username Given ➜➜ " + "(" + username + ")");
@@ -116,8 +116,8 @@ public class AllBodyStructure extends Environment {
 				// CurrentTime.second();
 				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
 				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				httprequest.body(requestParams.toJSONString());
 				Subcategory = "Add_UserRegion";
 
@@ -134,8 +134,8 @@ public class AllBodyStructure extends Environment {
 				// CurrentTime.second();
 				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
 				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				httprequest.body(requestParams.toJSONString());
 				Subcategory = "Add_UserRegion";
 
@@ -152,8 +152,8 @@ public class AllBodyStructure extends Environment {
 				// CurrentTime.second();
 				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
 				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				httprequest.body(requestParams.toJSONString());
 				Subcategory = "Add_UserRegion";
 
@@ -170,8 +170,8 @@ public class AllBodyStructure extends Environment {
 				// CurrentTime.second();
 				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
 				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				httprequest.body(requestParams.toJSONString());
 				Subcategory = "Add_UserRegion";
 
@@ -188,8 +188,8 @@ public class AllBodyStructure extends Environment {
 				// CurrentTime.second();
 				requestParams.put("UserId", "027cae79-7772-4912-965b-8a206e17eee7");
 				log.debug("UserID Given i.e. " + "027cae79-7772-4912-965b-8a206e17eee7");
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				httprequest.body(requestParams.toJSONString());
 				Subcategory = "Add_UserRegion";
 
@@ -233,8 +233,8 @@ public class AllBodyStructure extends Environment {
 				String JurisName = pro.getProperty("JurisName");
 				requestParams.put("Name", JurisName + currenttime12);
 				log.debug("Name Given i.e. " + JurisName + currenttime12);
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				String Jurisprefix = pro.getProperty("JurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
 				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
@@ -255,8 +255,8 @@ public class AllBodyStructure extends Environment {
 				String JurisName = pro.getProperty("JurisName");
 				requestParams.put("Name", JurisName + currenttime12);
 				log.debug("Name Given i.e. " + JurisName + currenttime12);
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				String Jurisprefix = pro.getProperty("JurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
 				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
@@ -277,8 +277,8 @@ public class AllBodyStructure extends Environment {
 				String JurisName = pro.getProperty("JurisName");
 				requestParams.put("Name", JurisName + currenttime12);
 				log.debug("Name Given i.e. " + JurisName + currenttime12);
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				String Jurisprefix = pro.getProperty("JurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
 				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
@@ -299,8 +299,8 @@ public class AllBodyStructure extends Environment {
 				String JurisName = pro.getProperty("JurisName");
 				requestParams.put("Name", JurisName + currenttime12);
 				log.debug("Name Given i.e. " + JurisName + currenttime12);
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				String Jurisprefix = pro.getProperty("JurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
 				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
@@ -321,8 +321,8 @@ public class AllBodyStructure extends Environment {
 				String JurisName = pro.getProperty("JurisName");
 				requestParams.put("Name", JurisName + currenttime12);
 				log.debug("Name Given i.e. " + JurisName + currenttime12);
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 				String Jurisprefix = pro.getProperty("JurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
 				log.debug("Prefix Given i.e. " + Jurisprefix + currentseconds);
@@ -380,8 +380,8 @@ public class AllBodyStructure extends Environment {
 				requestParams.put("Name", UpdateJurisName + currenttime12);
 				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
 
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 
 				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
@@ -401,15 +401,15 @@ public class AllBodyStructure extends Environment {
 				CurrentTime.time12();
 				CurrentTime.second();
 
-				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
-				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				requestParams.put("Id", "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
+				log.debug("JurisdictionID Given i.e. " + "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
 
 				String UpdateJurisName = pro.getProperty("UpdateJurisName");
 				requestParams.put("Name", UpdateJurisName + currenttime12);
 				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
 
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 
 				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
@@ -429,15 +429,15 @@ public class AllBodyStructure extends Environment {
 				CurrentTime.time12();
 				CurrentTime.second();
 
-				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
-				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				requestParams.put("Id", "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
+				log.debug("JurisdictionID Given i.e. " + "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
 
 				String UpdateJurisName = pro.getProperty("UpdateJurisName");
 				requestParams.put("Name", UpdateJurisName + currenttime12);
 				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
 
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 
 				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
@@ -457,15 +457,15 @@ public class AllBodyStructure extends Environment {
 				CurrentTime.time12();
 				CurrentTime.second();
 
-				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
-				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				requestParams.put("Id", "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
+				log.debug("JurisdictionID Given i.e. " + "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
 
 				String UpdateJurisName = pro.getProperty("UpdateJurisName");
 				requestParams.put("Name", UpdateJurisName + currenttime12);
 				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
 
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 
 				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);
@@ -485,15 +485,15 @@ public class AllBodyStructure extends Environment {
 				CurrentTime.time12();
 				CurrentTime.second();
 
-				requestParams.put("Id", "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
-				log.debug("JurisdictionID Given i.e. " + "f762be4a-a0a7-4e5c-8267-2cb8f633d0fb");
+				requestParams.put("Id", "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
+				log.debug("JurisdictionID Given i.e. " + "dfa3fc4b-15ac-4e0b-a2b4-d344d22c0f61");
 
 				String UpdateJurisName = pro.getProperty("UpdateJurisName");
 				requestParams.put("Name", UpdateJurisName + currenttime12);
 				log.debug("Name Given i.e. " + UpdateJurisName + currenttime12);
 
-				requestParams.put("RegionId", "c961bf76-5f7e-4d84-a405-dd4df02c09db");
-				log.debug("RegionID Given i.e. " + "c961bf76-5f7e-4d84-a405-dd4df02c09db");
+				requestParams.put("RegionId", "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+				log.debug("RegionID Given i.e. " + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
 
 				String Jurisprefix = pro.getProperty("UpdateJurisPrefix");
 				requestParams.put("Prefix", Jurisprefix + currentseconds);

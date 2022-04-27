@@ -34,4 +34,5 @@ public class GBdeclered extends Subcall {
 	protected static LocalDateTime now;
 	protected static String Index;
 	protected static String extendFinalOutput;
+	protected static String method;
 }

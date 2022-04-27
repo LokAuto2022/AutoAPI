@@ -3,9 +3,7 @@ package auth.api;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
-
 //import com.aventstack.extentreports.Status;
-
 import global.api.Environment;
 
 public class VerifyStatusCode extends Environment {
@@ -15,14 +13,13 @@ public class VerifyStatusCode extends Environment {
 			statuscode = httpresponse.getStatusCode();
 		    if (statuscode == 200) {
 				log.debug("Actual StatusCode ➨➨ " + statuscode);
-				log.debug("✔️PASS ! 🙂...Expected StatusCode [200] == Actual StatusCode " + "[" + statuscode+ "]");
-				test.log(Status.PASS, "✔️PASS ! 🙂...Expected StatusCode [200] == Actual StatusCode "+"[ "+statuscode+"]");
-				
+				log.debug("✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ " + "[" + statuscode+ "]");
+				test.log(Status.PASS, "✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ " + "[" + statuscode + "]");
 				Assert.assertEquals(statuscode, 200);
 			} else {
 				log.debug("Actual StatusCode ➨➨ " + statuscode);
-				log.debug("❌ Fail ! 🙁...Expected StatusCode [200] ≠≠ Actual StatusCode " + "["+ statuscode + "]");
-				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected StatusCode [200] ≠≠ Actual StatusCode "+"[ "+statuscode+"]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ " + "["+ statuscode + "]");
+				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ "+"[ "+statuscode+"]");
 			}
 		} catch (Exception e) {
 			log.debug("❌ Failling ! 🙁...Exception occur! on StatusCode in Global ", e);
@@ -34,14 +31,14 @@ public class VerifyStatusCode extends Environment {
 			statuscode = httpresponse.getStatusCode();
 		    if (statuscode == 403) {
 				log.debug("Actual Status_Code ➨➨ " + statuscode);
-				log.debug("✔️PASS ! 🙂...Expected StatusCode [403] == Actual StatusCode " + "[" + statuscode+ "]");
-				test.log(Status.PASS, "✔️PASS ! 🙂...Expected StatusCode [403] == Actual StatusCode "+"[ "+statuscode+"]");
+				log.debug("✔️PASS ! 🙂...Expected ➨ [403] == Actual ➨ " + "[" + statuscode+ "]");
+				test.log(Status.PASS, "✔️PASS ! 🙂...Expected ➨ [403] == Actual ➨ "+"[ "+statuscode+"]");
 				Assert.assertEquals(statuscode, 403);
 				extendFinalOutput="Fail";
 			} else {
 				log.debug("Actual Status_Code ➨➨ " + statuscode);
-				log.debug("❌ Fail ! 🙁...Expected StatusCode [403] ≠≠ Actual StatusCode " + "["+ statuscode + "]");
-				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected StatusCode [403] ≠≠ Actual StatusCode "+"[ "+statuscode+"]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [403] ≠≠ Actual ➨ " + "["+ statuscode + "]");
+				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected ➨ [403] ≠≠ Actual ➨ "+"[ "+statuscode+"]");
 				extendFinalOutput="Fail";
 				// Assert.assertEquals(statuscode, 200);
 				// Assert.fail();
@@ -60,13 +57,13 @@ public class VerifyStatusCode extends Environment {
 			statuscode = httpresponse.getStatusCode();
 		    if (statuscode == 400) {
 				log.debug("Actual Status_Code ➨➨ " + statuscode);
-				log.debug("✔️PASS ! 🙂...Expected StatusCode [400] == Actual StatusCode " + "[" + statuscode+ "]");
-				test.log(Status.PASS, "✔️PASS ! 🙂...Expected StatusCode [400] == Actual StatusCode "+"[ "+statuscode+"]");
+				log.debug("✔️PASS ! 🙂...Expected ➨ [400] == Actual ➨ " + "[" + statuscode+ "]");
+				test.log(Status.PASS, "✔️PASS ! 🙂...Expected ➨ [400] == Actual ➨ "+"[ "+statuscode+"]");
 				Assert.assertEquals(statuscode, 400);
 			} else {
 				log.debug("Actual Status_Code ➨➨ " + statuscode);
-				log.debug("❌ Fail ! 🙁...Expected StatusCode [400] ≠≠ Actual StatusCode " + "["+ statuscode + "]");
-				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected StatusCode [400] ≠≠ Actual StatusCode "+"[ "+statuscode+"]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [400] ≠≠ Actual ➨ " + "["+ statuscode + "]");
+				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected ➨ [400] ≠≠ Actual ➨ "+"[ "+statuscode+"]");
 				// Assert.assertEquals(statuscode, 200);
 				// Assert.fail();
 			}
@@ -80,14 +77,13 @@ public class VerifyStatusCode extends Environment {
 		try {
 			statuscode = httpresponse.getStatusCode();
 			if (statuscode == 200) {
-				log.debug("✔️PASS ! 🙂...Expected StatusCode [200] == Actual Status_Code " + "[" + statuscode
+				log.debug("✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ " + "[" + statuscode
 						+ "]");
 				// test.log(Status.PASS, "Actual Status_Code "+"["+ statuscode+"]");
 				Assert.assertEquals(statuscode, 200);
 			} else {
 				log.debug("Actual Status_Code ➨➨ " + statuscode);
-				log.debug("❌ Fail ! 🙁...Expected StatusCode [200] ≠≠ Actual StatusCode " + "["
-						+ statuscode + "]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ " + "["+ statuscode + "]");
 				test.log(Status.FAIL, "Actual Status_Code ➨➨ " + "[" + statuscode + "]");
 				// Assert.assertEquals(statuscode, 200);
 				// Assert.fail();
@@ -107,14 +103,14 @@ public class VerifyStatusCode extends Environment {
 			log.debug("Actual Status_Code ➨➨ " + statuscode);
 			if (statuscode == 200) {
 				log.debug(
-						"✔️PASS ! 🙂...Expected StatusCode ➨ [200]  == Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"✔️PASS ! 🙂...Expected ➨ [200]  == Actual  ➨ " + "[" + statuscode + "]");
 				test.log(Status.PASS,
-						"✔️PASS ! 🙂...Expected StatusCode ➨ [200]  == Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"✔️PASS ! 🙂...Expected ➨ [200]  == Actual  ➨ " + "[" + statuscode + "]");
 			} else {
 				log.debug(
-						"❌ Fail ! 🙁...Expected StatusCode ➨ [200]  ≠≠ Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"❌ Fail ! 🙁...Expected ➨ [200]  ≠≠ Actual ➨ " + "[" + statuscode + "]");
 				test.log(Status.FAIL,
-						"❌Fail ! 🙁...Expected StatusCode ➨ [200]  ≠≠ Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"❌Fail ! 🙁...Expected ➨ [200]  ≠≠ Actual ➨ " + "[" + statuscode + "]");
 			}
 		} catch (Exception e) {
 			log.debug("❌Failing ! 🙁...Exception occur! on Verify StatusCode", e);
@@ -128,14 +124,14 @@ public class VerifyStatusCode extends Environment {
 			log.debug("Actual Status_Code ➨➨ " + statuscode);
 			if (statuscode == 400) {
 				log.debug(
-						"✔️PASS ! 🙂...Expected StatusCode ➨ [400]  == Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"✔️PASS ! 🙂...Expected ➨ [400]  == Actual ➨ " + "[" + statuscode + "]");
 				test.log(Status.PASS,
-						"✔️PASS ! 🙂...Expected StatusCode ➨ [400]  == Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"✔️PASS ! 🙂...Expected ➨ [400]  == Actual ➨ " + "[" + statuscode + "]");
 			} else {
 				log.debug(
-						"❌ Fail ! 🙁...Expected StatusCode ➨ [400]  ≠≠ Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"❌ Fail ! 🙁...Expected ➨ [400]  ≠≠ Actual ➨ " + "[" + statuscode + "]");
 				test.log(Status.FAIL,
-						"❌Fail ! 🙁...Expected StatusCode ➨ [400]  ≠≠ Actual StatusCode ➨ " + "[" + statuscode + "]");
+						"❌Fail ! 🙁...Expected ➨ [400]  ≠≠ Actual ➨ " + "[" + statuscode + "]");
 			}
 		} catch (Exception e) {
 			log.debug("❌Failing ! 🙁...Exception occur! on Verify StatusCode", e);

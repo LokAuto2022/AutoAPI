@@ -7,7 +7,7 @@ import global.api.Environment;
 public class Token_Validation_Invalid extends Environment {
 	@Test
 	public static void filename() {
-		executefile = "Token_Validation";
+		executefile = "TOKEN_VALIDATION";
 		Subcategory="Invalid";
 	}
 }

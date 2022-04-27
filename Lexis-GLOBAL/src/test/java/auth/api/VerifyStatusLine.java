@@ -1,9 +1,7 @@
 package auth.api;
 
 import org.testng.Assert;
-
 import com.aventstack.extentreports.Status;
-
 import global.api.Environment;
 
 public class VerifyStatusLine extends Environment {
@@ -13,13 +11,13 @@ public class VerifyStatusLine extends Environment {
 			statusline = httpresponse.getStatusLine();
 			if (statusline.equals("HTTP/1.1 200 OK")) {
 				log.debug("Actual Status_Info is ➨➨ " + statusline);
-				log.debug("✔️PASS ! 🙂...Expected Status_Line [HTTP/1.1 200 OK] == Actual Status_Line " + "["+ statusline + "]");
-				test.log(Status.PASS, "✔️PASS ! 🙂...Expected Status_Line [HTTP/1.1 200 OK] == Actual Status_Line " + "["+ statusline + "]");
-				extendFinalOutput="Pass";
+				log.debug("✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.PASS, "✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ " + "["+ statusline + "]");
+		    	extendFinalOutput="Pass";
 			} else {
 				log.debug("Actual Status_Info is ➨➨ " + statusline);
-				log.debug("❌ Fail ! 🙁...Expected Status_Line [HTTP/1.1 200 OK] ≠≠ Actual Status_Line " + "["+ statusline + "]");
-				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected Status_Line [HTTP/1.1 200 OK] ≠≠ Actual Status_Line " + "["+ statusline + "]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK] ≠≠ Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK] ≠≠ Actual ➨ " + "["+ statusline + "]");
 				extendFinalOutput="Fail";
 				Assert.assertEquals(statusline, "HTTP/1.1 200 OK");
 				Assert.fail();
@@ -35,13 +33,13 @@ public class VerifyStatusLine extends Environment {
 			statusline = httpresponse.getStatusLine();
 			if (statusline.equals("HTTP/1.1 403 Forbidden")) {
 				log.debug("Actual Status_Info is ➨➨ " + statusline);
-				log.debug("✔️PASS ! 🙂...Expected StatusLine [HTTP/1.1 403 Forbidden] == Actual StatusLine " + "["+ statusline + "]");
-				test.log(Status.PASS, "✔️PASS ! 🙂...Expected StatusLine [HTTP/1.1 403 Forbidden] == Actual StatusLine " + "["+ statusline + "]");
+				log.debug("✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 403 Forbidden] == Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.PASS, "✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 403 Forbidden] == Actual ➨ " + "["+ statusline + "]");
 				extendFinalOutput="Fail";
 			} else {
 				log.debug("Actual Status_Info is ➨➨ " + statusline);
-				log.debug("❌ Fail ! 🙁...Expected StatusLine [HTTP/1.1 403 Forbidden] ≠≠ Actual StatusLine " + "["+ statusline + "]");
-				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected StatusLine [HTTP/1.1 403 Forbidden] ≠≠ Actual StatusLine " + "["+ statusline + "]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 403 Forbidden] ≠≠ Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected ➨  [HTTP/1.1 403 Forbidden] ≠≠ Actual ➨ " + "["+ statusline + "]");
 				extendFinalOutput="Fail";
 				Assert.assertEquals(statusline, "HTTP/1.1 403 Forbidden");
 				Assert.fail();
@@ -56,13 +54,13 @@ public class VerifyStatusLine extends Environment {
 			statusline = httpresponse.getStatusLine();
 			if (statusline.equals("HTTP/1.1 400 Bad Request")) {
 				log.debug("Actual Status_Info is ➨➨ " + statusline);
-				log.debug("✔️PASS ! 🙂...Expected StatusLine [HTTP/1.1 400 Bad Request] == Actual StatusLine " + "["+ statusline + "]");
-				test.log(Status.PASS, "✔️PASS ! 🙂...Expected StatusLine [HTTP/1.1 400 Bad Request] == Actual StatusLine " + "["+ statusline + "]");
+				log.debug("✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 400 Bad Request] == Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.PASS, "✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 400 Bad Request] == Actual ➨ " + "["+ statusline + "]");
 				extendFinalOutput="Fail";
 			} else {
 				log.debug("Actual Status_Info is ➨➨ " + statusline);
-				log.debug("❌ Fail ! 🙁...Expected StatusLine [HTTP/1.1 400 Forbidden] ≠≠ Actual StatusLine " + "["+ statusline + "]");
-				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected StatusLine [HTTP/1.1 400 Forbidden] ≠≠ Actual StatusLine " + "["+ statusline + "]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 400 Forbidden] ≠≠ Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.FAIL, "❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 400 Forbidden] ≠≠ Actual ➨ " + "["+ statusline + "]");
 				extendFinalOutput="Fail";
 				Assert.assertEquals(statusline, "HTTP/1.1 400 Bad Request");
 				Assert.fail();
@@ -77,12 +75,12 @@ public class VerifyStatusLine extends Environment {
 		try {
 			statusline = httpresponse.getStatusLine();
 			if (statusline.equals("HTTP/1.1 200 OK")) {
-				log.debug("✔️PASS ! 🙂...Expected StatusLine [HTTP/1.1 200 OK] == Actual StatusLine " + "["
+				log.debug("✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ " + "["
 						+ statusline + "]");
 				// test.log(Status.PASS, "Status_Line "+"["+ statusline+"]"+" Status OK");
 			} else {
 				log.debug("Actual Status_Info ➨➨ " + statusline);
-				log.debug("❌ Fail ! 🙁...Expected StatusLine [HTTP/1.1 200 OK] == Actual StatusLine " + "["
+				log.debug("❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ " + "["
 						+ statusline + "]");
 				test.log(Status.FAIL, "Status_Line " + "[" + statusline + "]" + " Bad Request");
 				// Assert.assertEquals(statusline, "HTTP/1.1 200 OK");
@@ -102,12 +100,12 @@ public class VerifyStatusLine extends Environment {
 			statusline = httpresponse.getStatusLine();
 			log.debug("Actual StatusLine ➨➨  " + statusline);
 			if (statusline.equals("HTTP/1.1 200 OK")) {
-				log.debug("✔️PASS ! 🙂...Expected StatusLine ➨ [HTTP/1.1 200 OK]  == Actual StatusLine ➨ " + "["+ statusline + "]");
-				test.log(Status.PASS,"✔️PASS ! 🙂...Expected StatusLine ➨ [HTTP/1.1 200 OK]  == Actual StatusLine ➨ " + "[" + statusline + "]");
+				log.debug("✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK]  == Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.PASS,"✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK]  == Actual ➨ " + "[" + statusline + "]");
 				extendFinalOutput="Pass";
 			} else {
-				log.debug("❌ Fail ! 🙁...Expected StatusLine ➨ [HTTP/1.1 200 OK]  ≠≠ Actual StatusLine ➨ " + "["+ statusline + "]");
-				test.log(Status.FAIL,"❌Fail ! 🙁...Expected StatusLine ➨ [HTTP/1.1 200 OK]  ≠≠ Actual StatusLine ➨ " + "[" + statusline + "]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK]  ≠≠ Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.FAIL,"❌Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK]  ≠≠ Actual ➨ " + "[" + statusline + "]");
 				extendFinalOutput="Fail";
 			}
 		} catch (Exception e) {
@@ -121,12 +119,12 @@ public class VerifyStatusLine extends Environment {
 			statusline = httpresponse.getStatusLine();
 			log.debug("Actual StatusLine ➨➨  " + statusline);
 			if (statusline.equals("HTTP/1.1 400 Bad Request")) {
-				log.debug("✔PASS ! 🙂...Expected StatusLine ➨ [HTTP/1.1 400 Bad Request] == Actual StatusLine ➨ " + "["+ statusline + "]");
-				test.log(Status.PASS,"✔️PASS ! 🙂...Expected StatusLine ➨ [HTTP/1.1 400 Bad Request]  == Actual StatusLine ➨ " + "[" + statusline + "]");
+				log.debug("✔PASS ! 🙂...Expected ➨ [HTTP/1.1 400 Bad Request] == Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.PASS,"✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 400 Bad Request]  == Actual ➨ " + "[" + statusline + "]");
 				extendFinalOutput="Fail";
 			} else {
-				log.debug("❌ Fail ! 🙁...Expected StatusLine ➨ [HTTP/1.1 400 Bad Request]  ≠≠ Actual StatusLine ➨ " + "["+ statusline + "]");
-				test.log(Status.FAIL,"❌Fail ! 🙁...Expected StatusLine ➨ [HTTP/1.1 400 Bad Request]  ≠≠ Actual StatusLine ➨ " + "[" + statusline + "]");
+				log.debug("❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 400 Bad Request]  ≠≠ Actual ➨ " + "["+ statusline + "]");
+				test.log(Status.FAIL,"❌Fail ! 🙁...Expected ➨ [HTTP/1.1 400 Bad Request]  ≠≠ Actual ➨ " + "[" + statusline + "]");
 				extendFinalOutput="Fail";
 			}
 		} catch (Exception e) {

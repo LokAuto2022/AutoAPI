@@ -8,7 +8,7 @@ public class UserJurisdiction_UserID extends Environment {
 
  @Test
  public static void filename() {
-	 executefile="UserJurisdiction";
+	 executefile="USER_JURISDICTION";
 	 Subcategory="UserID";
    }
  }
