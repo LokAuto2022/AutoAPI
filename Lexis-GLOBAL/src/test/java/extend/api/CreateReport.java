@@ -29,7 +29,7 @@ public class CreateReport extends Environment {
 			if (executefile.equals("JURISDICTION")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
-			if (executefile.equals("UserJurisdiction")) {
+			if (executefile.equals("USER_JURISDICTION")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
 			if (executefile.equals("EntityType")) {

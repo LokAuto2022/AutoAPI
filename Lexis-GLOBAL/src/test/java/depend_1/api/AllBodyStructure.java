@@ -24,7 +24,7 @@ public class AllBodyStructure extends Environment {
 			String password = pro.getProperty(epassword);
 			requestParams.put("Password", password);
 			log.debug("Password Given ➜➜" + "(" + password + ")");
-			//test.log(Status.INFO, username + "  and  " + password);
+			// test.log(Status.INFO, username + " and " + password);
 			requestParams.put("GrantType", "Password");
 			httprequest.body(requestParams.toJSONString());
 		} catch (Exception e) {
@@ -106,7 +106,7 @@ public class AllBodyStructure extends Environment {
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
 				Assert.fail();
-			}	
+			}
 		}
 		if (user.equals("RegionalAdmin")) {
 			try {
@@ -124,7 +124,7 @@ public class AllBodyStructure extends Environment {
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
 				Assert.fail();
-			}	
+			}
 		}
 		if (user.equals("CompanyAdmin")) {
 			try {
@@ -142,7 +142,7 @@ public class AllBodyStructure extends Environment {
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
 				Assert.fail();
-			}	
+			}
 		}
 		if (user.equals("AccountIT")) {
 			try {
@@ -160,7 +160,7 @@ public class AllBodyStructure extends Environment {
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
 				Assert.fail();
-			}	
+			}
 		}
 		if (user.equals("Approver")) {
 			try {
@@ -178,7 +178,7 @@ public class AllBodyStructure extends Environment {
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
 				Assert.fail();
-			}	
+			}
 		}
 		if (user.equals("NormalUser")) {
 			try {
@@ -196,7 +196,7 @@ public class AllBodyStructure extends Environment {
 			} catch (Exception e) {
 				log.debug("Failing(!)...Exception occur in Region Creation Configuration! " + e);
 				Assert.fail();
-			}	
+			}
 		}
 	}
 
@@ -506,22 +506,37 @@ public class AllBodyStructure extends Environment {
 				Assert.fail();
 			}
 		}
-		
-		
+
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public void creation_UserJurisdiction() throws InterruptedException, IOException {
-		    requestParams = new JSONObject();
-		    requestParams.put("UserId", UsersID);
-		    log.debug("UserID Given i.e. " + UsersID);
-	 	    @JsonProperty("JurisdictionId")
-		    ArrayList<String> jurisdictionId = new ArrayList<String>();
-		    ((ArrayList) jurisdictionId).add(uniqueidj1);
-		    requestParams.put("JurisdictionID", jurisdictionId);
-		    log.debug("JurisdictionID Given i.e. " + uniqueidj1);
-		    httprequest.body(requestParams.toJSONString());
+		if (user.equals("GlobalAdmin")) {
+			requestParams = new JSONObject();
+			requestParams.put("UserId", UsersID);
+			log.debug("UserID Given i.e. " + UsersID);
+			@JsonProperty("JurisdictionId")
+			ArrayList<String> jurisdictionId = new ArrayList<String>();
+			((ArrayList) jurisdictionId).add(uniqueidj1);
+			requestParams.put("JurisdictionID", jurisdictionId);
+			log.debug("JurisdictionID Given i.e. " + uniqueidj1);
+			httprequest.body(requestParams.toJSONString());
+		}
+		if (user.equals("RegionalAdmin")) {
 
+		}
+		if (user.equals("CompanyAdmin")) {
+
+		}
+		if (user.equals("AccountIT")) {
+
+		}
+		if (user.equals("Approver")) {
+
+		}
+		if (user.equals("NormalUser")) {
+
+		}
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -534,7 +549,7 @@ public class AllBodyStructure extends Environment {
 		((ArrayList) jurisdictionId).add(uniqueidj1);
 		requestParams.put("JurisdictionID", jurisdictionId);
 		log.debug("JurisdictionID Given i.e. " + jurisdictionId);
-		httprequest.body(requestParams.toJSONString());
+	    httprequest.body(requestParams.toJSONString());
 
 	}
 
@@ -543,43 +558,45 @@ public class AllBodyStructure extends Environment {
 		requestParams = new JSONObject();
 		@JsonProperty("MyArray")
 		ArrayList<String> getmyJurisdictionID = new ArrayList<String>();
-		//getmyJurisdictionID.add(UsersID);
-		//getmyJurisdictionID.add(uniqueidr1);
+		// getmyJurisdictionID.add(UsersID);
+		// getmyJurisdictionID.add(uniqueidr1);
 		getmyJurisdictionID.add(uniqueidj1);
 		requestParams.put("JurisdictionID", getmyJurisdictionID);
 		log.debug("JurisdictionID Given i.e. " + getmyJurisdictionID);
 		httprequest.body(requestParams.toJSONString());
-	     //payload="[\r\n"
-		//		+ "  \"string\"\r\n"
-		//		+ "]";
+		// payload="[\r\n"
+		// + " \"string\"\r\n"
+		// + "]";
 	}
+
 	@SuppressWarnings("unchecked")
 	public void Creation_EntityType() throws InterruptedException, IOException {
-		
+
 		requestParams = new JSONObject();
 		SupportProperties.CRUDEntity();
-		
+
 		String EntityTypeName = pro.getProperty("CName");
 		requestParams.put("Name", EntityTypeName);
-		log.debug("EntityType Name Given i.e. " + EntityTypeName );
+		log.debug("EntityType Name Given i.e. " + EntityTypeName);
 		requestParams.put("RegionId", uniqueidr1);
-		log.debug("Region ID Given i.e. " + uniqueidr1 );
+		log.debug("Region ID Given i.e. " + uniqueidr1);
 		httprequest.body(requestParams.toJSONString());
-  }
+	}
+
 	@SuppressWarnings("unchecked")
 	public void Updation_EntityType() throws InterruptedException, IOException {
-		
+
 		requestParams = new JSONObject();
 		SupportProperties.CRUDEntity();
-		
+
 		String EntityTypeKey = pro.getProperty("Key");
 		requestParams.put("Key", EntityTypeKey);
-		log.debug("EntityType Key Given i.e. " + EntityTypeKey );
+		log.debug("EntityType Key Given i.e. " + EntityTypeKey);
 		String EntityTypeUpName = pro.getProperty("UName");
 		requestParams.put("Name", EntityTypeUpName);
-		log.debug("EntityType Name Given i.e. " + EntityTypeUpName );
+		log.debug("EntityType Name Given i.e. " + EntityTypeUpName);
 		requestParams.put("RegionId", uniqueidr1);
-		log.debug("Region ID Given i.e. " + uniqueidr1 );
+		log.debug("Region ID Given i.e. " + uniqueidr1);
 		httprequest.body(requestParams.toJSONString());
-  }
+	}
 }

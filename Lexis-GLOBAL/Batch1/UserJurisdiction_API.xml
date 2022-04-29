@@ -16,7 +16,7 @@
       <class name="extend.api.CreateReport"></class>
       <class name="testsuite1.test.UserJurisdiction_GET_with_distinct_UserID_JurisdictionID"/>
       
-      <class name="scenarios.api.UserJurisdiction_GetByJurisdictionID"></class> 
+      <class name="scenarios.api.UserJurisdiction_GetByJurisdictionID"></class> 	
       <class name="extend.api.CreateReport"></class>
       <class name="testsuite1.test.UserJurisdiction_POST_with_distinct_GetByJurisdictionID"/>
       

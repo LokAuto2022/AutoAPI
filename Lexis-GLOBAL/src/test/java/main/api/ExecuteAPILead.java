@@ -55,11 +55,10 @@ public class ExecuteAPILead extends Environment {
 					FrameSuite.Jurisdiction_GET_View_GetMyJurisdiction(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 			}
-			if (executefile.equals("UserJurisdiction")) {
+			if (executefile.equals("USER_JURISDICTION")) {
 				if (Subcategory.equals("GetMyJurisdictions")) {
-					log.debug("Execution Started....[[GET ALL REQUEST]]_[[View all " + executefile
-							+ "s Espcially GetMyJurisdiction]]");
-					log.debug("Base URL fetched Succeed i.e." + url);
+					log.debug("Execution Started...VIEW ALL "+ executefile +" includes "+Subcategory+" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserJurisdiction_GET_All_GetMyJurisdictions(url, str1, str2, str3, str4, str5, str6,
 							str7);
 				}
@@ -99,15 +98,14 @@ public class ExecuteAPILead extends Environment {
 					FrameSuite.Jurisdiction_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 			}
-			if (executefile.equals("UserJurisdiction")) {
+			if (executefile.equals("USER_JURISDICTION")) {
 				if (Subcategory.equals("BaseLine")) {
-					log.debug("Execution Started... for POST Method in [[" + executefile + " Creation]]");
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserJurisdiction_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 				if (Subcategory.equals("GetByJurisdictionID")) {
-					log.debug("Execution Started....[[POST REQUEST]]_[[" + executefile
-							+ " Creation Includes GetByJurisdictionID]]");
+					log.debug("Execution Started...GET_BY_JURISDICTION_ID"+ executefile +" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserJurisdiction_POST_Create_GetByJurisID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
@@ -143,11 +141,10 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.Jurisdiction_PUT_Update(url, str1, str2, str3, str4, str5, str6, str7);
 			}
-			if (executefile.equals("UserJurisdiction")) {
-				log.debug("Execution Started....[[PUT REQUEST]]_[[Update Specific " + executefile
-						+ " Details Includes UserID_JurisdictionID]]");
+			if (executefile.equals("USER_JURISDICTION")) {
+				log.debug("Execution Started...UPDATE_DEFULT_JURISDICTION in "+ executefile +" in "+user);
 				log.debug("Base URL fetched Succeed i.e. " + url);
-				FrameSuite.UserJurisdiction_PUT_Update_UserIDJurisID(url, str1, str2, str3, str4, str5, str6, str7);
+				FrameSuite.UserJurisdiction_PUT_UpdateDefaultJurisdiction_UserIDJurisID(url, str1, str2, str3, str4, str5, str6, str7);
 			}
 			if (executefile.equals("EntityType")) {
 				log.debug("Execution Started....[[PUT REQUEST]]_[[Update Specific " + executefile
@@ -186,10 +183,9 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.Jurisdiction_DELETE_Delete_JurisdictionID(url, str1, str2, str3, str4, str5, str6, str7);
 			}
-			if (executefile.equals("UserJurisdiction")) {
+			if (executefile.equals("USER_JURISDICTION")) {
 				if (Subcategory.equals("BaseLine")) {
-					log.debug("Execution Started....[[DELETE REQUEST]]_[[Delete Specific " + executefile
-							+ " Includes UserID_JurisdictionID ]]");
+					log.debug("Execution Started...DELETE THE "+ executefile +" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserJurisdiction_DELETE_Delete(url, str1, str2, str3, str4, str5, str6, str7);
 				}
@@ -237,23 +233,21 @@ public class ExecuteAPILead extends Environment {
 					FrameSuite.Jurisdiction_GET_View_Specific_JurisID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 				if (Subcategory.equals("GetJurisdictions")) {
-					log.debug("Execution Started...VIEW ALL "+ executefile +" includes "+Subcategory+" in "+user);
+					log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" includes "+Subcategory+" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.Jurisdiction_GET_View_Specific_JurisID_GetJurisdictions(url, str1, str2, str3, str4,
 							str5, str6, str7);
 				}
 			}
-			if (executefile.equals("UserJurisdiction")) {
+			if (executefile.equals("USER_JURISDICTION")) {
 				if (Subcategory.equals("UserID")) {
-					log.debug("Execution Started....[[GET SPECIFIC REQUEST]]_[[View Specific " + executefile
-							+ " Details Include JurisdictionID]]");
-					log.debug("Base URL fetched Succeed i.e." + url);
+					log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" includes "+Subcategory+" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserJurisdiction_GET_View_Specific_UserID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 				if (Subcategory.equals("UserIDJurisdictionID")) {
-					log.debug("Execution Started....[[GET SPECIFIC REQUEST]]_[[View Specific " + executefile
-							+ " Details Include JurisdictionID]]");
-					log.debug("Base URL fetched Succeed i.e." + url);
+					log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" includes "+Subcategory+" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserJurisdiction_GET_View_Specific_UserIDJurisID(url, str1, str2, str3, str4, str5, str6,
 							str7);
 				}
