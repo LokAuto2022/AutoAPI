@@ -32,7 +32,7 @@ public class CreateReport extends Environment {
 			if (executefile.equals("USER_JURISDICTION")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
-			if (executefile.equals("EntityType")) {
+			if (executefile.equals("ENTITY_TYPE")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
 			sparkreport.config().setTheme(Theme.DARK);

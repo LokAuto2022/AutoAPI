@@ -12,7 +12,7 @@ public class VerifyJsonID extends Environment {
 			uniqueidr1=ActualBodyResult.replaceAll("^\"|\"$", "");                                                                                                                                                                                                                                                                                                                                                                                            
 			log.debug("➜ Region ID ➞➞ "+uniqueidr1);
 		} catch (Exception e) {
-			log.debug("❌ Failling ! 🙁...Exception occur! on Region ID Extraction from Json Body",e);
+			log.debug("❌ Failling ! 🙁...Exception occur! on Region ID Extraction from Json Body ",e);
 	        e.printStackTrace();
 		}
 	}
@@ -21,7 +21,7 @@ public class VerifyJsonID extends Environment {
 			uniqueidr1 = JsonPath.from(ActualBodyResult).get("Id");
 			log.debug("➜ Region ID is " + uniqueidr1);
 		} catch (Exception e) {
-			log.debug("❌ Failling ! 🙁...Exception occur! on Region ID Extraction from Json Body",e);
+			log.debug("❌ Failling ! 🙁...Exception occur! on Region ID Extraction from Json Body ",e);
 			Assert.fail();
 		}
 		
@@ -31,7 +31,7 @@ public class VerifyJsonID extends Environment {
 			uniqueidj1 = JsonPath.from(ActualBodyResult).get("Id");
 			log.debug("➜ Jurisdiction ID is " + uniqueidj1);
 		} catch (Exception e) {
-			log.debug("❌ Failling ! 🙁...Exception occur! on Jurisdiction ID Extraction from Json Body", e);
+			log.debug("❌ Failling ! 🙁...Exception occur! on Jurisdiction ID Extraction from Json Body ", e);
 			Assert.fail();
 		}
 	}
@@ -40,7 +40,16 @@ public class VerifyJsonID extends Environment {
 			uniqueidj1=ActualBodyResult.replaceAll("^\"|\"$", "");                                                                                                                                                                                                                                                                                                                                                                                            
 			log.debug("➜ Jurisdiction ID ➞➞ "+uniqueidj1);
 		} catch (Exception e) {
-			log.debug("❌ Failling ! 🙁...Exception occur! on Jurisdiction ID Extraction from Json Body",e);
+			log.debug("❌ Failling ! 🙁...Exception occur! on Jurisdiction ID Extraction from Json Body ",e);
+	        e.printStackTrace();
+		}
+	}
+	public static void fromEntitytypeID() {
+		try {
+			uniqueide1=ActualBodyResult.replaceAll("^\"|\"$", "");                                                                                                                                                                                                                                                                                                                                                                                            
+			log.debug("➜ EntityType ID ➞➞ "+uniqueide1);
+		} catch (Exception e) {
+			log.debug("❌ Failling ! 🙁...Exception occur! on EntityType ID Extraction from Json Body ",e);
 	        e.printStackTrace();
 		}
 	}

@@ -250,9 +250,9 @@ public class Resultantreport extends Environment {
 			System.out.println();
 			test.log(Status.INFO, "------------------------✔️👍 Specific "+ Subcategory+" Viewed under UserJurisdiction Successfully in "+user);
 		} else {
-			log.debug("------------------------❌👎 Specific "+Subcategory+" is NOT Viewed under UserJurisdiction Successfully in "+user);
+			log.debug("------------------------❌👎 Specific "+Subcategory+" is NOT Viewed under UserJurisdiction in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 Specific "+Subcategory+" is NOT Viewed under UserJurisdiction Successfully in "+user);
+			test.log(Status.INFO, "------------------------❌👎 Specific "+Subcategory+" is NOT Viewed under UserJurisdiction in "+user);
 		}
 	}
 	public static void GetByJurisdictionID_UserJurisdiction() {
@@ -261,9 +261,9 @@ public class Resultantreport extends Environment {
 			System.out.println();
 			test.log(Status.INFO, "------------------------✔️👍 GetMyJurisdictions under Jurisdiction is Viewed Successfully  in "+user);
 		} else {
-			log.debug("------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed Successfully in "+user);
+			log.debug("------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed Successfully in "+user);
+			test.log(Status.INFO, "------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed in "+user);
 		}
 	}
 	public static void GetMyJurisdictions_UserJurisdiction() {
@@ -272,9 +272,9 @@ public class Resultantreport extends Environment {
 			System.out.println();
 			test.log(Status.INFO, "------------------------✔️👍 GetMyJurisdictions under Jurisdiction is Viewed Successfully  in "+user);
 		} else {
-			log.debug("------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed Successfully in "+user);
+			log.debug("------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed Successfully in "+user);
+			test.log(Status.INFO, "------------------------❌👎 GetMyJurisdictions under Jurisdiction is NOT Viewed in "+user);
 		}
 	}
 	public static void UpdateDefaultJurisdiction_UserJurisdiction() {
@@ -283,9 +283,53 @@ public class Resultantreport extends Environment {
 			System.out.println();
 			test.log(Status.INFO, "------------------------✔️👍UpdateDefaultJurisdiction is Updated Successfully in "+user);
 		} else {
-			log.debug("------------------------❌👎 UpdateDefaultJurisdiction is NOT Updated Successfully in "+user);
+			log.debug("------------------------❌👎 UpdateDefaultJurisdiction is NOT Updated in "+user);
 			System.out.println();
-			test.log(Status.INFO, "------------------------❌👎 UpdateDefaultJurisdiction is NOT Updated Successfully in "+user);
+			test.log(Status.INFO, "------------------------❌👎 UpdateDefaultJurisdiction is NOT Updated in "+user);
+		}
+	}
+	public static void viewEntityType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntityType is Viewed Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntityType is Viewed Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntityType is NOT Viewed in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntityType is NOT Viewed in "+user);
+		}
+	}
+	public static void cReateEntityType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntityType is Created Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntityType is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntityType is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntityType is NOT Created in "+user);
+		}
+	}
+	public static void uPdateEntityType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntityType is Updated Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntityType is Updated Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntityType is NOT Updated in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntityType is NOT Updated in "+user);
+		}
+	}
+	public static void viewSpecificEntityType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 Specific EntityType is Viewed Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 Specific EntityType is Viewed Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 Specific EntityType is NOT Viewed in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 Specific EntityType is NOT Viewed in "+user);
 		}
 	}
 

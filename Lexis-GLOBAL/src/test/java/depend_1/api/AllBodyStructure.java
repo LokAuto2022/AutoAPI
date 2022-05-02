@@ -575,12 +575,13 @@ public class AllBodyStructure extends Environment {
 		requestParams = new JSONObject();
 		SupportProperties.CRUDEntity();
 
-		String EntityTypeName = pro.getProperty("CName");
-		requestParams.put("Name", EntityTypeName);
-		log.debug("EntityType Name Given i.e. " + EntityTypeName);
+		String EntityTypeName = pro.getProperty("EntityTypeName");
+		requestParams.put("Name", EntityTypeName+currenttime12);
+		log.debug("EntityType Name Given i.e. " + EntityTypeName+currenttime12);
 		requestParams.put("RegionId", uniqueidr1);
 		log.debug("Region ID Given i.e. " + uniqueidr1);
 		httprequest.body(requestParams.toJSONString());
+		Subcategory="CreateEntity";
 	}
 
 	@SuppressWarnings("unchecked")
@@ -589,12 +590,11 @@ public class AllBodyStructure extends Environment {
 		requestParams = new JSONObject();
 		SupportProperties.CRUDEntity();
 
-		String EntityTypeKey = pro.getProperty("Key");
-		requestParams.put("Key", EntityTypeKey);
-		log.debug("EntityType Key Given i.e. " + EntityTypeKey);
-		String EntityTypeUpName = pro.getProperty("UName");
-		requestParams.put("Name", EntityTypeUpName);
-		log.debug("EntityType Name Given i.e. " + EntityTypeUpName);
+		requestParams.put("Key", EntityKey);
+		log.debug("EntityType Key Given i.e. " + EntityKey);
+		String UpEntityTypeName = pro.getProperty("UpEntityTypeName");
+		requestParams.put("Name", UpEntityTypeName+currenttime12);
+		log.debug("EntityType Name Given i.e. " + UpEntityTypeName);
 		requestParams.put("RegionId", uniqueidr1);
 		log.debug("Region ID Given i.e. " + uniqueidr1);
 		httprequest.body(requestParams.toJSONString());

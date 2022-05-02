@@ -8,7 +8,7 @@ public class EntityType_EntityTypeID extends Environment {
 
  @Test
  public static void filename() {
-	 executefile="EntityType";
+	 executefile="ENTITY_TYPE";
 	 Subcategory="EntityTypeID";
    }
 }

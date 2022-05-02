@@ -58,7 +58,7 @@ public class SupportProperties extends Environment {
 			pro.load(file);
 			// log.debug("TestData file Loaded Succeed from
 		} catch (Exception e) {
-			log.debug("Failing(!)...Exception occur! on CRUD Jurisdiction PROPERTIES FILE load AREA " + e);
+			log.debug("Failing(!)...Exception occur! on CRUD EntityPro PROPERTIES FILE load AREA " + e);
 			Assert.fail();
 		}
 
