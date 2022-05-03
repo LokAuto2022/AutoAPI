@@ -599,4 +599,55 @@ public class AllBodyStructure extends Environment {
 		log.debug("Region ID Given i.e. " + uniqueidr1);
 		httprequest.body(requestParams.toJSONString());
 	}
+	@SuppressWarnings("unchecked")
+	public void Creation_EntitySubType() throws InterruptedException, IOException {
+
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+
+		String EntitySubTypeName = pro.getProperty("EntityTypeSubName");
+		requestParams.put("Name", EntitySubTypeName+currenttime12);
+		log.debug("EntityType Name Given i.e. " + EntitySubTypeName+currenttime12);
+		requestParams.put("EntitytypeID", uniqueide1);
+		log.debug("EntityType ID  Given i.e. " + uniqueide1);
+		requestParams.put("RegionId", uniqueidr1);
+		log.debug("Region ID Given i.e. " + uniqueidr1);
+		httprequest.body(requestParams.toJSONString());
+		Subcategory="CreateEntitySubType";
+	}
+	@SuppressWarnings("unchecked")
+	public void Updation_EntitySubType() throws InterruptedException, IOException {
+
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+
+		requestParams.put("Id", uniqueides1);
+		log.debug("EntitySubType ID Given i.e. " + uniqueides1);
+		requestParams.put("EntitytypeID", uniqueide1);
+		log.debug("EntityType ID  Given i.e. " + uniqueide1);
+		String UpEntitySubTypeName = pro.getProperty("UpEntitySubTypeName");
+		requestParams.put("Name", UpEntitySubTypeName+currenttime12);
+		log.debug("EntityType Name Given i.e. " + UpEntitySubTypeName);
+		
+		httprequest.body(requestParams.toJSONString());
+	}
+	@SuppressWarnings("unchecked")
+	public void Creation_EntitySubType_Clone() throws InterruptedException, IOException {
+
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+
+		requestParams.put("Id", uniqueides1);
+		log.debug("EntitySubType ID Given i.e. " + uniqueides1);
+		
+		String CloneEntitySubType = pro.getProperty("CloneEntitySubType");
+		requestParams.put("Name", CloneEntitySubType+currenttime12);
+		log.debug("EntityType Name Given i.e. " + CloneEntitySubType);
+		
+		requestParams.put("RegionId", uniqueidr1);
+		log.debug("Region ID Given i.e. " + uniqueidr1);
+		
+	    httprequest.body(requestParams.toJSONString());
+		Subcategory="CreateEntitySubTypeClone";
+	}
 }

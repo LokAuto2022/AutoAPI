@@ -2608,7 +2608,7 @@ public class FrameSuite extends Environment {
 				VerifyStatusLine.ensureLine200();
 				// VerifyResponseTime.ensure3(url, str2);
 				Resultantreport.cReateJurisdiction();
-				
+
 				// TODO Stage 3
 				httprequest = RestAssured.given();
 				// TODO Token Generation and Store it
@@ -4553,10 +4553,10 @@ public class FrameSuite extends Environment {
 	public static void EntityType_GET_View_Specific_EntityType(String url, String str1, String str2, String str3,
 			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
 		if (user.equals("GlobalAdmin")) {
-			
+
 			test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
 					.info("SCENARIO ➨ VIEW SPECIFIC " + executefile + " in " + user);
-			
+
 			httprequest = RestAssured.given();
 			// TODO Token Generation and Store it
 			PrePostRequest.tokengeneration(url, str1);
@@ -4591,7 +4591,7 @@ public class FrameSuite extends Environment {
 			VerifyStatusLine.ensureLine200();
 			VerifyJsonID.fromEntitytypeID();
 			Resultantreport.cReateEntityType();
-			
+
 			// TODO Stage 3
 			httprequest = RestAssured.given();
 			// TODO Token Generation and Store it
@@ -4601,11 +4601,10 @@ public class FrameSuite extends Environment {
 			VerifyStatusCode.ensureCode200();
 			VerifyStatusLine.ensureLine200();
 			// VerifyResponseTime.ensure3(url, str2);
-            // TODO End the HTML Report
+			// TODO End the HTML Report
 			Resultantreport.viewSpecificEntityType();
 			htmlreport.flush();
-			
-			
+
 		}
 		if (user.equals("RegionalAdmin")) {
 
@@ -4674,5 +4673,452 @@ public class FrameSuite extends Environment {
 		VerifyStatusLine.ensureLine200();
 		htmlreport.flush();
 
+	}
+
+	@SuppressWarnings("static-access")
+	public static void EntitySubType_GET_View_EntityTypeID(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+
+		test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+				.info("SCENARIO ➨ VIEW SPECIFIC " + executefile + " in " + user);
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyJsonID.fromJurisdictionID();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+
+		// TODO Stage 3
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		// TODO End the HTML Report
+		Resultantreport.viewSpecificEntityType();
+		htmlreport.flush();
+
+	}
+
+	@SuppressWarnings("static-access")
+	public static void EntitySubType_POST_Create(String url, String str1, String str2, String str3, String str4,
+			String str5, String str6, String str7) throws InterruptedException, IOException {
+		
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyJsonID.fromJurisdictionID();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+		htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void EntitySubType_PUT_Update(String url, String str1, String str2, String str3, String str4,
+			String str5, String str6, String str7) throws InterruptedException, IOException {
+		if (user.equals("GlobalAdmin")) {
+			test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+					.info("SCENARIO ➨ UPDATE THE SPECIFIC " + executefile + " in " + user);
+			
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.createregioninglobal();
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			VerifyJsonID.fromRegionID();
+			// VerifyResponseTime.ensure2(url, str2, str3, str4);
+			Resultantreport.cReateRegion();
+
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.creationJurisdiction();
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyJsonID.fromJurisdictionID();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			// VerifyResponseTime.ensure3(url, str2);
+			Resultantreport.cReateJurisdiction();
+
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.Creation_EntityType();
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			VerifyJsonID.fromEntitytypeID();
+			Resultantreport.cReateEntityType();
+			
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.Creation_EntitySubType();
+			referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			VerifyJsonID.fromEntitySubtypeID();
+			Resultantreport.cReateEntitySubType();
+			
+			httprequest = RestAssured.given();
+			// TODO Token Generation and Store it
+			PrePostRequest.tokengeneration(url, str1);
+			withrespectto.Updation_EntitySubType();
+			referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+			VerifyJsonResult.ensurebodyToken();
+			VerifyStatusCode.ensureCode200();
+			VerifyStatusLine.ensureLine200();
+			Resultantreport.uPdateEntitySubType();
+			htmlreport.flush();
+		}
+		
+	}
+
+	@SuppressWarnings("static-access")
+	public static void EntitySubType_DELETE_Delete(String url, String str1, String str2, String str3, String str4,
+			String str5, String str6, String str7) throws InterruptedException, IOException {
+		test = htmlreport.createTest(executefile + " ➜ DELETE Method in " + user)
+				.info("SCENARIO ➨ DELETE THE SPECIFIC " + executefile + " in " + user);
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyJsonID.fromJurisdictionID();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		referencereqresponse.DELETEresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		Resultantreport.DeleteEntitySubType();
+		htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void EntitySubType_POST_Create_Clone(String url, String str1, String str2, String str3, String str4,
+			String str5, String str6, String str7) throws InterruptedException, IOException {
+		test = htmlreport.createTest(executefile + " ➜ POST Method in " + user)
+				.info("SCENARIO ➨ CREATE THE NEW " + executefile + " in " + user);
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyJsonID.fromJurisdictionID();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType_Clone();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubTypeClone();
+		htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void EntitySubType_GET_View_Specific_IsVersionChangeEnabled(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+		test = htmlreport.createTest(executefile + " ➜ GET(ID) Method in " + user)
+				.info("SCENARIO ➨ VIEW THE SPECIFIC " + executefile + " include " + Subcategory + " in " + user);
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyJsonID.fromJurisdictionID();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		Subcategory="IsVersionChangedEnabled";
+		referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		// TODO End the HTML Report
+		Resultantreport.vIewEntitySubType_IsVersionChangeEnabled();
+		htmlreport.flush();
+	}
+
+	@SuppressWarnings("static-access")
+	public static void EntitySubType_PUT_Update_StartVersionChange(String url, String str1, String str2, String str3,
+			String str4, String str5, String str6, String str7) throws InterruptedException, IOException {
+		test = htmlreport.createTest(executefile + " ➜ PUT Method in " + user)
+				.info("SCENARIO ➨ UPDATE THE SPECIFIC " + executefile + " in " + user);
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.createregioninglobal();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromRegionID();
+		// VerifyResponseTime.ensure2(url, str2, str3, str4);
+		Resultantreport.cReateRegion();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.creationJurisdiction();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyJsonID.fromJurisdictionID();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		// VerifyResponseTime.ensure3(url, str2);
+		Resultantreport.cReateJurisdiction();
+
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntityType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitytypeID();
+		Resultantreport.cReateEntityType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		withrespectto.Creation_EntitySubType();
+		referencereqresponse.POSTresponse(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		VerifyJsonID.fromEntitySubtypeID();
+		Resultantreport.cReateEntitySubType();
+		
+		httprequest = RestAssured.given();
+		// TODO Token Generation and Store it
+		PrePostRequest.tokengeneration(url, str1);
+		//withrespectto.Updation_EntitySubType();
+		Subcategory="StartVersionChange";
+	    referencereqresponse.PUTresponseSPF(url, str2, str3, str4, str5, str6, str7);
+		VerifyJsonResult.ensurebodyToken();
+		VerifyStatusCode.ensureCode200();
+		VerifyStatusLine.ensureLine200();
+		Resultantreport.UpdateEntitySubType_StartVersionChange();
+		htmlreport.flush();
+		
 	}
 }

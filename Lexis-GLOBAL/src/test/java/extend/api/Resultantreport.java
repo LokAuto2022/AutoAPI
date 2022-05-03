@@ -332,5 +332,71 @@ public class Resultantreport extends Environment {
 			test.log(Status.INFO, "------------------------❌👎 Specific EntityType is NOT Viewed in "+user);
 		}
 	}
+	public static void cReateEntitySubType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntitySubType is Created Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntitySubType is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntitySubType is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntitySubType is NOT Created in "+user);
+		}
+	}
+	public static void uPdateEntitySubType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntitySubType is Updated Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntitySubType is Updated Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntitySubType is NOT Updated in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntitySubType is NOT Updated in "+user);
+		}
+	}
+	public static void DeleteEntitySubType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntitySubType is Deleted Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntitySubType is Deleted Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntitySubType is NOT Deleted in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntitySubType is NOT Deleted in "+user);
+		}
+	}
+	public static void cReateEntitySubTypeClone() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntitySubTypeClone is Created Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntitySubTypeClone is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntitySubTypeClone is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntitySubTypeClone is NOT Created in "+user);
+		}
+	}
+	public static void vIewEntitySubType_IsVersionChangeEnabled() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntitySubType_IsVersion Change Enabled is Viewed Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntitySubType_IsVersion Change Enabled is Viewed Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntitySubType_IsVersion Change Enabled is NOT Viewed in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntitySubType_IsVersion Change Enabled is NOT Viewed in "+user);
+		}
+	}
+	public static void UpdateEntitySubType_StartVersionChange() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 EntitySubType_Start Version Change is Updated Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 EntitySubType_Start Version Change is Updated Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 EntitySubType_Start Version Change is NOT Updated in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 EntitySubType_Start Version Change is NOT Updated in "+user);
+		}
+	}
 
 }

@@ -13,7 +13,7 @@ public class VerifyJsonResult extends Environment {
 			ActualBodyResult = httpresponse.getBody().asString();
 			log.debug("Actual JsonBody Result is ➨➨ " + ActualBodyResult);
 
-			if (ActualBodyResult.equals("Region Prefix Already Exits")) {
+			if (ActualBodyResult.equals("1060")) {
 				log.debug("❌ Fail ! 🙁...Region Prefix Already Exits while Create or Update " + executefile);
 				test.log(Status.FAIL, "Region Prefix Already Exits while Create or Update " + executefile);
 				

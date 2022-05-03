@@ -68,6 +68,11 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.EntityType_GET_View(url, str1, str2, str3, str4, str5, str6, str7);
 			}
+			if (executefile.equals("ENTITY_SUBTYPE")) {
+				log.debug("Execution Started...VIEW ALL "+ executefile +" in "+user);
+				log.debug("Base URL fetched Succeed i.e. " + url);
+				FrameSuite.EntitySubType_GET_View_EntityTypeID(url, str1, str2, str3, str4, str5, str6, str7);
+			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on GET ALL Request in layout_2 " + e);
 			Assert.fail();
@@ -115,6 +120,18 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.EntityType_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);
 			}
+			if (executefile.equals("ENTITY_SUBTYPE")) {
+				if (Subcategory.equals("BaseLine")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.EntitySubType_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);
+				}
+				if (Subcategory.equals("Clone")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" Clone in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.EntitySubType_POST_Create_Clone(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
+			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on POST Request in layout_3 " + e);
 			Assert.fail();
@@ -149,7 +166,18 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.EntityType_PUT_Update(url, str1, str2, str3, str4, str5, str6, str7);
 			}
-
+			if (executefile.equals("ENTITY_SUBTYPE")) {
+				if (Subcategory.equals("BaseLine")) {
+					log.debug("Execution Started...UPDATE THE EXISTING "+ executefile +" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.EntitySubType_PUT_Update(url, str1, str2, str3, str4, str5, str6, str7);
+				}
+				if (Subcategory.equals("StartVersionChange")) {
+					log.debug("Execution Started...UPDATE THE EXISTING Version "+ executefile +" StartVersionChange in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.EntitySubType_PUT_Update_StartVersionChange(url, str1, str2, str3, str4, str5, str6, str7);
+				}
+			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on PUT Request in layout_4 " + e);
 			Assert.fail();
@@ -191,6 +219,11 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Execution Started...DELETE THE "+ executefile +" in "+user);
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.EntityType_DELETE_Delete(url, str1, str2, str3, str4, str5, str6, str7);
+			}
+			if (executefile.equals("ENTITY_SUBTYPE")) {
+				log.debug("Execution Started...DELETE THE "+ executefile +" in "+user);
+				log.debug("Base URL fetched Succeed i.e. " + url);
+				FrameSuite.EntitySubType_DELETE_Delete(url, str1, str2, str3, str4, str5, str6, str7);
 			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on DELETE Request in layout_5 " + e);
@@ -252,6 +285,12 @@ public class ExecuteAPILead extends Environment {
 				log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" in "+user);
 				log.debug("Base URL fetched Succeed i.e. " + url);
 				FrameSuite.EntityType_GET_View_Specific_EntityType(url, str1, str2, str3, str4, str5, str6, str7);
+
+			}
+			if (executefile.equals("ENTITY_SUBTYPE")) {
+				log.debug("Execution Started...VIEW SPECIFIC "+ executefile +" IsVersionChangedEnabled in "+user);
+				log.debug("Base URL fetched Succeed i.e. " + url);
+				FrameSuite.EntitySubType_GET_View_Specific_IsVersionChangeEnabled(url, str1, str2, str3, str4, str5, str6, str7);
 
 			}
 		} catch (Exception e) {
