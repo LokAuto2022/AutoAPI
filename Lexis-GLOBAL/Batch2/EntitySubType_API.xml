@@ -20,7 +20,19 @@
 			
 			<class name="scenarios.api.EntitySubType_EntityTypeId_StartVersionChange"></class>
 			<class name="extend.api.CreateReport"></class>
-			<class name="testsuite2.test.EntitySubType_GET_with_distinct_StartVersionChange" />
+			<class name="testsuite2.test.EntitySubType_PUT_with_distinct_StartVersionChange" />
+			
+			<!-- <class name="scenarios.api.EntitySubType_EntityTypeId_CreateNewVesion"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite2.test.EntitySubType_POST_with_distinct_CreateNewVersion" /> -->
+			
+			<!-- <class name="scenarios.api.EntitySubType_EntityTypeId_GetByEntityTypeId"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite2.test.EntitySubType_POST_with_distinct_GetByEntityTypeId" /> -->
+			
+			<!-- <class name="scenarios.api.EntitySubType_EntityTypeId_RollbackVersionChanges"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite2.test.EntitySubType_POST_with_distinct_RollbackVersionChanges" /> -->
 			
 	 </classes>
 	</test> <!-- Test -->

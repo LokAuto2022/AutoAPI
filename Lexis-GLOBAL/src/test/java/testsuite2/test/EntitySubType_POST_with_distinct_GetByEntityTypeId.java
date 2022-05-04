@@ -10,12 +10,12 @@ import apache.api.Operation;
 import dataprovider.api.DP_Base;
 import global.api.Environment;
 
-public class EntitySubType_GET_with_distinct_StartVersionChange extends Environment {
+public class EntitySubType_POST_with_distinct_GetByEntityTypeId extends Environment {
 
 	@Test(dataProvider = "ProbaseURL", dataProviderClass = DP_Base.class)
 	public static void View_EntitySubType_using_EntityTypeID(String url) throws IOException, InterruptedException {
 		try {
-			sheetname = "EntitySubType_Update";
+			sheetname = "EntitySubType_Create";
 			FileIO.coreutility(sheetname);
 			Operation.worksheet(url);
 		} catch (Exception e) {
