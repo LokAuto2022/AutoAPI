@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="scenarios.api.Rule_BaseLine"></class>
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite3.test.RULE_POST_with_Indistinct"/>
+      <class name="testsuite3.test.RULE_POST_with_distinct_Clone"/>
+      <class name="testsuite3.test.RULE_POST_with_GetRuleInfo"/>
+      <class name="testsuite3.test.RULE_GET_with_Rules_ID"/>
+      <class name="testsuite3.test.RULE_DELETE_with_Indistinct"/>
+      <class name="testsuite3.test.RULE_GET_with_Indistinct"/>
+      <class name="testsuite3.test.RULE_GET_with_GetRulesByRegionID_ID"/>
+      <class name="testsuite3.test.RULE_PUT_with_distinct_ID"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testsuite3.test.RuleExpression_DELETE_with_distinct_ID"/>
+      <class name="testsuite3.test.RuleExpression_GET_with_distinct_ID"/>
+      <class name="testsuite3.test.RuleExpression_GET_GetAllByRuleConfiguration_ID"/>
+      <class name="testsuite3.test.RuleExpression_POST_with_Indistinct"/>
+      <class name="testsuite3.test.RuleExpression_PUT_with_distinct_ID"/>
+      <class name="testsuite3.test.RuleExpression_PATCH_with_Sort_ID"/>
+      <class name="testsuite3.test.RuleExpression_GET_TagValidation_Tag"/>
+      <class name="testsuite3.test.RuleExpression_GET_with_Indistinct"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
