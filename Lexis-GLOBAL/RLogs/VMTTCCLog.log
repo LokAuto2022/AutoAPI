@@ -1,0 +1,364 @@
+2022-05-04 17:10:31,558 [main] DEBUG main.api.ExecuteAPILead - Execution Started...CREATE A NEW ENTITIES Clone in GlobalAdmin
+2022-05-04 17:10:31,563 [main] DEBUG main.api.ExecuteAPILead - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-05-04 17:10:31,819 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:10:31,820 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:10:35,816 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:10:35,855 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:10:35,859 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:10:35,875 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:10:35,981 [main] DEBUG main.api.ExecuteAPILead - RegionName Given i.e. (API)17.10.35
+2022-05-04 17:10:35,982 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw35
+2022-05-04 17:10:35,982 [main] DEBUG main.api.ExecuteAPILead - Description Given i.e. Test_Description
+2022-05-04 17:10:35,983 [main] DEBUG main.api.ExecuteAPILead - DataCentre Given i.e. Test_DataCentre
+2022-05-04 17:10:35,983 [main] DEBUG main.api.ExecuteAPILead - Hosting Given i.e. Test_Hosting
+2022-05-04 17:10:37,772 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Entity
+2022-05-04 17:10:37,776 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ {"errors":{"Value":["The Value field is required."]},"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-1a525248e40eed4f865e924248113aef-f4a5390212ba0e4c-00"}
+2022-05-04 17:10:37,777 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 400
+2022-05-04 17:10:37,780 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ [400]
+2022-05-04 17:10:37,780 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 400 Bad Request
+2022-05-04 17:10:37,781 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK] ≠≠ Actual ➨ [HTTP/1.1 400 Bad Request]
+2022-05-04 17:14:47,738 [main] DEBUG main.api.ExecuteAPILead - Execution Started...CREATE A NEW ENTITIES in GlobalAdmin
+2022-05-04 17:14:47,741 [main] DEBUG main.api.ExecuteAPILead - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-05-04 17:14:48,003 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:14:48,004 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:14:50,985 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:14:50,986 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:14:50,989 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:14:51,002 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:14:51,107 [main] DEBUG main.api.ExecuteAPILead - RegionName Given i.e. (API)17.14.51
+2022-05-04 17:14:51,109 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw51
+2022-05-04 17:14:51,109 [main] DEBUG main.api.ExecuteAPILead - Description Given i.e. Test_Description
+2022-05-04 17:14:51,110 [main] DEBUG main.api.ExecuteAPILead - DataCentre Given i.e. Test_DataCentre
+2022-05-04 17:14:51,110 [main] DEBUG main.api.ExecuteAPILead - Hosting Given i.e. Test_Hosting
+2022-05-04 17:14:53,083 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-05-04 17:14:53,085 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "2d18b4bf-8394-4fc5-8acb-2cb17d755b58"
+2022-05-04 17:14:53,086 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:14:53,088 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:14:53,088 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:14:53,088 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:14:53,090 [main] DEBUG main.api.ExecuteAPILead - ➜ Region ID ➞➞ 2d18b4bf-8394-4fc5-8acb-2cb17d755b58
+2022-05-04 17:14:53,091 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍  Region Created Successfully in GlobalAdmin
+2022-05-04 17:14:53,207 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:14:53,208 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:14:55,008 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:14:55,009 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:14:55,009 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:14:55,010 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:14:55,120 [main] DEBUG main.api.ExecuteAPILead - Name Given i.e. (JuAPI)17.14.55
+2022-05-04 17:14:55,121 [main] DEBUG main.api.ExecuteAPILead - RegionID Given i.e. 2d18b4bf-8394-4fc5-8acb-2cb17d755b58
+2022-05-04 17:14:55,121 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw55
+2022-05-04 17:14:57,064 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Jurisdiction
+2022-05-04 17:14:57,065 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "de844cbc-6f9f-43a7-a355-5054e49af2fd"
+2022-05-04 17:14:57,066 [main] DEBUG main.api.ExecuteAPILead - ➜ Jurisdiction ID ➞➞ de844cbc-6f9f-43a7-a355-5054e49af2fd
+2022-05-04 17:14:57,067 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:14:57,067 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:14:57,068 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:14:57,069 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:14:57,069 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 Jurisdiction Created Successfully in GlobalAdmin
+2022-05-04 17:14:57,182 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:14:57,183 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:14:59,038 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:14:59,039 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:14:59,040 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:14:59,041 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:14:59,145 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntityAPI)17.14.55
+2022-05-04 17:14:59,145 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 2d18b4bf-8394-4fc5-8acb-2cb17d755b58
+2022-05-04 17:15:00,947 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntityType
+2022-05-04 17:15:00,948 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "de94a9a0-f7e7-4d8d-97c8-ad5923a1ad43"
+2022-05-04 17:15:00,949 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:15:00,949 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:15:00,950 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:15:00,950 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:15:00,951 [main] DEBUG main.api.ExecuteAPILead - ➜ EntityType ID ➞➞ de94a9a0-f7e7-4d8d-97c8-ad5923a1ad43
+2022-05-04 17:15:00,951 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntityType is Created Successfully in GlobalAdmin
+2022-05-04 17:15:01,058 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:15:01,059 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:15:03,007 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:15:03,008 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:15:03,009 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:15:03,010 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:15:03,114 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntitySubAPI)17.14.55
+2022-05-04 17:15:03,114 [main] DEBUG main.api.ExecuteAPILead - EntityType ID  Given i.e. de94a9a0-f7e7-4d8d-97c8-ad5923a1ad43
+2022-05-04 17:15:03,115 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 2d18b4bf-8394-4fc5-8acb-2cb17d755b58
+2022-05-04 17:15:05,041 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntitySubType
+2022-05-04 17:15:05,042 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "fc3e639a-e271-43fb-8262-410419fcf7f5"
+2022-05-04 17:15:05,042 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:15:05,043 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:15:05,043 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:15:05,043 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:15:05,044 [main] DEBUG main.api.ExecuteAPILead - ➜ EntitySubType ID ➞➞ fc3e639a-e271-43fb-8262-410419fcf7f5
+2022-05-04 17:15:05,044 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntitySubType is Created Successfully in GlobalAdmin
+2022-05-04 17:15:05,147 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:15:05,148 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:15:07,193 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:15:07,193 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:15:07,194 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:15:07,195 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:15:07,298 [main] DEBUG main.api.ExecuteAPILead - EntityType ID Given i.e. de94a9a0-f7e7-4d8d-97c8-ad5923a1ad43
+2022-05-04 17:15:07,299 [main] DEBUG main.api.ExecuteAPILead - EntitySubype ID Given i.e. fc3e639a-e271-43fb-8262-410419fcf7f5
+2022-05-04 17:15:07,300 [main] DEBUG main.api.ExecuteAPILead - Value Given i.e. TValue
+2022-05-04 17:15:07,300 [main] DEBUG main.api.ExecuteAPILead - Value Given i.e. TSugges
+2022-05-04 17:15:09,132 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Entity
+2022-05-04 17:15:09,133 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ {"errors":{"Value":["The Value field is required."]},"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-6736dfea08442f4ca6379a055565a633-125f2ad47c1ff747-00"}
+2022-05-04 17:15:09,134 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 400
+2022-05-04 17:15:09,134 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ [400]
+2022-05-04 17:15:09,135 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 400 Bad Request
+2022-05-04 17:15:09,136 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK] ≠≠ Actual ➨ [HTTP/1.1 400 Bad Request]
+2022-05-04 17:16:51,986 [main] DEBUG main.api.ExecuteAPILead - Execution Started...VIEW ALL ENTITY_SUBTYPE in GlobalAdmin
+2022-05-04 17:16:51,989 [main] DEBUG main.api.ExecuteAPILead - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-05-04 17:16:52,230 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:16:52,231 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:16:57,275 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:16:57,276 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:16:57,279 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:16:57,295 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:16:57,401 [main] DEBUG main.api.ExecuteAPILead - RegionName Given i.e. (API)17.16.57
+2022-05-04 17:16:57,401 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw57
+2022-05-04 17:16:57,402 [main] DEBUG main.api.ExecuteAPILead - Description Given i.e. Test_Description
+2022-05-04 17:16:57,402 [main] DEBUG main.api.ExecuteAPILead - DataCentre Given i.e. Test_DataCentre
+2022-05-04 17:16:57,402 [main] DEBUG main.api.ExecuteAPILead - Hosting Given i.e. Test_Hosting
+2022-05-04 17:16:59,119 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-05-04 17:16:59,122 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "11564f0c-b7af-4f24-99e6-637b99a87aa8"
+2022-05-04 17:16:59,122 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:16:59,123 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:16:59,123 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:16:59,123 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:16:59,125 [main] DEBUG main.api.ExecuteAPILead - ➜ Region ID ➞➞ 11564f0c-b7af-4f24-99e6-637b99a87aa8
+2022-05-04 17:16:59,127 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍  Region Created Successfully in GlobalAdmin
+2022-05-04 17:16:59,236 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:16:59,237 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:17:00,950 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:17:00,951 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:00,951 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:00,954 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:17:01,060 [main] DEBUG main.api.ExecuteAPILead - Name Given i.e. (JuAPI)17.17.01
+2022-05-04 17:17:01,061 [main] DEBUG main.api.ExecuteAPILead - RegionID Given i.e. 11564f0c-b7af-4f24-99e6-637b99a87aa8
+2022-05-04 17:17:01,062 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw01
+2022-05-04 17:17:02,804 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Jurisdiction
+2022-05-04 17:17:02,805 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "d004469b-38ee-4a78-a9dc-10fb6183f7a9"
+2022-05-04 17:17:02,806 [main] DEBUG main.api.ExecuteAPILead - ➜ Jurisdiction ID ➞➞ d004469b-38ee-4a78-a9dc-10fb6183f7a9
+2022-05-04 17:17:02,806 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:17:02,806 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:02,807 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:17:02,807 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:02,808 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 Jurisdiction Created Successfully in GlobalAdmin
+2022-05-04 17:17:02,917 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:17:02,917 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:17:04,645 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:17:04,646 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:04,646 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:04,647 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:17:04,750 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntityAPI)17.17.01
+2022-05-04 17:17:04,751 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 11564f0c-b7af-4f24-99e6-637b99a87aa8
+2022-05-04 17:17:06,591 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntityType
+2022-05-04 17:17:06,592 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "ba84a00e-a476-473e-bc7f-8bf4832bb79c"
+2022-05-04 17:17:06,593 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:17:06,593 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:06,594 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:17:06,595 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:06,596 [main] DEBUG main.api.ExecuteAPILead - ➜ EntityType ID ➞➞ ba84a00e-a476-473e-bc7f-8bf4832bb79c
+2022-05-04 17:17:06,597 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntityType is Created Successfully in GlobalAdmin
+2022-05-04 17:17:06,710 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:17:06,711 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:17:08,565 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:17:08,565 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:08,565 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:08,566 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:17:08,682 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntitySubAPI)17.17.01
+2022-05-04 17:17:08,683 [main] DEBUG main.api.ExecuteAPILead - EntityType ID  Given i.e. ba84a00e-a476-473e-bc7f-8bf4832bb79c
+2022-05-04 17:17:08,684 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 11564f0c-b7af-4f24-99e6-637b99a87aa8
+2022-05-04 17:17:10,694 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntitySubType
+2022-05-04 17:17:10,696 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "4266447e-899f-4b82-95b9-658d720440ea"
+2022-05-04 17:17:10,696 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:17:10,697 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:10,697 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:17:10,698 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:10,698 [main] DEBUG main.api.ExecuteAPILead - ➜ EntitySubType ID ➞➞ 4266447e-899f-4b82-95b9-658d720440ea
+2022-05-04 17:17:10,699 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntitySubType is Created Successfully in GlobalAdmin
+2022-05-04 17:17:10,802 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:17:10,803 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:17:12,736 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:17:12,737 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:12,737 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:12,738 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:17:14,581 [main] DEBUG main.api.ExecuteAPILead - ⏪ GET_SPF ⏩ Request for https://lnmjapi.adappt.ai/api/v1/EntitySubType/ba84a00e-a476-473e-bc7f-8bf4832bb79c
+2022-05-04 17:17:14,586 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ [{"Id":"4266447e-899f-4b82-95b9-658d720440ea","EntityTypeId":"ba84a00e-a476-473e-bc7f-8bf4832bb79c","Name":"(entitysubapi)17.17.01","Version":0.0,"DraftEnabled":true,"RegionId":"11564f0c-b7af-4f24-99e6-637b99a87aa8"}]
+2022-05-04 17:17:14,587 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:17:14,587 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:17:14,588 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:17:14,588 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:17:14,589 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 Specific EntityType is Viewed Successfully in GlobalAdmin
+2022-05-04 17:20:48,772 [main] DEBUG main.api.ExecuteAPILead - Execution Started...CREATE A NEW ENTITIES in GlobalAdmin
+2022-05-04 17:20:48,775 [main] DEBUG main.api.ExecuteAPILead - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-05-04 17:20:49,008 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:20:49,009 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:20:52,121 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:20:52,123 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:20:52,126 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:20:52,139 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:20:52,247 [main] DEBUG main.api.ExecuteAPILead - RegionName Given i.e. (API)17.20.52
+2022-05-04 17:20:52,248 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw52
+2022-05-04 17:20:52,249 [main] DEBUG main.api.ExecuteAPILead - Description Given i.e. Test_Description
+2022-05-04 17:20:52,250 [main] DEBUG main.api.ExecuteAPILead - DataCentre Given i.e. Test_DataCentre
+2022-05-04 17:20:52,250 [main] DEBUG main.api.ExecuteAPILead - Hosting Given i.e. Test_Hosting
+2022-05-04 17:20:54,233 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-05-04 17:20:54,237 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "34a2c875-bd02-4e91-89da-f72ec67a9e95"
+2022-05-04 17:20:54,238 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:20:54,239 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:20:54,241 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:20:54,241 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:20:54,243 [main] DEBUG main.api.ExecuteAPILead - ➜ Region ID ➞➞ 34a2c875-bd02-4e91-89da-f72ec67a9e95
+2022-05-04 17:20:54,244 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍  Region Created Successfully in GlobalAdmin
+2022-05-04 17:20:54,351 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:20:54,352 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:20:56,277 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:20:56,278 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:20:56,280 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:20:56,281 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:20:56,394 [main] DEBUG main.api.ExecuteAPILead - Name Given i.e. (JuAPI)17.20.56
+2022-05-04 17:20:56,395 [main] DEBUG main.api.ExecuteAPILead - RegionID Given i.e. 34a2c875-bd02-4e91-89da-f72ec67a9e95
+2022-05-04 17:20:56,396 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw56
+2022-05-04 17:20:58,400 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Jurisdiction
+2022-05-04 17:20:58,401 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "7e396775-852e-4844-afe7-8f1a831d2d10"
+2022-05-04 17:20:58,402 [main] DEBUG main.api.ExecuteAPILead - ➜ Jurisdiction ID ➞➞ 7e396775-852e-4844-afe7-8f1a831d2d10
+2022-05-04 17:20:58,403 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:20:58,403 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:20:58,404 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:20:58,405 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:20:58,405 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 Jurisdiction Created Successfully in GlobalAdmin
+2022-05-04 17:20:58,513 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:20:58,513 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:21:00,374 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:21:00,375 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:21:00,376 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:21:00,377 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:21:00,493 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntityAPI)17.20.56
+2022-05-04 17:21:00,493 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 34a2c875-bd02-4e91-89da-f72ec67a9e95
+2022-05-04 17:21:02,422 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntityType
+2022-05-04 17:21:02,422 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "dd189b34-8e90-4f06-8c44-5f4f2fd565af"
+2022-05-04 17:21:02,423 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:21:02,423 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:21:02,423 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:21:02,423 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:21:02,424 [main] DEBUG main.api.ExecuteAPILead - ➜ EntityType ID ➞➞ dd189b34-8e90-4f06-8c44-5f4f2fd565af
+2022-05-04 17:21:02,424 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntityType is Created Successfully in GlobalAdmin
+2022-05-04 17:21:02,532 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:21:02,533 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:21:04,365 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:21:04,366 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:21:04,366 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:21:04,367 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:21:04,481 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntitySubAPI)17.20.56
+2022-05-04 17:21:04,481 [main] DEBUG main.api.ExecuteAPILead - EntityType ID  Given i.e. dd189b34-8e90-4f06-8c44-5f4f2fd565af
+2022-05-04 17:21:04,482 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 34a2c875-bd02-4e91-89da-f72ec67a9e95
+2022-05-04 17:21:06,323 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntitySubType
+2022-05-04 17:21:06,325 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "56fde7b9-b613-4992-bafb-b60f1ef4fa2a"
+2022-05-04 17:21:06,325 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-04 17:21:06,325 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:21:06,326 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-04 17:21:06,326 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:21:06,327 [main] DEBUG main.api.ExecuteAPILead - ➜ EntitySubType ID ➞➞ 56fde7b9-b613-4992-bafb-b60f1ef4fa2a
+2022-05-04 17:21:06,328 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntitySubType is Created Successfully in GlobalAdmin
+2022-05-04 17:21:06,435 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-04 17:21:06,436 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-04 17:21:08,300 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-04 17:21:08,301 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-04 17:21:08,302 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-04 17:21:08,302 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-04 17:21:08,413 [main] DEBUG main.api.ExecuteAPILead - EntityType ID Given i.e. dd189b34-8e90-4f06-8c44-5f4f2fd565af
+2022-05-04 17:21:08,414 [main] DEBUG main.api.ExecuteAPILead - EntitySubype ID Given i.e. 56fde7b9-b613-4992-bafb-b60f1ef4fa2a
+2022-05-04 17:21:08,414 [main] DEBUG main.api.ExecuteAPILead - Value Given i.e. TValue
+2022-05-04 17:21:08,415 [main] DEBUG main.api.ExecuteAPILead - Value Given i.e. TSugges
+2022-05-04 17:21:10,100 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Entity
+2022-05-04 17:21:10,101 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ {"errors":{"Value":["The Value field is required."]},"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-4b64099e441bca47918d32bd0aab6db8-3855e60e5aae094a-00"}
+2022-05-04 17:21:10,102 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 400
+2022-05-04 17:21:10,102 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ [400]
+2022-05-04 17:21:10,103 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 400 Bad Request
+2022-05-04 17:21:10,104 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK] ≠≠ Actual ➨ [HTTP/1.1 400 Bad Request]
+2022-05-05 11:22:45,842 [main] DEBUG main.api.ExecuteAPILead - Execution Started...CREATE A NEW ENTITIES in GlobalAdmin
+2022-05-05 11:22:45,846 [main] DEBUG main.api.ExecuteAPILead - Base URL fetched Succeed i.e. https://lnmjapi.adappt.ai/
+2022-05-05 11:22:46,074 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-05 11:22:46,076 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-05 11:22:48,749 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-05 11:22:48,750 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:22:48,753 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:22:48,764 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-05 11:22:48,871 [main] DEBUG main.api.ExecuteAPILead - RegionName Given i.e. (API)11.22.48
+2022-05-05 11:22:48,871 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw48
+2022-05-05 11:22:48,871 [main] DEBUG main.api.ExecuteAPILead - Description Given i.e. Test_Description
+2022-05-05 11:22:48,871 [main] DEBUG main.api.ExecuteAPILead - DataCentre Given i.e. Test_DataCentre
+2022-05-05 11:22:48,872 [main] DEBUG main.api.ExecuteAPILead - Hosting Given i.e. Test_Hosting
+2022-05-05 11:22:50,471 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Region
+2022-05-05 11:22:50,485 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "2deb165b-ec11-48ee-880c-9b6fbe935e04"
+2022-05-05 11:22:50,485 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-05 11:22:50,486 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:22:50,487 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-05 11:22:50,487 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:22:50,489 [main] DEBUG main.api.ExecuteAPILead - ➜ Region ID ➞➞ 2deb165b-ec11-48ee-880c-9b6fbe935e04
+2022-05-05 11:22:50,493 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍  Region Created Successfully in GlobalAdmin
+2022-05-05 11:22:50,601 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-05 11:22:50,602 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-05 11:22:52,215 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-05 11:22:52,215 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:22:52,215 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:22:52,216 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-05 11:22:52,322 [main] DEBUG main.api.ExecuteAPILead - Name Given i.e. (JuAPI)11.22.52
+2022-05-05 11:22:52,323 [main] DEBUG main.api.ExecuteAPILead - RegionID Given i.e. 2deb165b-ec11-48ee-880c-9b6fbe935e04
+2022-05-05 11:22:52,323 [main] DEBUG main.api.ExecuteAPILead - Prefix Given i.e. Lw52
+2022-05-05 11:22:53,929 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Jurisdiction
+2022-05-05 11:22:53,929 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "63fb680f-ab39-4cbe-94c9-819e8dfe7673"
+2022-05-05 11:22:53,930 [main] DEBUG main.api.ExecuteAPILead - ➜ Jurisdiction ID ➞➞ 63fb680f-ab39-4cbe-94c9-819e8dfe7673
+2022-05-05 11:22:53,930 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-05 11:22:53,930 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:22:53,930 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-05 11:22:53,930 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:22:53,930 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 Jurisdiction Created Successfully in GlobalAdmin
+2022-05-05 11:22:54,037 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-05 11:22:54,038 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-05 11:22:55,708 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-05 11:22:55,709 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:22:55,709 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:22:55,710 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-05 11:22:55,811 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntityAPI)11.22.52
+2022-05-05 11:22:55,812 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 2deb165b-ec11-48ee-880c-9b6fbe935e04
+2022-05-05 11:22:57,401 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntityType
+2022-05-05 11:22:57,402 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "fc941ac0-8fcc-4c92-a7cc-7d0d6a54f57d"
+2022-05-05 11:22:57,402 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-05 11:22:57,403 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:22:57,403 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-05 11:22:57,403 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:22:57,403 [main] DEBUG main.api.ExecuteAPILead - ➜ EntityType ID ➞➞ fc941ac0-8fcc-4c92-a7cc-7d0d6a54f57d
+2022-05-05 11:22:57,403 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntityType is Created Successfully in GlobalAdmin
+2022-05-05 11:22:57,519 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-05 11:22:57,520 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-05 11:22:59,117 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-05 11:22:59,118 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:22:59,118 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:22:59,119 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-05 11:22:59,224 [main] DEBUG main.api.ExecuteAPILead - EntityType Name Given i.e. (EntitySubAPI)11.22.52
+2022-05-05 11:22:59,224 [main] DEBUG main.api.ExecuteAPILead - EntityType ID  Given i.e. fc941ac0-8fcc-4c92-a7cc-7d0d6a54f57d
+2022-05-05 11:22:59,224 [main] DEBUG main.api.ExecuteAPILead - Region ID Given i.e. 2deb165b-ec11-48ee-880c-9b6fbe935e04
+2022-05-05 11:23:01,389 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/EntitySubType
+2022-05-05 11:23:01,390 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ "bce2807d-619a-41c4-8245-a678750bbd72"
+2022-05-05 11:23:01,391 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 200
+2022-05-05 11:23:01,391 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:23:01,391 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 200 OK
+2022-05-05 11:23:01,391 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:23:01,391 [main] DEBUG main.api.ExecuteAPILead - ➜ EntitySubType ID ➞➞ bce2807d-619a-41c4-8245-a678750bbd72
+2022-05-05 11:23:01,391 [main] DEBUG main.api.ExecuteAPILead - ------------------------✔️👍 EntitySubType is Created Successfully in GlobalAdmin
+2022-05-05 11:23:01,501 [main] DEBUG main.api.ExecuteAPILead - Username Given ➜➜ (LexisnexisAdmin@adappt.co.in)
+2022-05-05 11:23:01,502 [main] DEBUG main.api.ExecuteAPILead - Password Given ➜➜(LonestarAdmin@123)
+2022-05-05 11:23:03,153 [main] DEBUG main.api.ExecuteAPILead - ⏪ PRE_POST ⏩  Requested for: https://lnmjapi.adappt.ai/api/v1/Account/token
+2022-05-05 11:23:03,154 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [200] == Actual ➨ [200]
+2022-05-05 11:23:03,154 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...Expected ➨ [HTTP/1.1 200 OK] == Actual ➨ [HTTP/1.1 200 OK]
+2022-05-05 11:23:03,154 [main] DEBUG main.api.ExecuteAPILead - ✔️PASS ! 🙂...BEARER TOKEN Generated Succeed 
+2022-05-05 11:23:03,260 [main] DEBUG main.api.ExecuteAPILead - EntityType ID Given i.e. fc941ac0-8fcc-4c92-a7cc-7d0d6a54f57d
+2022-05-05 11:23:03,260 [main] DEBUG main.api.ExecuteAPILead - EntitySubype ID Given i.e. bce2807d-619a-41c4-8245-a678750bbd72
+2022-05-05 11:23:03,261 [main] DEBUG main.api.ExecuteAPILead - Value Given i.e. TValue
+2022-05-05 11:23:03,261 [main] DEBUG main.api.ExecuteAPILead - Value Given i.e. TSugges
+2022-05-05 11:23:04,862 [main] DEBUG main.api.ExecuteAPILead - ⏪ POST ⏩ Requested for https://lnmjapi.adappt.ai/api/v1/Entity
+2022-05-05 11:23:04,863 [main] DEBUG main.api.ExecuteAPILead - Actual JsonBody Result is ➨➨ {"errors":{"Value":["The Value field is required."]},"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-297186e57965a14bbb48d3ac8dcddfc6-467e038febe00f42-00"}
+2022-05-05 11:23:04,863 [main] DEBUG main.api.ExecuteAPILead - Actual StatusCode ➨➨ 400
+2022-05-05 11:23:04,863 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [200] ≠≠ Actual ➨ [400]
+2022-05-05 11:23:04,864 [main] DEBUG main.api.ExecuteAPILead - Actual Status_Info is ➨➨ HTTP/1.1 400 Bad Request
+2022-05-05 11:23:04,864 [main] DEBUG main.api.ExecuteAPILead - ❌ Fail ! 🙁...Expected ➨ [HTTP/1.1 200 OK] ≠≠ Actual ➨ [HTTP/1.1 400 Bad Request]

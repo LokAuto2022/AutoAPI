@@ -650,4 +650,27 @@ public class AllBodyStructure extends Environment {
 	    httprequest.body(requestParams.toJSONString());
 		Subcategory="CreateEntitySubTypeClone";
 	}
+	@SuppressWarnings("unchecked")
+	public void Creation_Entities() throws InterruptedException, IOException {
+
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+
+		requestParams.put("EntityTypeId", uniqueide1);
+		log.debug("EntityType ID Given i.e. " + uniqueide1);
+		
+		requestParams.put("EntitySubTypeId", uniqueides1);
+		log.debug("EntitySubype ID Given i.e. " + uniqueides1);
+		
+		String Value = pro.getProperty("Value");
+		requestParams.put("Name", Value);
+		log.debug("Value Given i.e. " + Value);
+		
+		String Suggestion = pro.getProperty("Suggestion");
+		requestParams.put("Name", Suggestion);
+		log.debug("Suggestion Given i.e. " + Suggestion);
+		
+		httprequest.body(requestParams.toJSONString());
+		Subcategory="CreateEntitySubTypeClone";
+	}
 }

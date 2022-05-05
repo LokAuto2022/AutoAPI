@@ -69,9 +69,11 @@ public class ExecuteAPILead extends Environment {
 				FrameSuite.EntityType_GET_View(url, str1, str2, str3, str4, str5, str6, str7);
 			}
 			if (executefile.equals("ENTITY_SUBTYPE")) {
-				log.debug("Execution Started...VIEW ALL "+ executefile +" in "+user);
-				log.debug("Base URL fetched Succeed i.e. " + url);
-				FrameSuite.EntitySubType_GET_View_EntityTypeID(url, str1, str2, str3, str4, str5, str6, str7);
+				if (Subcategory.equals("BaseLine")) {
+					log.debug("Execution Started...VIEW ALL "+ executefile +" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.EntitySubType_GET_View_EntityTypeID(url, str1, str2, str3, str4, str5, str6, str7);
+				}
 			}
 		} catch (Exception e) {
 			log.debug("Failing(!)...Exception occur! on GET ALL Request in layout_2 " + e);
@@ -130,6 +132,13 @@ public class ExecuteAPILead extends Environment {
 					log.debug("Execution Started...CREATE A NEW "+ executefile +" Clone in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.EntitySubType_POST_Create_Clone(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
+			}
+			if (executefile.equals("ENTITIES")) {
+				if (Subcategory.equals("BaseLine")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.Entities_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);	
 				}
 			}
 		} catch (Exception e) {

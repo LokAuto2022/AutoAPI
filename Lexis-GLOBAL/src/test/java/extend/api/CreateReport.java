@@ -38,6 +38,9 @@ public class CreateReport extends Environment {
 			if (executefile.equals("ENTITY_SUBTYPE")) {
 				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
 			}
+			if (executefile.equals("ENTITIES")) {
+				sparkreport = new ExtentSparkReporter(finalreport + "\\" + executefile + " " + timestamp() + ".html");
+			}
 			sparkreport.config().setTheme(Theme.DARK);
 			sparkreport.config().setDocumentTitle("API Automation Report");
 			htmlreport.attachReporter(sparkreport);

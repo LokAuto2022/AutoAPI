@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-  <classes>
-      <class name="testsuite2.test.EntitySubType_DELETE_with_distinct_EntityID"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="scenarios.api.Entities_BaseLine"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite2.test.Entities_POST_with_indistinct" />
+			<class name="testsuite2.test.Entities_DELETE_with_indistinct" />
+			<class name="testsuite2.test.Entities_PUT_with_distinct_EntityID" />
+			<class name="testsuite2.test.Entities_GET_with_distinct_EntityID" />
+			
+			<class name="scenarios.api.Entities_EntitySubType"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite2.test.Entities_GET_with_distinct_with_EntitySubTypeID" />
+			
+			<class name="scenarios.api.CreateReport_GetEntityList"></class>
+			<class name="extend.api.CreateReport"></class>
+			<class name="testsuite2.test.Entities_GET_with_distinct_GetEntitylist" />
+			
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
