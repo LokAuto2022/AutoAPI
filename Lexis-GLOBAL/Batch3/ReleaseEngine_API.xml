@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testsuite5.test.RuleEngine_GET_with_GetForReleaseConfiguration"/>
+      <class name="testsuite5.test.RuleEngine_DELETE_with_distinct_DeleteByNameAndRedionID"/>
+      <class name="testsuite5.test.RuleEngine_GET_with_GetPageList"/>
+      <class name="testsuite5.test.RuleEngine_POST_with_CreateNewVersion"/>
+      <class name="testsuite5.test.RuleEngine_DELETE_with_distinct_Delete_ID"/>
+      <class name="testsuite5.test.RuleEngine_POST_with_Indistinct"/>
+      <class name="testsuite5.test.RuleEngine_GET_with_GetGlobalAndRegion"/>
+      <class name="testsuite5.test.RuleEngine_GET_with_GetCountByCategory"/>
+      <class name="testsuite5.test.RuleEngine_GET_with_GetVersionByName"/>
+      <class name="testsuite5.test.RuleEngine_GET_with_GetAllVersionByNameAndRegion"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

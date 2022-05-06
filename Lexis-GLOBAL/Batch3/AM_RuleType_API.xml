@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testsuite4.test.AM_RuleType_GET_with_GetPageList"/>
+      <class name="testsuite4.test.AM_RuleType_PUT_with_distinct_ID"/>
+      <class name="testsuite4.test.AM_RuleType_DELETE_with_distinct_ID"/>
+      <class name="testsuite4.test.AM_RuleType_POST_with_Indistinct"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testsuite4.test.ADDIN_GET_with_distinct_GetPageResult"/>
+      <class name="testsuite4.test.ADDIN_GET_with_distinct_ID"/>
+      <class name="testsuite4.test.ADDIN_POST_with_Indistinct"/>
+      <class name="testsuite4.test.ADDIN_DELETE_with_addinID_AllFlag_RegionID"/>
+      <class name="testsuite4.test.ADDIN_GET_with_distinct_GetGlobalAndRegion"/>
+      <class name="testsuite4.test.ADDIN_GET_with_distinct_GetCountByCategory"/>
+      <class name="testsuite4.test.ADDIN_POST_with_CreateNewVersion"/>
+      <class name="testsuite4.test.ADDIN_GET_with_distinct_GetALLVersion_ID"/>
+      <class name="testsuite4.test.ADDIN_GET_with_distinct_GetALL"/>
+      <class name="testsuite4.test.ADDIN_GET_with_distinct_GetAllVersionByNameAndRegion"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testsuite4.test.AM_RuleCategoryAndRules_POST_Indistinct"/>
+      <class name="testsuite4.test.AM_RuleCategoryAndRules_GET_with_GetByRuleCategoryID_ID"/>
+      <class name="testsuite4.test.AM_Rule_Category_POST_Indistinct"/>
+      <class name="testsuite4.test.AM_Rule_Category_PUT_with_ID"/>
+      <class name="testsuite4.test.AM_RuleCategoryAndRules_DELETE_Indistinct"/>
+      <class name="testsuite4.test.AM_RuleCategoryAndRules_DELETE_with_DeleteByRulesIdsAsync"/>
+      <class name="testsuite4.test.AM_Rule_Category_DELETE_Indistinct"/>
+      <class name="testsuite4.test.AM_Rule_Category_PUT_with_GetPageList"/>
+      <class name="testsuite4.test.AM_RuleCategoryAndRules_GET_with_GetByRuleID_ID"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

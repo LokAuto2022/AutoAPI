@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testsuite6.test.ReleaseConfig_GET_with_GetVersionForResources_ResourceType_ID"/>
+      <class name="testsuite6.test.ReleaseConfig_POST_with_AssignToJurisdiction"/>
+      <class name="testsuite6.test.ReleaseConfig_PATCH_SetToDraft"/>
+      <class name="testsuite6.test.ReleaseConfig_GET_with_GetCountByCategory"/>
+      <class name="testsuite6.test.ReleaseConfig_POST_with_Indistinct"/>
+      <class name="testsuite6.test.ReleaseConfig_POST_with_Clone"/>
+      <class name="testsuite6.test.ReleaseConfig_GET_with_GetAllData_ID"/>
+      <class name="testsuite6.test.ReleaseConfig_GET_with_GetPageResult"/>
+      <class name="testsuite6.test.ReleaseConfig_POST_with_AssignResources"/>
+      <class name="testsuite6.test.ReleaseConfig_PATCH_Publish"/>
+      <class name="testsuite6.test.ReleaseConfig_POST_with_AssignPreviewUsers"/>
+      <class name="testsuite6.test.ReleaseConfig_DELETE_with_ID"/>
+      <class name="testsuite6.test.ReleaseConfig_PUT_with_ID"/>
+      <class name="testsuite6.test.ReleaseConfig_PATCH_SetToPreview"/>
+      <class name="testsuite6.test.ReleaseConfig_GET_with_GetEnum"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

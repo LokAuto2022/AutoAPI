@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testsuite4.test.Addin_Config_GET_with_distinct_ID"/>
+      <class name="testsuite4.test.Addin_Config_GET_with_GetAddinConfigForReleaseConfig_RegionID"/>
+      <class name="testsuite4.test.Addin_Config_POST_with_Indistinct"/>
+      <class name="testsuite4.test.Addin_Config_POST_with_Clone"/>
+      <class name="testsuite4.test.Addin_Config_GET_with_IsVersionChangeEnabled_ID"/>
+      <class name="testsuite4.test.Addin_Config_PUT_with_StartVersionChange_ID"/>
+      <class name="testsuite4.test.Addin_Config_GET_with_GetPageList"/>
+      <class name="testsuite4.test.Addin_Config_POST_with_RollBackVersion_ID"/>
+      <class name="testsuite4.test.Addin_Config_POST_with_distinct_CreateNewVersion"/>
+      <class name="testsuite4.test.Addin_Config_DELETE_with_distinct_ID"/>
+      <class name="testsuite4.test.Addin_Config_GET_with_GetVersionofAddinConfig_Name_RegionID"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
