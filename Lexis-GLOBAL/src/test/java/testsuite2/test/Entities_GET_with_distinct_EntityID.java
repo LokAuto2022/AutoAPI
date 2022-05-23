@@ -15,7 +15,7 @@ public class Entities_GET_with_distinct_EntityID extends Environment {
 	@Test(dataProvider = "ProbaseURL", dataProviderClass = DP_Base.class)
 	public static void ViewSpecific_Entities(String url) throws IOException, InterruptedException {
 		try {
-			sheetname = "Entities_Delete";
+			sheetname = "Entities_View(ID)";
 			FileIO.coreutility(sheetname);
 			Operation.worksheet(url);
 		} catch (Exception e) {

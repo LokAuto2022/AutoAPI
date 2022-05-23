@@ -552,10 +552,9 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.GET, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					test.log(Status.INFO,
-							"GET(ID) Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.GET, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					test.log(Status.INFO,"GET(ID) Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
@@ -568,10 +567,10 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.GET, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.GET, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"GET(ID) Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"GET(ID) Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
@@ -584,10 +583,10 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.GET, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.GET, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"GET(ID) Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"GET(ID) Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
@@ -600,10 +599,10 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.GET, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.GET, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"GET(ID) Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"GET(ID) Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
@@ -616,10 +615,10 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.GET, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.GET, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ GET_SPF ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"GET(ID) Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"GET(ID) Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹..Exception occur on Spcefic GET Request " + e);
@@ -760,11 +759,11 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str4 + "/" + UsersID + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str4 + "/" + UsersID + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/"
-								+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method ➜ " + url + str4 + "/" + UsersID + "/"
-								+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 					} catch (Exception e) {
 						log.debug(
@@ -782,12 +781,12 @@ public class MANRequestmodule extends Environment {
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
 								str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/"
-										+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+										+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7"
-								+ "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS,
 								"GET (ID) Method ➜ " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/"
-										+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+										+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 					} catch (Exception e) {
 						log.debug(
@@ -804,11 +803,11 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str4 + "/" + UsersID + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str4 + "/" + UsersID + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/"
-								+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method ➜ " + url + str4 + "/" + UsersID + "/"
-								+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 					} catch (Exception e) {
 						log.debug("Failing ! ☹...Exception occur on GET Specific Method in UserRegion Include UserID "
@@ -824,11 +823,11 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str4 + "/" + UsersID + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str4 + "/" + UsersID + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/"
-								+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method ➜ " + url + str4 + "/" + UsersID + "/"
-								+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 					} catch (Exception e) {
 						log.debug("Failing ! ☹...Exception occur on GET Specific Method in UserRegion Include UserID "
@@ -845,12 +844,12 @@ public class MANRequestmodule extends Environment {
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
 								str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/"
-										+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+										+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7"
-								+ "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS,
 								"GET (ID) Method ➜ " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/"
-										+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+										+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 					} catch (Exception e) {
 						log.debug("Failing ! ☹...Exception occur on GET Specific Method in UserRegion Include UserID "
@@ -867,12 +866,12 @@ public class MANRequestmodule extends Environment {
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
 								str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/"
-										+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+										+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7"
-								+ "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								+ "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS,
 								"GET (ID) Method ➜ " + url + str4 + "/" + "027cae79-7772-4912-965b-8a206e17eee7" + "/"
-										+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+										+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 					} catch (Exception e) {
 						log.debug("Failing ! ☹...Exception occur on GET Specific Method in UserRegion Include UserID "
@@ -1022,9 +1021,9 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug(
-								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 					} catch (Exception e) {
@@ -1039,9 +1038,9 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug(
-								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 					} catch (Exception e) {
@@ -1056,9 +1055,9 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug(
-								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 					} catch (Exception e) {
@@ -1073,9 +1072,9 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug(
-								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 					} catch (Exception e) {
@@ -1090,9 +1089,9 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						log.debug(
-								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+								"⏪ GET_SPF ⏩ Request for " + url + str7 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 						test.log(Status.PASS, "GET (ID) Method Accomplished ( ! ) for Specific Viewing");
 
 					} catch (Exception e) {
@@ -1210,9 +1209,9 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.DELETE,
 							str3 + "/" + "af976921-01e1-45d1-97fc-eac917b3dc19");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str3 + "/"
-							+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"DELETE Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"DELETE Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
@@ -1228,9 +1227,9 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.DELETE,
 							str3 + "/" + "af976921-01e1-45d1-97fc-eac917b3dc19");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str3 + "/"
-							+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"DELETE Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"DELETE Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
@@ -1246,9 +1245,9 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.DELETE,
 							str3 + "/" + "af976921-01e1-45d1-97fc-eac917b3dc19");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str3 + "/"
-							+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"DELETE Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"DELETE Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
@@ -1264,9 +1263,9 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.DELETE,
 							str3 + "/" + "af976921-01e1-45d1-97fc-eac917b3dc19");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str3 + "/"
-							+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"DELETE Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"DELETE Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
@@ -1282,9 +1281,9 @@ public class MANRequestmodule extends Environment {
 					httpresponse = httprequest.request(Method.DELETE,
 							str3 + "/" + "af976921-01e1-45d1-97fc-eac917b3dc19");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str3 + "/"
-							+ "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.INFO,
-							"DELETE Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							"DELETE Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on DELETE Request " + e);
@@ -1315,9 +1314,9 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.DELETE, str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 				} catch (Exception e) {
@@ -1332,9 +1331,9 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.DELETE, str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 				} catch (Exception e) {
@@ -1349,9 +1348,9 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.DELETE, str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 				} catch (Exception e) {
@@ -1366,9 +1365,9 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.DELETE, str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 				} catch (Exception e) {
@@ -1383,9 +1382,9 @@ public class MANRequestmodule extends Environment {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
 					httpresponse = httprequest.request(Method.DELETE, str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					log.debug("⏪ DELETE ⏩ Request initiated for " + url + str4 + "/"
-							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+							+ "027cae79-7772-4912-965b-8a206e17eee7" + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 					test.log(Status.PASS, "DELETE (ID) Method Accomplished (!) for Specific Deletion");
 
 				} catch (Exception e) {
@@ -1598,9 +1597,9 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
@@ -1612,9 +1611,9 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
@@ -1626,9 +1625,9 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);
@@ -1640,9 +1639,9 @@ public class MANRequestmodule extends Environment {
 				try {
 					httprequest.headers("Content-Type", "application/json");
 					httprequest.header("Authorization", "Bearer " + token);
-					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
-					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "480c3e49-ae9b-403e-9f1c-1a01a40e905b");
+					httpresponse = httprequest.request(Method.PUT, str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					log.debug("⏪ PUT ⏩ Request for " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+					test.log(Status.INFO, "PUT Method  ➜ " + url + str3 + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
 
 				} catch (Exception e) {
 					log.debug("Failing ! ☹...Exception occur! on PUT Specific Request " + e);

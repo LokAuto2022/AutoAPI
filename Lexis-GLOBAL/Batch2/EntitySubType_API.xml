@@ -5,22 +5,22 @@
 		<classes>
 			<class name="scenarios.api.EntitySubType_EntityTypeId_BaseLine"></class>
 			<class name="extend.api.CreateReport"></class>
-			<!-- <class name="testsuite2.test.EntitySubType_POST_with_indistinct" /> -->
+			<class name="testsuite2.test.EntitySubType_POST_with_indistinct" />
 			<class name="testsuite2.test.EntitySubType_GET_with_indistinct" />
-			<!-- <class name="testsuite2.test.EntitySubType_PUT_with_indistinct" />
-			<class name="testsuite2.test.EntityType_DELETE_with_distinct_EntityTypeID" /> -->
+			<class name="testsuite2.test.EntitySubType_PUT_with_indistinct" />
+			<class name="testsuite2.test.EntityType_DELETE_with_distinct_EntityTypeID" />
 
-			<!-- <class name="scenarios.api.EntitySubType_EntityTypeId_Clone"></class>
+			<class name="scenarios.api.EntitySubType_EntityTypeId_Clone"></class>
 			<class name="extend.api.CreateReport"></class>
-			<class name="testsuite2.test.EntitySubType_POST_with_distinct_Clone" /> -->
+			<class name="testsuite2.test.EntitySubType_POST_with_distinct_Clone" />
 
-			<!-- <class name="scenarios.api.EntitySubType_EntityTypeId_IsVersionChangedEnabled"></class>
+			<class name="scenarios.api.EntitySubType_EntityTypeId_IsVersionChangedEnabled"></class>
 			<class name="extend.api.CreateReport"></class>
 			<class name="testsuite2.test.EntitySubType_GET_with_distinct_IsVersionChangedEnabled" />
 			
 			<class name="scenarios.api.EntitySubType_EntityTypeId_StartVersionChange"></class>
 			<class name="extend.api.CreateReport"></class>
-			<class name="testsuite2.test.EntitySubType_PUT_with_distinct_StartVersionChange" /> -->
+			<class name="testsuite2.test.EntitySubType_PUT_with_distinct_StartVersionChange" />
 			
 			<!-- <class name="scenarios.api.EntitySubType_EntityTypeId_CreateNewVesion"></class>
 			<class name="extend.api.CreateReport"></class>
@@ -33,11 +33,11 @@
 			<!-- <class name="scenarios.api.EntitySubType_EntityTypeId_RollbackVersionChanges"></class>
 			<class name="extend.api.CreateReport"></class>
 			<class name="testsuite2.test.EntitySubType_POST_with_distinct_RollbackVersionChanges" /> -->
-			
-	 </classes>
+ 
+</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
 
+<class>
 
-
-
+</class>

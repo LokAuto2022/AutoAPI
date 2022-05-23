@@ -193,13 +193,13 @@ public class FrameSuite extends Environment {
 				Resultantreport.cReateRegion();
 
 				httprequest = RestAssured.given();
-				// TODO Token Generation and Store it
+				// TODO Token Generation and Store it	
 				PrePostRequest.tokengeneration(url, str1);
 				referencereqresponse.GETresponseSPF(url, str2, str3, str4, str5, str6, str7);
 				VerifyJsonResult.ensurebodyToken();
 				VerifyStatusCode.ensureCode200();
 				VerifyStatusLine.ensureLine200();
-				// VerifyResponseTime.ensure3(url, str2);
+				// VerifyResponseTime.ensure3(url, str2);	
 				Resultantreport.vIewSpecificRegion();
 				htmlreport.flush();
 
@@ -988,8 +988,8 @@ public class FrameSuite extends Environment {
 				PrePostRequest.tokengeneration(url, str1);
 				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
 				VerifyJsonResult.ensurebodyToken();
-				VerifyStatusCode.ensureCode403();
-				VerifyStatusLine.ensureLine403();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
 				// VerifyResponseTime.ensure2(url, str2, str3, str4);
 				Resultantreport.vIewUserRegion();
 				htmlreport.flush();
@@ -1624,8 +1624,8 @@ public class FrameSuite extends Environment {
 				PrePostRequest.tokengeneration(url, str1);
 				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
 				VerifyJsonResult.ensurebodyToken();
-				VerifyStatusCode.ensureCode403();
-				VerifyStatusLine.ensureLine403();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
 				Resultantreport.vIewUserRegion();
 				// TODO Stage 2
 				httprequest = RestAssured.given();
@@ -1938,8 +1938,8 @@ public class FrameSuite extends Environment {
 				PrePostRequest.tokengeneration(url, str1);
 				referencereqresponse.GETresponseALL(url, str2, str3, str4, str5, str6, str7);
 				VerifyJsonResult.ensurebodyToken();
-				VerifyStatusCode.ensureCode403();
-				VerifyStatusLine.ensureLine403();
+				VerifyStatusCode.ensureCode200();
+				VerifyStatusLine.ensureLine200();
 				// ExtractJsonValue.fromResult();
 				Resultantreport.vIewUserRegion();
 				// TODO Stage 3
@@ -2198,7 +2198,7 @@ public class FrameSuite extends Environment {
 				// VerifyResponseTime.ensure3(url, str2);
 
 				// TODO End the HTML Report
-
+				Resultantreport.dEleteUserRegion();
 				htmlreport.flush();
 				Subcategory = "UserIDRegionID";
 

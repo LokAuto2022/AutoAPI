@@ -1,4 +1,4 @@
-package testsuite3.test;
+package testsuite4.test;
 
 import java.io.IOException;
 

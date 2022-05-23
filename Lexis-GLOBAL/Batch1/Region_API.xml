@@ -8,12 +8,16 @@
 			<class name="testsuite1.test.Region_POST_Create" />
 			<class name="testsuite1.test.Region_GET_View" />
 		    <class name="testsuite1.test.Region_PUT_Update" />
+		    <class name="testsuite1.test.Region_DELETE_Delete" />
 			<class name="testsuite1.test.Region_GET_View_ID" />
-			<class name="testsuite1.test.Region_DELETE_Delete" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
 
 
 
-				
+
+
+
+
+
