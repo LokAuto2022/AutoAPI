@@ -2,6 +2,8 @@ package depend_1.api;
 
 import java.io.IOException;
 import java.util.ArrayList;
+
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
@@ -509,16 +511,19 @@ public class AllBodyStructure extends Environment {
 
 	}
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@SuppressWarnings({ "unchecked" })
 	public void creation_UserJurisdiction() throws InterruptedException, IOException {
 		if (user.equals("GlobalAdmin")) {
 			requestParams = new JSONObject();
 			requestParams.put("UserId", UsersID);
 			log.debug("UserID Given i.e. " + UsersID);
-			@JsonProperty("JurisdictionId")
-			ArrayList<String> jurisdictionId = new ArrayList<String>();
-			((ArrayList) jurisdictionId).add(uniqueidj1);
-			requestParams.put("JurisdictionID", jurisdictionId);
+			
+			//@JsonProperty("JurisdictionId")
+			//ArrayList<String> jurisdictionId = new ArrayList<String>();
+			//((ArrayList) jurisdictionId).add(uniqueidj1);
+			//requestParams.put("JurisdictionID", jurisdictionId);
+			
+			requestParams.put("JurisdictionID", uniqueidj1);
 			log.debug("JurisdictionID Given i.e. " + uniqueidj1);
 			httprequest.body(requestParams.toJSONString());
 		}
@@ -556,17 +561,20 @@ public class AllBodyStructure extends Environment {
 	@SuppressWarnings("unchecked")
 	public void getmyjurisdictionID_UserJurisdiction() {
 		requestParams = new JSONObject();
+		
+		//Unused One 
 		@JsonProperty("MyArray")
 		ArrayList<String> getmyJurisdictionID = new ArrayList<String>();
-		// getmyJurisdictionID.add(UsersID);
-		// getmyJurisdictionID.add(uniqueidr1);
 		getmyJurisdictionID.add(uniqueidj1);
-		requestParams.put("JurisdictionID", getmyJurisdictionID);
-		log.debug("JurisdictionID Given i.e. " + getmyJurisdictionID);
-		httprequest.body(requestParams.toJSONString());
-		// payload="[\r\n"
-		// + " \"string\"\r\n"
-		// + "]";
+		
+		//Used One
+		JSONArray jurisdictionID=new JSONArray();
+		jurisdictionID.add(uniqueidj1);
+		
+		//
+		requestParams.put("JurisdictionID", jurisdictionID);
+		log.debug("JurisdictionID Given i.e. " + jurisdictionID);
+		httprequest.body(jurisdictionID.toJSONString());
 	}
 
 	@SuppressWarnings("unchecked")
@@ -672,5 +680,29 @@ public class AllBodyStructure extends Environment {
 		
 		httprequest.body(requestParams.toJSONString());
 		Subcategory="CreateEntitySubTypeClone";
+	}
+
+	@SuppressWarnings("unchecked")
+	public void CreateNewVersion_EntitySubType() throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		requestParams = new JSONObject();
+		SupportProperties.CRUDEntity();
+
+		requestParams.put("EntityTypeId", uniqueide1);
+		log.debug("EntityTypeId ID Given i.e. " + uniqueide1);
+		
+		requestParams.put("EntitySubTypeId", uniqueides1);
+		log.debug("EntitySubTypeId ID Given i.e. " + uniqueides1);
+		
+		requestParams.put("EntityTypeName", "TestAccepta");
+		log.debug("EntitySubTypeId ID Given i.e. " + "TestAccepta");
+		
+		requestParams.put("EntitySubTypeName", "TestOptan");
+		log.debug("EntitySubTypeName ID Given i.e. " + "TestOptan");
+		
+		requestParams.put("Version", "1");
+		log.debug("Version ID Given i.e. " + "1");
+		
+		httprequest.body(requestParams.toJSONString());
 	}
 }

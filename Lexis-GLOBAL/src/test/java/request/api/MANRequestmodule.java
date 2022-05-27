@@ -284,6 +284,19 @@ public class MANRequestmodule extends Environment {
 				Assert.fail();
 			}
 		}
+		if (Subcategory.equals("CreateNewVersion")) { 
+			try {
+				httprequest.headers("Content-Type", "application/json");
+				httprequest.header("Authorization", "Bearer " + token);
+				httpresponse = httprequest.request(Method.POST, str8 +"/CreateNewVersion");
+				log.debug("⏪ POST ⏩ Requested for " + url + str8+"/CreateNewVersion");
+				test.log(Status.INFO, "POST Method  ➜ " + url + str8+"/CreateNewVersion");
+			} catch (Exception e) {
+				log.debug("Failing ! ☹....Exception occur! on POST Request " + e);
+				test.log(Status.FAIL, "FAIL, unable to access POST Method for UserRegion");
+				Assert.fail();
+			}
+		}
 	}
 		if (executefile.equals("ENTITIES")) {
 			if (Subcategory.equals("BaseLine")) {
@@ -759,11 +772,11 @@ public class MANRequestmodule extends Environment {
 						httprequest.headers("Content-Type", "application/json");
 						httprequest.header("Authorization", "Bearer " + token);
 						httpresponse = httprequest.request(Method.GET,
-								str4 + "/" + UsersID + "/" + "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+								str4 + "/" + UsersID + "/" + uniqueidr1);
 						log.debug("⏪ GET_SPF ⏩ Request for " + url + str4 + "/" + UsersID + "/"
-								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+								+ uniqueidr1);
 						test.log(Status.PASS, "GET (ID) Method ➜ " + url + str4 + "/" + UsersID + "/"
-								+ "b5530724-b3cd-4ca9-94e2-7f6e5d8b9f08");
+								+ uniqueidr1);
 
 					} catch (Exception e) {
 						log.debug(

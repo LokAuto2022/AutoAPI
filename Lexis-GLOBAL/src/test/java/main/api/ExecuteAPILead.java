@@ -112,7 +112,7 @@ public class ExecuteAPILead extends Environment {
 					FrameSuite.UserJurisdiction_POST_Create(url, str1, str2, str3, str4, str5, str6, str7);
 				}
 				if (Subcategory.equals("GetByJurisdictionID")) {
-					log.debug("Execution Started...GET_BY_JURISDICTION_ID"+ executefile +" in "+user);
+					log.debug("Execution Started...GetByJurisdictionID "+ executefile +" in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.UserJurisdiction_POST_Create_GetByJurisID(url, str1, str2, str3, str4, str5, str6, str7);
 				}
@@ -132,6 +132,11 @@ public class ExecuteAPILead extends Environment {
 					log.debug("Execution Started...CREATE A NEW "+ executefile +" Clone in "+user);
 					log.debug("Base URL fetched Succeed i.e. " + url);
 					FrameSuite.EntitySubType_POST_Create_Clone(url, str1, str2, str3, str4, str5, str6, str7);	
+				}
+				if (Subcategory.equals("CreateNewVesion")) {
+					log.debug("Execution Started...CREATE A NEW "+ executefile +" Clone in "+user);
+					log.debug("Base URL fetched Succeed i.e. " + url);
+					FrameSuite.EntitySubType_POST_Create_CreateNewVersion(url, str1, str2, str3, str4, str5, str6, str7);	
 				}
 			}
 			if (executefile.equals("ENTITIES")) {

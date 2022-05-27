@@ -365,6 +365,17 @@ public class Resultantreport extends Environment {
 			test.log(Status.INFO, "------------------------❌👎 EntitySubType is NOT Deleted in "+user);
 		}
 	}
+	public static void CreateNewVersion_EntitySubType() {
+		if (extendFinalOutput.equals("Pass")) {
+			log.debug("------------------------✔️👍 CreateNewVersion EntitySubType is Created Successfully in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------✔️👍 CreateNewVersion EntitySubType is Created Successfully in "+user);
+		} else {
+			log.debug("------------------------❌👎 CreateNewVersion EntitySubType is NOT Created in "+user);
+			System.out.println();
+			test.log(Status.INFO, "------------------------❌👎 CreateNewVersion EntitySubType is NOT Created in "+user);
+		}
+	}
 	public static void cReateEntitySubTypeClone() {
 		if (extendFinalOutput.equals("Pass")) {
 			log.debug("------------------------✔️👍 EntitySubTypeClone is Created Successfully in "+user);
