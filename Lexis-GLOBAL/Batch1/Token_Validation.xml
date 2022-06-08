@@ -9,6 +9,6 @@
 			<class name="scenarios.api.Token_Validation_Invalid"></class>
 			<class name="extend.api.CreateReport"></class>
 			<class name="testsuite1.test.Token_Validation_Invalid" />
-		</classes>
+	   </classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

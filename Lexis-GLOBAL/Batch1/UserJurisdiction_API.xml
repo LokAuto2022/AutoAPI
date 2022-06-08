@@ -24,10 +24,11 @@
       <class name="extend.api.CreateReport"></class>
       <class name="testsuite1.test.UserJurisdiction_GET_with_distinct_GetMyJurisdictions"/>
       <class name="testsuite1.test.UserJurisdiction_PUT_with_distinct_UpdateDefaultJurisdiction_with_JurisdictionID_UserID"/>
-      
-    </classes>
+   </classes> 
   </test> <!-- Test --> 
 </suite> <!-- Suite -->
+
+
 
 
 

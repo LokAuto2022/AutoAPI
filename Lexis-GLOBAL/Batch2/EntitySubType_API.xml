@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="scenarios.api.EntitySubType_EntityTypeId_BaseLine"></class>
+    <class name="scenarios.api.EntitySubType_EntityTypeId_BaseLine"></class>
 	 <class name="extend.api.CreateReport"></class>
       <class name="testsuite2.test.EntitySubType_POST_with_indistinct"/>
       <class name="testsuite2.test.EntitySubType_GET_with_indistinct" />
@@ -22,16 +22,39 @@
 	  <class name="extend.api.CreateReport"></class>
       <class name="testsuite2.test.EntitySubType_PUT_with_distinct_StartVersionChange" />
       
-      <class name="scenarios.api.EntitySubType_EntityTypeId_CreateNewVesion"></class>  
-	  <class name="extend.api.CreateReport"></class>               
+      <!-- 12 Testcases -->
+      
+      <!-- <class name="scenarios.api.EntitySubType_EntityTypeId_CreateNewVesion"></class>  
+	  <class name="extend.api.CreateReport"></class>               	
       <class name="testsuite2.test.EntitySubType_POST_with_distinct_CreateNewVersion" />
       
-      <!-- <class name="scenarios.api.EntitySubType_EntityTypeId_RollbackVersionChanges"></class>
+      <class name="scenarios.api.EntitySubType_EntityTypeId_RollbackVersionChanges"></class>
 	  <class name="extend.api.CreateReport"></class>
-      <class name="testsuite2.test.EntitySubType_POST_with_distinct_RollbackVersionChanges" /> -->
+      <class name="testsuite2.test.EntitySubType_POST_with_distinct_RollbackVersionChanges" />
       
-       <!-- <class name="testsuite2.test.EntitySubType_POST_with_distinct_GetByEntityTypeId"/> -->
-      <!-- <class name="testsuite2.test.EntitySubType_GET_with_distinct_EntityTypeID"/> -->	
-    </classes>
-  </test> <!-- Test -->
+      <class name="scenarios.api.EntitySubType_GET_with_distinct_EntityTypeID"></class>
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite2.test.EntitySubType_GET_with_distinct_EntityTypeID"/>
+      
+      <class name="scenarios.api.EntitySubType_POST_with_distinct_GetByEntityTypeId"> </class>
+      <class name="extend.api.CreateReport"></class>
+      <class name="testsuite2.test.EntitySubType_POST_with_distinct_GetByEntityTypeId"/> -->
+    
+     </classes>
+   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+

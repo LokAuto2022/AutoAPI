@@ -12,12 +12,11 @@
 			<class name="testsuite1.test.Region_GET_View_ID" />
 		</classes>
 	</test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Suite --> 
 
 
 
-
-
+ 
 
 
 

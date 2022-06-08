@@ -2,11 +2,11 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">  <!-- Total API-(7), PASS(4), FAIL(3) and Display Result-(13), Pass(10), Fail(3) -->
 		<classes>
-			<!-- <class name="scenarios.api.EntityType"></class>
+			<class name="scenarios.api.EntityType"></class>
 			<class name="extend.api.CreateReport"></class>
 			<class name="testsuite2.test.EntityType_PUT_with_indistinct" />
 			<class name="testsuite2.test.EntityType_POST_with_indistinct" />
-			<class name="testsuite2.test.EntityType_GET_with_indistinct" /> -->
+			<class name="testsuite2.test.EntityType_GET_with_indistinct" />
 			
 			<class name="scenarios.api.EntityType_EntityTypeID"></class>
 			<class name="extend.api.CreateReport"></class>

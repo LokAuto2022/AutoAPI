@@ -13,10 +13,9 @@
 			<class name="extend.api.CreateReport" />
 			<class name="testsuite1.test.User_Region_GET_with_distinct_UserID_RegionID" />
 			<class name="testsuite1.test.User_Region_DELETE_with_distinct_UserID_RegionID" />
-
-		</classes>
+			
+	</classes>  
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
- 
-  
+
 
