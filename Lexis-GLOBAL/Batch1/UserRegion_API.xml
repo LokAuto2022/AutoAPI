@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="UserRegion_Suite">
-	<test thread-count="5" name="Test">  <!-- Total API-(5), PASS(3), FAIL(2) and Display Result-(8), Pass(6), Fail(2) -->
+	<test thread-count="5" name="Test">  <!--Total Run(8) Pass(8) and Fail(0) // ACTIVE : 5 -->
 		<classes>
 			<class name="scenarios.api.UserRegion_UserID" />
 			<class name="extend.api.CreateReport" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Jurisdiction_Suite">
-	<test thread-count="5" name="Test"> <!-- Total API-(7), PASS(7), FAIL(0) and Display Result-(11), Pass(11), Fail(0) -->
+	<test thread-count="5" name="Test"> <!-- Total Run(11), PASS(11), FAIL(0) // ACTUAL(7) -->
 		<classes>
 
 			<class name="scenarios.api.Jurisdiction_BaseLine"></class>
