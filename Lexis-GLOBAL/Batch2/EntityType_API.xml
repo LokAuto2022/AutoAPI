@@ -5,16 +5,17 @@
 			<class name="scenarios.api.EntityType"></class>
 			<class name="extend.api.CreateReport"></class>
 			<class name="testsuite2.test.EntityType_PUT_with_indistinct" />
-			<class name="testsuite2.test.EntityType_POST_with_indistinct" />
-			<class name="testsuite2.test.EntityType_GET_with_indistinct" />
+			<!-- <class name="testsuite2.test.EntityType_POST_with_indistinct" />
+			<class name="testsuite2.test.EntityType_GET_with_indistinct" /> -->
 			
-			<class name="scenarios.api.EntityType_EntityTypeID"></class>
+			<!-- <class name="scenarios.api.EntityType_EntityTypeID"></class>
 			<class name="extend.api.CreateReport"></class>
 			<class name="testsuite2.test.EntityType_DELETE_with_distinct_EntityTypeID" />
-            <class name="testsuite2.test.EntityType_GET_with_distinct_EntityTypeID" />
+            <class name="testsuite2.test.EntityType_GET_with_distinct_EntityTypeID" /> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
 
 
 

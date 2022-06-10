@@ -29,7 +29,7 @@ public class ExtractJsonValue extends Environment {
 			//log.debug("List of  EntityName ➞➞ " + extractName.size());
 
 			String EntityKey0 = extractKey.get(0);
-			String Entityname0 = extractName.get(0);
+		    String Entityname0 = extractName.get(0);
 			//log.debug("Index 0 EntityKey ➞➞ " + EntityKey0);
 			//log.debug("Index 0 Entityname ➞➞ " + Entityname0);
 			if (EntityKey0.contains("(entityapi)")) {
